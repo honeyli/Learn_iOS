@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
         [dictionary removeObjectForKey:@"age"];
         NSLog(@"%@", [dictionary allValues]);
         NSLog(@"%@", [dictionary allKeys]);
-        
+        NSDictionary
         
     }
     return 0;

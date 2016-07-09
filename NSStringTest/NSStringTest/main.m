@@ -10,30 +10,15 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSString *str1 = @"This is string A";
-        NSString *str2 = @"This is string B";
-        NSString *res ;
-        NSComparisonResult *comparisonResult;
-        NSLog(@"length of str1 : %lu",[str1 length]);
-        res = [NSString stringWithString:str1];
-        NSLog(@"copy : %@", res);
-        str2 = [str1 stringByAppendingString: str2];
-        NSLog(@"Concatentation :%@", str2);
+        NSString *str1 = @"xyl is ios developer";
+        NSString *str2 ;
+        str2 = [str1 substringWithRange:NSMakeRange(7, 3)];
+        NSLog(@"%@", str2);
         
-        if ([str1 isEqualToString:res] == YES) {
-            NSLog(@"str1 == res");
-        }
-        else
-            NSLog(@"str1 != res");
-        res = [str1 uppercaseString ];
-        NSLog(@"Uppercase conversion : %s", [res UTF8String]);
-        res = [str1 lowercaseString];
-        NSLog(@"Lowercase conversion : %@", res);
-        str2 = [str1 stringByAppendingString:str2];
-        res = [str1 substringFromIndex:5];
-        NSLog(@"Chars from index 5 of str1 : %@",res);
-        res = [str1 substringToIndex:3];
-        NSLog(@"First 3 chars of str1 : %@", res);
+        str2 = [str1 stringByReplacingOccurrencesOfString:@"ios" withString:@"android"];
+        str2 = [str1 substringFromIndex:4];
+        str2 = [str1 substringToIndex:4];
+        
     }
     return 0;
 }
