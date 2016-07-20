@@ -35,7 +35,7 @@
 
 -(void)tapImageView:(UITapGestureRecognizer *)recognizer
 {
-    NSLog(@" fsdf" );
+    NSLog(@"hello" );
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
