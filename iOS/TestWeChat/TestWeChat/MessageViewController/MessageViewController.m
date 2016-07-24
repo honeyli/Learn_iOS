@@ -118,7 +118,7 @@
         [cell.contentView addSubview:imageView];
         
         UILabel *labelnickName = [[UILabel alloc] init];
-        labelnickName.frame = CGRectMake(110, 12, 150, 40);
+        labelnickName.frame = CGRectMake(75, 12, 145, 18);
         labelnickName.tag = 111;
         [cell.contentView addSubview:labelnickName];
         labelnickName.font = [UIFont systemFontOfSize:18 ];
@@ -131,7 +131,7 @@
         
         
         UILabel *labelMessage = [[UILabel alloc] init];
-        labelMessage.frame = CGRectMake(110, 50, 150, 20);
+        labelMessage.frame = CGRectMake(75, 35, 105, 18);
         labelMessage.tag = 130;
         [cell.contentView addSubview:labelMessage];
         labelMessage.font = [UIFont systemFontOfSize:13];

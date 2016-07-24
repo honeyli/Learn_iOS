@@ -29,7 +29,7 @@
      MessageViewController*messageView = [[MessageViewController alloc]  init];
     messageView.view.backgroundColor = [UIColor grayColor];
     messageView.tabBarItem.title = @"微信";
-    messageView.tabBarItem.image = [[UIImage imageNamed:@"tabbar_mainframe"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    messageView.tabBarItem.image = [[UIImage imageNamed:@"Image-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     messageView.tabBarItem.selectedImage =  [[UIImage imageNamed:@"tabbar_mainframeHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     messageView.tabBarItem.badgeValue = @"3";
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:messageView];
@@ -38,18 +38,21 @@
     ContentViewController *contentView = [[ContentViewController alloc] init ];
     contentView.tabBarItem.title = @"通讯录";
     contentView.tabBarItem.image = [[UIImage imageNamed:@"tabbar_discover"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    contentView.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_discoverHL"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:contentView];
 
     FindViewController *findView = [[FindViewController alloc] init];
     findView.view.backgroundColor = [UIColor yellowColor];
     findView.tabBarItem.title = @"发现";
     findView.tabBarItem.image = [[UIImage imageNamed:@"tabbar_contacts"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    findView.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_contactsHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:findView];
     
     
     MineViewController *mineView = [[MineViewController alloc] init];
     mineView.tabBarItem.title = @"我";
     mineView.tabBarItem.image = [[UIImage imageNamed:@"tabbar_me"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    mineView.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_meHL"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:mineView];
     //添加自控制器到tabbar中
     tabBar.viewControllers = @[nav1,nav2,nav3,nav4];

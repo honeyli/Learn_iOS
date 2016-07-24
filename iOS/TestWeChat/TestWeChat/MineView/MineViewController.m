@@ -108,6 +108,8 @@
     NSDictionary *dic = [array objectAtIndex:indexPath.row];
     cell.textLabel.text = [dic objectForKey:@"title"];
     cell.imageView.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
+    cell.imageView.layer.cornerRadius = 5;
+    cell.imageView.layer.masksToBounds = YES;
 //    if (indexPath.section == 0) {
 //        
 //        imageView.image = [UIImage imageNamed:mImage.image];
