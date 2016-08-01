@@ -8,6 +8,7 @@
 
 #import "MineViewController.h"
 #import "MineImage.h"
+#import "ClickSetTableViewController.h"
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -104,7 +105,6 @@
     }
     
     NSArray *array = [_datalist objectAtIndex:indexPath.section];
-    
     NSDictionary *dic = [array objectAtIndex:indexPath.row];
     cell.textLabel.text = [dic objectForKey:@"title"];
     cell.imageView.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
@@ -121,7 +121,12 @@
     
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"点击了设置");
+    ClickSetTableViewController *click = [[ClickSetTableViewController alloc] init];
+    [self.navigationController pushViewController:click animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

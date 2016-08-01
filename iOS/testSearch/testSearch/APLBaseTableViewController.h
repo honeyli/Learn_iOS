@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "APLProduct.h"
 @interface APLBaseTableViewController : UITableViewController
-
+-(void)configureCell:(UITableViewCell *)cell forProduct:product;
 @end

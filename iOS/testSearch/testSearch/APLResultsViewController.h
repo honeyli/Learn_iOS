@@ -9,5 +9,5 @@
 #import "APLBaseTableViewController.h"
 
 @interface APLResultsViewController : APLBaseTableViewController
-
+@property(nonatomic,strong) NSMutableArray *dataArray;
 @end

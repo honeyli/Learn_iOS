@@ -20,6 +20,7 @@
     //field.backgroundColor = [UIColor redColor];
     myTextfield1.borderStyle = UITextBorderStyleRoundedRect;//设置边框样式
     myTextfield1.placeholder = @"Enter password";
+    myTextfield1.textAlignment = YES;
     myTextfield1.font = [UIFont fontWithName:@"Arial" size:15.0f];//设置字体
     myTextfield1.textColor = [UIColor redColor];//设置字体的颜色
     myTextfield1.clearButtonMode = UITextFieldViewModeAlways;//一次性删除文本框中的内容
@@ -69,7 +70,6 @@
 }
 //返回一个BOOL值，指明是否允许在按下回车键时结束编辑
 //如果允许要调用resignFirstResponder 方法，这回导致结束编辑，而键盘会被收起[textField resignFirstResponder];
-//查一下resign这个单词的意思就明白这个方法了
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];

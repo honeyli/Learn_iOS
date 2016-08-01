@@ -7,6 +7,7 @@
 //
 
 #import "APLResultsViewController.h"
+#import "APLProduct.h"
 @interface APLResultsViewController ()
 
 @end
@@ -15,9 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
-
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_dataArray count];
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifider = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifider];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifider];
+    }
+    APLProduct *p = [_dataArray objectAtIndex:indexPath.row];
+    [self configureCell:cell forProduct:p];
+    return cell;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

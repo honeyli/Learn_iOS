@@ -8,6 +8,10 @@
 
 #import "MessageViewController.h"
 #import "Message1.h"
+#import "LoginViewController.h"
+#import "MineViewController.h"
+#import "ContentViewController.h"
+#import "FindViewController.h"
 @interface MessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -173,6 +177,16 @@
 //    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:viewController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+- (void)setupNavBar
+{
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    UINavigationBar *bar = [UINavigationBar appearance];
+    CGFloat rgb = 0.1;
+    bar.barTintColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:0.9];
+    bar.tintColor = [UIColor whiteColor];
+    bar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,6 +23,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)configureCell:(UITableViewCell *)cell forProduct:(APLProduct *)product
+{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    NSString *priceString = [numberFormatter stringFromNumber:product.inToPrice];
+    NSString *detailStr = [NSString stringWithFormat:@"%@",priceString];
+    cell.textLabel.text = product.name;
+    cell.detailTextLabel.text = detailStr;
+}
 
 /*
 #pragma mark - Navigation
