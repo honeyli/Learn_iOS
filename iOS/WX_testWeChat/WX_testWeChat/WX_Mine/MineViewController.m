@@ -29,13 +29,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createArrayData];
-    UITableView *tableView = [[UITableView alloc] init];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
     tableView.rowHeight = 55;
     [self.view addSubview:tableView];
 }
-    
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return 15;
+    }
+    return 18;
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [_datalist count];

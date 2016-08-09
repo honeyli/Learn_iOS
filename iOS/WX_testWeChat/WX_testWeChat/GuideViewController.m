@@ -7,6 +7,7 @@
 //
 
 #import "GuideViewController.h"
+#import "AppDelegate.h"
 @interface GuideViewController ()
 {
     UIScrollView *scrollView;
@@ -89,6 +90,8 @@
     //    LoginViewController *login = [[LoginViewController alloc] init];
     //    [self.navigationController pushViewController:login animated:NO];
     [self dismissViewControllerAnimated:NO completion:nil];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:YES forKey:@"guide1"];
     NSLog(@"点击");
 }
 

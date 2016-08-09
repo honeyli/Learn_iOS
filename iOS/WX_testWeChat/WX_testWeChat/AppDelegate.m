@@ -23,15 +23,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
+    [self setupNavBar];
     
     MessageViewController  *messageView = [[MessageViewController alloc] init];
     messageView.tabBarItem.title = @"微信";
-//    messageView.view.backgroundColor = [UIColor grayColor];
     messageView.tabBarItem.image = [UIImage imageNamed:@"tabbar_mainframe"];
     messageView.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_mainframeHL"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:messageView];
-    
+
+
     ContactViewController *contactView = [[ContactViewController alloc] init];
     contactView.tabBarItem.title = @"通讯录";
     contactView.tabBarItem.image = [UIImage imageNamed:@"tabbar_contacts"];
@@ -49,15 +49,17 @@
     mineView.tabBarItem.image = [UIImage imageNamed:@"tabbar_me"];
     mineView.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_meHL"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:mineView];
-    
+
     UITabBarController *tabBar = [[UITabBarController alloc] init];
     tabBar.viewControllers = @[nav1,nav2,nav3,nav4];
     
+    
     self.window.rootViewController = tabBar;
-    [self.window makeKeyWindow];
-    NSUserDefaults *userDefaults;
-    if (![[NSUserDefaults standardUserDefaults]boolForKey:@"login"]) {
-        [userDefaults setBool:YES forKey:@"login"];
+    [self.window makeKeyAndVisible];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    BOOL isLogin = [userDefaults boolForKey:@"login"];
+    BOOL isGuide = [userDefaults boolForKey:@"guide1"];
+    if (!isLogin && !isGuide) {
         LoginViewController *login = [[LoginViewController alloc] init];
         login.view.alpha = 0;
         [tabBar presentViewController:login animated:NO completion:nil];
@@ -65,8 +67,35 @@
         [login presentViewController:guideView animated:NO completion:nil];
         login.view.alpha = 1;
         tabBar.view.alpha = 1;
+    }else if (!isLogin && isGuide)
+    {
+        LoginViewController *login = [[LoginViewController alloc] init];
+        login.view.alpha = 0;
+        [tabBar presentViewController:login animated:NO completion:nil];
+        login.view.alpha = 1;
     }
+    else if (isLogin && !isGuide)
+    {
+        GuideViewController *guide = [[GuideViewController alloc] init];
+        guide.view.alpha = 0;
+        [tabBar presentViewController:guide animated:NO completion:nil];
+        guide.view.alpha = 1;
+    }
+
     return YES;
+}
+
+- (void)setupNavBar
+{
+    //此种方法设置后，应用内所有的navgationBar都会有统一的样式
+    UINavigationBar *bar = [UINavigationBar appearance];
+    CGFloat rgb = 0.1;
+    bar.barTintColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:0.9];
+    bar.tintColor = [UIColor whiteColor];
+    bar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};    
+    //status bar的字体为黑色
+    //导航栏的背景色是白色，状态栏的背景色也是白色。
+    //self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

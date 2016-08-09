@@ -138,9 +138,9 @@
     NSString *phoneNumber = textField1.text;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:phoneNumber forKey:LoginPhoneNumber];
-    [defaults synchronize];
     [textField2 resignFirstResponder];
     [self dismissViewControllerAnimated:NO completion:nil];
+    [defaults setBool:YES forKey:@"login"];
 }
 
 -(void)didInputPassword:(NSNotification *)sender

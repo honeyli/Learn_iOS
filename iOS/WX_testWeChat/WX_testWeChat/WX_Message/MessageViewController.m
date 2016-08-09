@@ -8,11 +8,17 @@
 
 #import "MessageViewController.h"
 #import "Message.h"
+#import "ChatViewController.h"
+#import "NewCell.h"
 @interface MessageViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
 
+}
+@property (nonatomic,strong) NSMutableArray *datalist;
 @end
 
 @implementation MessageViewController
+
 
 - (void)createData {
     self.title = @"消息";
@@ -89,7 +95,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createData];
-    UITableView *tableView = [[UITableView alloc] init];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.rowHeight = 65;
@@ -104,38 +110,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identidifider = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identidifider];
+    NewCell *cell = [tableView dequeueReusableCellWithIdentifier:identidifider];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identidifider];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 8, 49, 49)];
-        imageView.tag = 1;
-        [cell.contentView addSubview:imageView];
-        
-        UILabel *labelnickName = [[UILabel alloc] initWithFrame:CGRectMake(75, 12, 145, 18)];
-        labelnickName.tag = 2;
-        [cell.contentView addSubview:labelnickName];
-        
-        UILabel *labelTime = [[UILabel alloc] initWithFrame:CGRectMake(350, 15, 62, 25)];
-        labelTime.tag = 3;
-        [cell.contentView addSubview:labelTime];
-        
-        UILabel *labelMessage = [[UILabel alloc] initWithFrame:CGRectMake(75, 35, 105, 18)];
-        labelTime.tag = 4;
-        [cell.contentView addSubview:labelMessage];
+        cell = [[NewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identidifider];
     }
+    
     Message *msg = [_datalist objectAtIndex:indexPath.row];
-    UIImageView *imageView = (UIImageView *) [cell.contentView viewWithTag:1];
-    imageView.image = [UIImage imageNamed:msg.imageName];
-    
-    UILabel *labelnickName = (UILabel *) [cell.contentView viewWithTag:2];
-    labelnickName.text = msg.nickName;
-    
-    UILabel *labelTime = (UILabel *) [cell.contentView viewWithTag:3];
-    labelTime.text = msg.time;
-    
-    UILabel *labelMessage = (UILabel *) [cell.contentView viewWithTag:4];
-    labelMessage.text = msg.message;
-    
+    [cell configureCell:msg];
     return cell;
 }
 
@@ -153,25 +134,13 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"响应单击事件");
-    UIViewController *viewController= [[UIViewController alloc] init];
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    viewController.hidesBottomBarWhenPushed = YES;
-    //    self.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:viewController animated:YES];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ChatViewController *chatView = [[ChatViewController alloc] initWithMessage:[_datalist objectAtIndex:indexPath.row]];
+    chatView.hidesBottomBarWhenPushed = YES;
+//    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:chatView animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
 }
-- (void)setupNavBar
-{
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    
-    UINavigationBar *bar = [UINavigationBar appearance];
-    CGFloat rgb = 0.1;
-    bar.barTintColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:0.9];
-    bar.tintColor = [UIColor whiteColor];
-    bar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -186,5 +155,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

@@ -12,6 +12,7 @@
 		3145B8B81D3C854800360FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3145B8B61D3C854800360FAF /* LaunchScreen.storyboard */; };
 		3145B8C31D3C854800360FAF /* TestWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145B8C21D3C854800360FAF /* TestWeChatTests.m */; };
 		3145B8CE1D3C854800360FAF /* TestWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145B8CD1D3C854800360FAF /* TestWeChatUITests.m */; };
+		318C8FBD1D50716B00EA01B2 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318C8FBC1D50716B00EA01B2 /* ChatViewController.m */; };
 		31D294811D4BA76B0020D6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D294801D4BA76B0020D6C4 /* Assets.xcassets */; };
 		31ECF8031D470C0E002E38CD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ECF8021D470C0E002E38CD /* LoginViewController.m */; };
 		31ECF8101D472BB3002E38CD /* ClickSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ECF80F1D472BB3002E38CD /* ClickSetTableViewController.m */; };
@@ -55,6 +56,8 @@
 		3145B8C91D3C854800360FAF /* TestWeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3145B8CD1D3C854800360FAF /* TestWeChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWeChatUITests.m; sourceTree = "<group>"; };
 		3145B8CF1D3C854800360FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318C8FBB1D50716B00EA01B2 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		318C8FBC1D50716B00EA01B2 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		31D294801D4BA76B0020D6C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31ECF8011D470C0E002E38CD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = TestWeChat/LoginViewController/LoginViewController.h; sourceTree = SOURCE_ROOT; };
 		31ECF8021D470C0E002E38CD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = TestWeChat/LoginViewController/LoginViewController.m; sourceTree = SOURCE_ROOT; };
@@ -167,6 +170,15 @@
 			path = TestWeChatUITests;
 			sourceTree = "<group>";
 		};
+		318C8FBA1D50713C00EA01B2 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				318C8FBB1D50716B00EA01B2 /* ChatViewController.h */,
+				318C8FBC1D50716B00EA01B2 /* ChatViewController.m */,
+			);
+			name = ChatView;
+			sourceTree = "<group>";
+		};
 		31ECF8001D470B55002E38CD /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +265,7 @@
 			children = (
 				31F075A41D3F299600A1C21C /* MessageViewController.h */,
 				31F075A51D3F299600A1C21C /* MessageViewController.m */,
+				318C8FBA1D50713C00EA01B2 /* ChatView */,
 			);
 			name = MessageViewController;
 			path = ../MessageViewController;
@@ -399,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318C8FBD1D50716B00EA01B2 /* ChatViewController.m in Sources */,
 				31F075891D3F27BE00A1C21C /* ViewController.m in Sources */,
 				31F075AA1D3F2B0600A1C21C /* Message1.m in Sources */,
 				31F075991D3F283D00A1C21C /* FindViewController.m in Sources */,
@@ -560,6 +574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bulaba.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a7dfd3b1-abf2-4d37-83b8-cb9aa07ff697";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -575,6 +590,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bulaba.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a7dfd3b1-abf2-4d37-83b8-cb9aa07ff697";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

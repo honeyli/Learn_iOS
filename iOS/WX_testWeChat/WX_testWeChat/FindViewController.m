@@ -17,9 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"发现";
-    UITableView *tableView = [[UITableView alloc] init];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
+    [self.view addSubview:tableView];
     
     NSArray *list1 = @[@{@"title":@"朋友圈",@"image":@"ff_IconShowAlbum"},];
     NSArray *list2 = @[@{@"title":@"扫一扫",@"image":@"ff_IconQRCode"},@{@"title":@"摇一摇",@"image":@"Find_Icon_Shake"}];
@@ -27,7 +28,6 @@
     NSArray *list4 = @[@{@"title":@"游戏",@"image":@""},@{@"title":@"漂流瓶",@"image":@"find_Icon_Bottle"}];
     NSArray *array = [[NSArray alloc] initWithObjects:list1,list2,list3,list4, nil];
     _datalist = array;
-    [self.view addSubview:tableView];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -44,6 +44,10 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifider];
     }
+    NSArray *array = [_datalist objectAtIndex:indexPath.section];
+    NSDictionary *dic = [array objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dic objectForKey:@"title"];
+    cell.imageView.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
     return cell;
 }
 

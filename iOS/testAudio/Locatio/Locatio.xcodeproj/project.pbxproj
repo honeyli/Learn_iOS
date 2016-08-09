@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317FA0AD1D5887AB0012B129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FA0AC1D5887AB0012B129 /* main.m */; };
+		317FA0B01D5887AB0012B129 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FA0AF1D5887AB0012B129 /* AppDelegate.m */; };
+		317FA0B31D5887AB0012B129 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FA0B21D5887AB0012B129 /* ViewController.m */; };
+		317FA0B61D5887AB0012B129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317FA0B41D5887AB0012B129 /* Main.storyboard */; };
+		317FA0B81D5887AB0012B129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317FA0B71D5887AB0012B129 /* Assets.xcassets */; };
+		317FA0BB1D5887AB0012B129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317FA0B91D5887AB0012B129 /* LaunchScreen.storyboard */; };
+		317FA0C61D5887AB0012B129 /* LocatioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FA0C51D5887AB0012B129 /* LocatioTests.m */; };
+		317FA0D11D5887AB0012B129 /* LocatioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FA0D01D5887AB0012B129 /* LocatioUITests.m */; };
+		317FA0DF1D5887D90012B129 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317FA0DE1D5887D90012B129 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		317FA0C21D5887AB0012B129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317FA0A01D5887AA0012B129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 317FA0A71D5887AB0012B129;
+			remoteInfo = Locatio;
+		};
+		317FA0CD1D5887AB0012B129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317FA0A01D5887AA0012B129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 317FA0A71D5887AB0012B129;
+			remoteInfo = Locatio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		317FA0A81D5887AB0012B129 /* Locatio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locatio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		317FA0AC1D5887AB0012B129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		317FA0AE1D5887AB0012B129 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		317FA0AF1D5887AB0012B129 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		317FA0B11D5887AB0012B129 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		317FA0B21D5887AB0012B129 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		317FA0B51D5887AB0012B129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		317FA0B71D5887AB0012B129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		317FA0BA1D5887AB0012B129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		317FA0BC1D5887AB0012B129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317FA0C11D5887AB0012B129 /* LocatioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocatioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		317FA0C51D5887AB0012B129 /* LocatioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocatioTests.m; sourceTree = "<group>"; };
+		317FA0C71D5887AB0012B129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317FA0CC1D5887AB0012B129 /* LocatioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocatioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		317FA0D01D5887AB0012B129 /* LocatioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocatioUITests.m; sourceTree = "<group>"; };
+		317FA0D21D5887AB0012B129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317FA0DE1D5887D90012B129 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		317FA0A51D5887AB0012B129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317FA0DF1D5887D90012B129 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317FA0BE1D5887AB0012B129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317FA0C91D5887AB0012B129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		317FA09F1D5887AA0012B129 = {
+			isa = PBXGroup;
+			children = (
+				317FA0DE1D5887D90012B129 /* CoreLocation.framework */,
+				317FA0AA1D5887AB0012B129 /* Locatio */,
+				317FA0C41D5887AB0012B129 /* LocatioTests */,
+				317FA0CF1D5887AB0012B129 /* LocatioUITests */,
+				317FA0A91D5887AB0012B129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		317FA0A91D5887AB0012B129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				317FA0A81D5887AB0012B129 /* Locatio.app */,
+				317FA0C11D5887AB0012B129 /* LocatioTests.xctest */,
+				317FA0CC1D5887AB0012B129 /* LocatioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		317FA0AA1D5887AB0012B129 /* Locatio */ = {
+			isa = PBXGroup;
+			children = (
+				317FA0AE1D5887AB0012B129 /* AppDelegate.h */,
+				317FA0AF1D5887AB0012B129 /* AppDelegate.m */,
+				317FA0B11D5887AB0012B129 /* ViewController.h */,
+				317FA0B21D5887AB0012B129 /* ViewController.m */,
+				317FA0B41D5887AB0012B129 /* Main.storyboard */,
+				317FA0B71D5887AB0012B129 /* Assets.xcassets */,
+				317FA0B91D5887AB0012B129 /* LaunchScreen.storyboard */,
+				317FA0BC1D5887AB0012B129 /* Info.plist */,
+				317FA0AB1D5887AB0012B129 /* Supporting Files */,
+			);
+			path = Locatio;
+			sourceTree = "<group>";
+		};
+		317FA0AB1D5887AB0012B129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				317FA0AC1D5887AB0012B129 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		317FA0C41D5887AB0012B129 /* LocatioTests */ = {
+			isa = PBXGroup;
+			children = (
+				317FA0C51D5887AB0012B129 /* LocatioTests.m */,
+				317FA0C71D5887AB0012B129 /* Info.plist */,
+			);
+			path = LocatioTests;
+			sourceTree = "<group>";
+		};
+		317FA0CF1D5887AB0012B129 /* LocatioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				317FA0D01D5887AB0012B129 /* LocatioUITests.m */,
+				317FA0D21D5887AB0012B129 /* Info.plist */,
+			);
+			path = LocatioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		317FA0A71D5887AB0012B129 /* Locatio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317FA0D51D5887AB0012B129 /* Build configuration list for PBXNativeTarget "Locatio" */;
+			buildPhases = (
+				317FA0A41D5887AB0012B129 /* Sources */,
+				317FA0A51D5887AB0012B129 /* Frameworks */,
+				317FA0A61D5887AB0012B129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locatio;
+			productName = Locatio;
+			productReference = 317FA0A81D5887AB0012B129 /* Locatio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		317FA0C01D5887AB0012B129 /* LocatioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317FA0D81D5887AB0012B129 /* Build configuration list for PBXNativeTarget "LocatioTests" */;
+			buildPhases = (
+				317FA0BD1D5887AB0012B129 /* Sources */,
+				317FA0BE1D5887AB0012B129 /* Frameworks */,
+				317FA0BF1D5887AB0012B129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				317FA0C31D5887AB0012B129 /* PBXTargetDependency */,
+			);
+			name = LocatioTests;
+			productName = LocatioTests;
+			productReference = 317FA0C11D5887AB0012B129 /* LocatioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		317FA0CB1D5887AB0012B129 /* LocatioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317FA0DB1D5887AB0012B129 /* Build configuration list for PBXNativeTarget "LocatioUITests" */;
+			buildPhases = (
+				317FA0C81D5887AB0012B129 /* Sources */,
+				317FA0C91D5887AB0012B129 /* Frameworks */,
+				317FA0CA1D5887AB0012B129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				317FA0CE1D5887AB0012B129 /* PBXTargetDependency */,
+			);
+			name = LocatioUITests;
+			productName = LocatioUITests;
+			productReference = 317FA0CC1D5887AB0012B129 /* LocatioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		317FA0A01D5887AA0012B129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = xuyanli;
+				TargetAttributes = {
+					317FA0A71D5887AB0012B129 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					317FA0C01D5887AB0012B129 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 317FA0A71D5887AB0012B129;
+					};
+					317FA0CB1D5887AB0012B129 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 317FA0A71D5887AB0012B129;
+					};
+				};
+			};
+			buildConfigurationList = 317FA0A31D5887AB0012B129 /* Build configuration list for PBXProject "Locatio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 317FA09F1D5887AA0012B129;
+			productRefGroup = 317FA0A91D5887AB0012B129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				317FA0A71D5887AB0012B129 /* Locatio */,
+				317FA0C01D5887AB0012B129 /* LocatioTests */,
+				317FA0CB1D5887AB0012B129 /* LocatioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		317FA0A61D5887AB0012B129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317FA0BB1D5887AB0012B129 /* LaunchScreen.storyboard in Resources */,
+				317FA0B81D5887AB0012B129 /* Assets.xcassets in Resources */,
+				317FA0B61D5887AB0012B129 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317FA0BF1D5887AB0012B129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317FA0CA1D5887AB0012B129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		317FA0A41D5887AB0012B129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317FA0B31D5887AB0012B129 /* ViewController.m in Sources */,
+				317FA0B01D5887AB0012B129 /* AppDelegate.m in Sources */,
+				317FA0AD1D5887AB0012B129 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317FA0BD1D5887AB0012B129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317FA0C61D5887AB0012B129 /* LocatioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317FA0C81D5887AB0012B129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317FA0D11D5887AB0012B129 /* LocatioUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		317FA0C31D5887AB0012B129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 317FA0A71D5887AB0012B129 /* Locatio */;
+			targetProxy = 317FA0C21D5887AB0012B129 /* PBXContainerItemProxy */;
+		};
+		317FA0CE1D5887AB0012B129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 317FA0A71D5887AB0012B129 /* Locatio */;
+			targetProxy = 317FA0CD1D5887AB0012B129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		317FA0B41D5887AB0012B129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317FA0B51D5887AB0012B129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		317FA0B91D5887AB0012B129 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317FA0BA1D5887AB0012B129 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		317FA0D31D5887AB0012B129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		317FA0D41D5887AB0012B129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		317FA0D61D5887AB0012B129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Locatio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.os.Locatio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		317FA0D71D5887AB0012B129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Locatio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.os.Locatio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		317FA0D91D5887AB0012B129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocatioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.os.LocatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locatio.app/Locatio";
+			};
+			name = Debug;
+		};
+		317FA0DA1D5887AB0012B129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocatioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.os.LocatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locatio.app/Locatio";
+			};
+			name = Release;
+		};
+		317FA0DC1D5887AB0012B129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LocatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.os.LocatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Locatio;
+			};
+			name = Debug;
+		};
+		317FA0DD1D5887AB0012B129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LocatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.os.LocatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Locatio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		317FA0A31D5887AB0012B129 /* Build configuration list for PBXProject "Locatio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317FA0D31D5887AB0012B129 /* Debug */,
+				317FA0D41D5887AB0012B129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317FA0D51D5887AB0012B129 /* Build configuration list for PBXNativeTarget "Locatio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317FA0D61D5887AB0012B129 /* Debug */,
+				317FA0D71D5887AB0012B129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		317FA0D81D5887AB0012B129 /* Build configuration list for PBXNativeTarget "LocatioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317FA0D91D5887AB0012B129 /* Debug */,
+				317FA0DA1D5887AB0012B129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		317FA0DB1D5887AB0012B129 /* Build configuration list for PBXNativeTarget "LocatioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317FA0DC1D5887AB0012B129 /* Debug */,
+				317FA0DD1D5887AB0012B129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 317FA0A01D5887AA0012B129 /* Project object */;
+}

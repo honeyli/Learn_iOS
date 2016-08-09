@@ -12,6 +12,7 @@
 #import "MineViewController.h"
 #import "ContentViewController.h"
 #import "FindViewController.h"
+#import "ChatViewController.h"
 @interface MessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -171,11 +172,11 @@
 {
     NSLog(@"响应单击时间");
     
-    UIViewController *viewController= [[UIViewController alloc] init];
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    viewController.hidesBottomBarWhenPushed = YES;
+    ChatViewController *chatView = [[ChatViewController alloc] initWithMessage:[_datalist objectAtIndex:indexPath.row]];
+    chatView.view.backgroundColor = [UIColor whiteColor];
+    chatView.hidesBottomBarWhenPushed = YES;
 //    self.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:viewController animated:YES];
+    [self.navigationController pushViewController:chatView animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 - (void)setupNavBar

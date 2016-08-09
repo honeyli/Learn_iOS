@@ -77,11 +77,11 @@
     [view addSubview:imageViewThree];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(128, 540, 110, 25);
+    btn.frame = CGRectMake(128, 520, 110, 25);
     [btn setTintColor:[UIColor blueColor]];
     [btn setTitle:@"立 即 体 验" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
-    [view addSubview:btn];
+    [self.view addSubview:btn];
     
     UITapGestureRecognizer *singleTap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(buttonPress3 :)];
     imageViewThree.userInteractionEnabled = YES;
@@ -117,7 +117,7 @@
 
 -(void)buttonPress3:(id)sender
 {
-    
+    [self dismissViewControllerAnimated:NO completion:nil];
     NSLog(@"引导页完成");
 }
 @end
