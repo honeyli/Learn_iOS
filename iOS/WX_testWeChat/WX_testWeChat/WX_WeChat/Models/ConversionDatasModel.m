@@ -12,8 +12,8 @@
 -(instancetype)init
 {
     if (self = [super init]) {
-        self.lastMessageTime = @"zhou yi";
-        self.message = @"hello!";
+        self.lastMessageTime = @"";
+        self.message = @"";
     }
     return self;
 }

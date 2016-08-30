@@ -52,7 +52,7 @@
         cell = [[NewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identidifider];
     }
     
-    MessageModel *msg = [_datalist objectAtIndex:indexPath.row];
+    ConversionDatasModel *msg = [_datalist objectAtIndex:indexPath.row];
     [cell configureCell:msg];
     return cell;
 }

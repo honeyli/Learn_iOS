@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MessageModel.h"
+#import "ConversionDatasModel.h"
 @interface NewCell : UITableViewCell
 {
  
 }
 
--(void)configureCell:(MessageModel *)msg;
+-(void)configureCell:(ConversionDatasModel *)msg;
 @end

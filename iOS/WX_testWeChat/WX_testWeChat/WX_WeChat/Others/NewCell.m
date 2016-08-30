@@ -7,7 +7,6 @@
 //
 
 #import "NewCell.h"
-
 @interface NewCell ()
 {
 }
@@ -50,7 +49,7 @@
 }
 
 
--(void)configureCell:(MessageModel *)msg
+-(void)configureCell:(ConversionDatasModel *)msg
 {
     UIImageView *imageView = (UIImageView *) [self.contentView viewWithTag:101];
     imageView.image = [UIImage imageNamed:msg.imageName];
@@ -59,7 +58,7 @@
     labelnickName.text = msg.nickName;
     
     UILabel *labelTime = (UILabel *) [self.contentView viewWithTag:120];
-    labelTime.text = msg.time;
+    labelTime.text = msg.lastMessageTime;
     
     UILabel *labelMessage = (UILabel *) [self.contentView viewWithTag:130];
     labelMessage.text = msg.message;
