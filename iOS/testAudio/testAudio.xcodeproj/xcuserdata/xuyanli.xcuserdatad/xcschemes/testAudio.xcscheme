@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31D22B1E1D55D447003C50F6"
+               BlueprintIdentifier = "31D22B611D5714B2003C50F6"
                BuildableName = "testAudio.app"
                BlueprintName = "testAudio"
                ReferencedContainer = "container:testAudio.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31D22B371D55D447003C50F6"
+               BlueprintIdentifier = "31D22B7A1D5714B2003C50F6"
                BuildableName = "testAudioTests.xctest"
                BlueprintName = "testAudioTests"
                ReferencedContainer = "container:testAudio.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31D22B421D55D447003C50F6"
+               BlueprintIdentifier = "31D22B851D5714B2003C50F6"
                BuildableName = "testAudioUITests.xctest"
                BlueprintName = "testAudioUITests"
                ReferencedContainer = "container:testAudio.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31D22B1E1D55D447003C50F6"
+            BlueprintIdentifier = "31D22B611D5714B2003C50F6"
             BuildableName = "testAudio.app"
             BlueprintName = "testAudio"
             ReferencedContainer = "container:testAudio.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31D22B1E1D55D447003C50F6"
+            BlueprintIdentifier = "31D22B611D5714B2003C50F6"
             BuildableName = "testAudio.app"
             BlueprintName = "testAudio"
             ReferencedContainer = "container:testAudio.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31D22B1E1D55D447003C50F6"
+            BlueprintIdentifier = "31D22B611D5714B2003C50F6"
             BuildableName = "testAudio.app"
             BlueprintName = "testAudio"
             ReferencedContainer = "container:testAudio.xcodeproj">

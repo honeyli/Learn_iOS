@@ -18,33 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    /*MineImage *mImage1 = [[MineImage alloc] init];
-    mImage1.title = @"Honey丽";
-    mImage1.image = @"head portrait";
-    
-    MineImage *mImage2 = [[MineImage alloc] init];
-    mImage2.title = @"相册";
-    mImage2.image = @"mine_photo album";
-    
-    MineImage *mImage3 = [[MineImage alloc] init];
-    mImage3.title = @"收藏";
-    mImage3.image = @"MineMyFavorites";
-    
-    MineImage *mImage4 = [[MineImage alloc] init];
-    mImage4.title = @"钱包";
-    mImage4.image = @"mine_ wallet_icon";
-    
-    MineImage *mImage5 = [[MineImage alloc] init];
-    mImage5.title = @"卡包";
-    mImage5.image = @"MineCardPackageIcon";
-    
-    MineImage *mImage6 = [[MineImage alloc] init];
-    mImage6.title = @"表情";
-    mImage6.image = @"mine_face_icon";
-    
-    MineImage *mImage7 = [[MineImage alloc] init];
-    mImage7.title = @"设置";
-    mImage7.image = @"MineSetting";*/
     self.title = @"我的";
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     tableView.dataSource = self;
@@ -66,10 +39,6 @@
 {
     return 15.0;
 }
-//-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-//{
-//    return 5.0;
-//}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [_datalist count];
@@ -93,15 +62,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifider];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifider];
-//        UIImageView *imageView = [[UIImageView alloc] init];
-//        imageView.frame = CGRectMake(20, 9, 40, 40);
-//        imageView.tag = 1;
-//        [cell.contentView addSubview:imageView];
-//        
-//        UILabel *label = [[UILabel alloc] init];
-//        label.frame = CGRectMake(80, 10, 206, 39);
-//        label.tag = 2;
-//        [cell.contentView addSubview:label];
     }
     
     NSArray *array = [_datalist objectAtIndex:indexPath.section];
@@ -110,15 +70,6 @@
     cell.imageView.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
     cell.imageView.layer.cornerRadius = 5;
     cell.imageView.layer.masksToBounds = YES;
-//    if (indexPath.section == 0) {
-//        
-//        imageView.image = [UIImage imageNamed:mImage.image];
-//        label.frame = CGRectMake(80, 10, 206, 39);
-//    } else {
-//        label.frame =CGRectMake(20, 10, 206 , 40);
-//        imageView.image = nil;
-//    }
-    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

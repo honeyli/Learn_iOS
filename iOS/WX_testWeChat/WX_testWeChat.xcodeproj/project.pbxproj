@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3112CF2D1D4F25CA001E0279 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112CF2C1D4F25CA001E0279 /* LoginViewController.m */; };
-		3112CF311D4F2F82001E0279 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3112CF301D4F2F82001E0279 /* GuideViewController.m */; };
-		317FA0E61D59B74A0012B129 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317FA0E51D59B74A0012B129 /* ChatView.m */; };
-		318C8FB21D503E0100EA01B2 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 318C8FB11D503E0100EA01B2 /* Message.m */; };
-		318C8FB91D503EA100EA01B2 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318C8FB81D503EA100EA01B2 /* ChatViewController.m */; };
-		3198AB9F1D4C624A00AB1F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3198AB9E1D4C624A00AB1F9B /* main.m */; };
-		3198ABA21D4C624A00AB1F9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3198ABA11D4C624A00AB1F9B /* AppDelegate.m */; };
-		3198ABA51D4C624A00AB1F9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3198ABA41D4C624A00AB1F9B /* ViewController.m */; };
-		3198ABA81D4C624A00AB1F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3198ABA61D4C624A00AB1F9B /* Main.storyboard */; };
-		3198ABAA1D4C624A00AB1F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3198ABA91D4C624A00AB1F9B /* Assets.xcassets */; };
-		3198ABAD1D4C624A00AB1F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3198ABAB1D4C624A00AB1F9B /* LaunchScreen.storyboard */; };
+		314615531D733009008D689C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314615051D733009008D689C /* Main.storyboard */; };
+		3146156D1D733009008D689C /* NSObject+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3146154E1D733009008D689C /* NSObject+UUID.m */; };
+		314615981D756132008D689C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615971D756132008D689C /* AppDelegate.m */; };
+		3146159F1D7561F7008D689C /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3146159A1D7561F7008D689C /* GuideViewController.m */; };
+		314615A01D7561F7008D689C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3146159C1D7561F7008D689C /* LoginViewController.m */; };
+		314615A11D7561F7008D689C /* OtherLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3146159E1D7561F7008D689C /* OtherLogin.m */; };
+		314615A61D75633E008D689C /* ConversionDatasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615A31D75633E008D689C /* ConversionDatasModel.m */; };
+		314615A71D75633E008D689C /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615A51D75633E008D689C /* MessageModel.m */; };
+		314615AA1D7563E2008D689C /* ChatTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615A91D7563E2008D689C /* ChatTableView.m */; };
+		314615AD1D75642B008D689C /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615AC1D75642B008D689C /* ConversionViewController.m */; };
+		314615B21D756442008D689C /* NewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615AF1D756442008D689C /* NewCell.m */; };
+		314615B31D756442008D689C /* TextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615B11D756442008D689C /* TextMessageCell.m */; };
+		314615B61D75647A008D689C /* ImageCellModelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615B51D75647A008D689C /* ImageCellModelTableViewCell.m */; };
+		314615B91D7564E6008D689C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615B81D7564E6008D689C /* ChatViewController.m */; };
+		314615BC1D7565D0008D689C /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615BB1D7565D0008D689C /* ContactModel.m */; };
+		314615BF1D7565EF008D689C /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615BE1D7565EF008D689C /* ContactViewController.m */; };
+		314615C21D75663A008D689C /* ContactDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615C11D75663A008D689C /* ContactDetailsTableViewController.m */; };
+		314615C51D756679008D689C /* StyleCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615C41D756679008D689C /* StyleCellTableViewCell.m */; };
+		314615C81D7566D8008D689C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615C71D7566D8008D689C /* MineViewController.m */; };
+		314615CB1D7566E6008D689C /* ClickSetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615CA1D7566E6008D689C /* ClickSetTableView.m */; };
+		314615CE1D756713008D689C /* DetailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615CD1D756713008D689C /* DetailImage.m */; };
+		314615D11D75678E008D689C /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615D01D75678E008D689C /* FindViewController.m */; };
+		314615D31D7567C2008D689C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314615D21D7567C2008D689C /* Assets.xcassets */; };
+		314615D81D756860008D689C /* SQLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 314615D71D756860008D689C /* SQLManager.m */; };
+		314615DD1D756915008D689C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 314615D91D756915008D689C /* Info.plist */; };
 		3198ABB81D4C624A00AB1F9B /* WX_testWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3198ABB71D4C624A00AB1F9B /* WX_testWeChatTests.m */; };
 		3198ABC31D4C624A00AB1F9B /* WX_testWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3198ABC21D4C624A00AB1F9B /* WX_testWeChatUITests.m */; };
-		319DB3941D52E68E000222FE /* StyleCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 319DB3931D52E68E000222FE /* StyleCellTableViewCell.m */; };
-		319DB3981D530569000222FE /* ContactDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319DB3971D530569000222FE /* ContactDetailsTableViewController.m */; };
-		31B113BB1D51AB760061C15B /* NewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B113BA1D51AB760061C15B /* NewCell.m */; };
-		31B9BF5E1D544015003A8B3F /* ContactDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9BF5D1D544015003A8B3F /* ContactDatas.m */; };
-		31D22B581D56FAFF003C50F6 /* TextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D22B571D56FAFF003C50F6 /* TextMessageCell.m */; };
-		31DE83EA1D4C7FB800ED8B38 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE83E91D4C7FB800ED8B38 /* MessageViewController.m */; };
-		31DE83ED1D4C7FD200ED8B38 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE83EC1D4C7FD200ED8B38 /* MineViewController.m */; };
-		31DE83F01D4C7FEE00ED8B38 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE83EF1D4C7FEE00ED8B38 /* ContactViewController.m */; };
-		31DE83F31D4C7FFB00ED8B38 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE83F21D4C7FFB00ED8B38 /* FindViewController.m */; };
+		31C36B381D620B9B0061FFA1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,50 +55,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3112CF2B1D4F25CA001E0279 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		3112CF2C1D4F25CA001E0279 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		3112CF2F1D4F2F82001E0279 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
-		3112CF301D4F2F82001E0279 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
-		317FA0E41D59B74A0012B129 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatView.h; path = Chat/ChatView.h; sourceTree = "<group>"; };
-		317FA0E51D59B74A0012B129 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatView.m; path = Chat/ChatView.m; sourceTree = "<group>"; };
-		318C8FB01D503E0100EA01B2 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		318C8FB11D503E0100EA01B2 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		318C8FB71D503EA100EA01B2 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		318C8FB81D503EA100EA01B2 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		314615061D733009008D689C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3146154D1D733009008D689C /* NSObject+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+UUID.h"; path = "WX_testWeChat/WX_Public/categroy/NSObject+UUID.h"; sourceTree = "<group>"; };
+		3146154E1D733009008D689C /* NSObject+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+UUID.m"; path = "WX_testWeChat/WX_Public/categroy/NSObject+UUID.m"; sourceTree = "<group>"; };
+		314615961D756132008D689C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WX_testWeChat/AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		314615971D756132008D689C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WX_testWeChat/AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
+		314615991D7561F7008D689C /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideViewController.h; path = WX_testWeChat/WX_Login/Controllers/GuideViewController.h; sourceTree = "<group>"; };
+		3146159A1D7561F7008D689C /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideViewController.m; path = WX_testWeChat/WX_Login/Controllers/GuideViewController.m; sourceTree = "<group>"; };
+		3146159B1D7561F7008D689C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = WX_testWeChat/WX_Login/Controllers/LoginViewController.h; sourceTree = "<group>"; };
+		3146159C1D7561F7008D689C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = WX_testWeChat/WX_Login/Controllers/LoginViewController.m; sourceTree = "<group>"; };
+		3146159D1D7561F7008D689C /* OtherLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherLogin.h; path = WX_testWeChat/WX_Login/Controllers/OtherLogin.h; sourceTree = "<group>"; };
+		3146159E1D7561F7008D689C /* OtherLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherLogin.m; path = WX_testWeChat/WX_Login/Controllers/OtherLogin.m; sourceTree = "<group>"; };
+		314615A21D75633E008D689C /* ConversionDatasModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConversionDatasModel.h; path = WX_testWeChat/WX_WeChat/Models/ConversionDatasModel.h; sourceTree = "<group>"; };
+		314615A31D75633E008D689C /* ConversionDatasModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConversionDatasModel.m; path = WX_testWeChat/WX_WeChat/Models/ConversionDatasModel.m; sourceTree = "<group>"; };
+		314615A41D75633E008D689C /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageModel.h; path = WX_testWeChat/WX_WeChat/Models/MessageModel.h; sourceTree = "<group>"; };
+		314615A51D75633E008D689C /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageModel.m; path = WX_testWeChat/WX_WeChat/Models/MessageModel.m; sourceTree = "<group>"; };
+		314615A81D7563E2008D689C /* ChatTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatTableView.h; path = WX_testWeChat/WX_WeChat/View/ChatTableView.h; sourceTree = "<group>"; };
+		314615A91D7563E2008D689C /* ChatTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatTableView.m; path = WX_testWeChat/WX_WeChat/View/ChatTableView.m; sourceTree = "<group>"; };
+		314615AB1D75642B008D689C /* ConversionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConversionViewController.h; path = WX_testWeChat/WX_WeChat/Controllers/ConversionViewController.h; sourceTree = "<group>"; };
+		314615AC1D75642B008D689C /* ConversionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConversionViewController.m; path = WX_testWeChat/WX_WeChat/Controllers/ConversionViewController.m; sourceTree = "<group>"; };
+		314615AE1D756442008D689C /* NewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewCell.h; path = WX_testWeChat/WX_WeChat/Others/NewCell.h; sourceTree = "<group>"; };
+		314615AF1D756442008D689C /* NewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewCell.m; path = WX_testWeChat/WX_WeChat/Others/NewCell.m; sourceTree = "<group>"; };
+		314615B01D756442008D689C /* TextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextMessageCell.h; path = WX_testWeChat/WX_WeChat/Others/TextMessageCell.h; sourceTree = "<group>"; };
+		314615B11D756442008D689C /* TextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextMessageCell.m; path = WX_testWeChat/WX_WeChat/Others/TextMessageCell.m; sourceTree = "<group>"; };
+		314615B41D75647A008D689C /* ImageCellModelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCellModelTableViewCell.h; path = WX_testWeChat/WX_WeChat/Others/ImageCellModelTableViewCell.h; sourceTree = "<group>"; };
+		314615B51D75647A008D689C /* ImageCellModelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCellModelTableViewCell.m; path = WX_testWeChat/WX_WeChat/Others/ImageCellModelTableViewCell.m; sourceTree = "<group>"; };
+		314615B71D7564E6008D689C /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = WX_testWeChat/WX_WeChat/Controllers/ChatController/ChatViewController.h; sourceTree = "<group>"; };
+		314615B81D7564E6008D689C /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = WX_testWeChat/WX_WeChat/Controllers/ChatController/ChatViewController.m; sourceTree = "<group>"; };
+		314615BA1D7565D0008D689C /* ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactModel.h; path = WX_testWeChat/WX_Contact/Models/ContactModel.h; sourceTree = "<group>"; };
+		314615BB1D7565D0008D689C /* ContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactModel.m; path = WX_testWeChat/WX_Contact/Models/ContactModel.m; sourceTree = "<group>"; };
+		314615BD1D7565EF008D689C /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = WX_testWeChat/WX_Contact/Controllers/ContactViewController.h; sourceTree = "<group>"; };
+		314615BE1D7565EF008D689C /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = WX_testWeChat/WX_Contact/Controllers/ContactViewController.m; sourceTree = "<group>"; };
+		314615C01D75663A008D689C /* ContactDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactDetailsTableViewController.h; path = WX_testWeChat/WX_Contact/Controllers/DetailController/ContactDetailsTableViewController.h; sourceTree = "<group>"; };
+		314615C11D75663A008D689C /* ContactDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactDetailsTableViewController.m; path = WX_testWeChat/WX_Contact/Controllers/DetailController/ContactDetailsTableViewController.m; sourceTree = "<group>"; };
+		314615C31D756679008D689C /* StyleCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleCellTableViewCell.h; path = WX_testWeChat/WX_Contact/Others/StyleCellTableViewCell.h; sourceTree = "<group>"; };
+		314615C41D756679008D689C /* StyleCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleCellTableViewCell.m; path = WX_testWeChat/WX_Contact/Others/StyleCellTableViewCell.m; sourceTree = "<group>"; };
+		314615C61D7566D8008D689C /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = WX_testWeChat/WX_Mine/Controllers/MineViewController.h; sourceTree = "<group>"; };
+		314615C71D7566D8008D689C /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineViewController.m; path = WX_testWeChat/WX_Mine/Controllers/MineViewController.m; sourceTree = "<group>"; };
+		314615C91D7566E6008D689C /* ClickSetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClickSetTableView.h; path = WX_testWeChat/WX_Mine/Controllers/ClickSet/ClickSetTableView.h; sourceTree = "<group>"; };
+		314615CA1D7566E6008D689C /* ClickSetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClickSetTableView.m; path = WX_testWeChat/WX_Mine/Controllers/ClickSet/ClickSetTableView.m; sourceTree = "<group>"; };
+		314615CC1D756713008D689C /* DetailImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailImage.h; path = WX_testWeChat/WX_WeChat/Controllers/ChatController/DetailImage/DetailImage.h; sourceTree = "<group>"; };
+		314615CD1D756713008D689C /* DetailImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailImage.m; path = WX_testWeChat/WX_WeChat/Controllers/ChatController/DetailImage/DetailImage.m; sourceTree = "<group>"; };
+		314615CF1D75678E008D689C /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindViewController.h; path = WX_testWeChat/WX_Find/Controllers/FindViewController.h; sourceTree = "<group>"; };
+		314615D01D75678E008D689C /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindViewController.m; path = WX_testWeChat/WX_Find/Controllers/FindViewController.m; sourceTree = "<group>"; };
+		314615D21D7567C2008D689C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WX_testWeChat/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		314615D41D756814008D689C /* WX_testWeChat.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WX_testWeChat.pch; path = WX_testWeChat/WX_Public/Macro/WX_testWeChat.pch; sourceTree = "<group>"; };
+		314615D61D756860008D689C /* SQLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLManager.h; path = WX_testWeChat/WX_DataBase/Sqlite3/SQLManager.h; sourceTree = "<group>"; };
+		314615D71D756860008D689C /* SQLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLManager.m; path = WX_testWeChat/WX_DataBase/Sqlite3/SQLManager.m; sourceTree = "<group>"; };
+		314615DA1D756915008D689C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = WX_testWeChat/Base.lproj/Info.plist; sourceTree = SOURCE_ROOT; };
+		314615DC1D756915008D689C /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = WX_testWeChat/Base.lproj/main.m; sourceTree = SOURCE_ROOT; };
 		3198AB9A1D4C624A00AB1F9B /* WX_testWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WX_testWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3198AB9E1D4C624A00AB1F9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3198ABA01D4C624A00AB1F9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3198ABA11D4C624A00AB1F9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3198ABA31D4C624A00AB1F9B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3198ABA41D4C624A00AB1F9B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3198ABA71D4C624A00AB1F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3198ABA91D4C624A00AB1F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3198ABAC1D4C624A00AB1F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3198ABAE1D4C624A00AB1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3198ABB31D4C624A00AB1F9B /* WX_testWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WX_testWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3198ABB71D4C624A00AB1F9B /* WX_testWeChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WX_testWeChatTests.m; sourceTree = "<group>"; };
-		3198ABB91D4C624A00AB1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3198ABB71D4C624A00AB1F9B /* WX_testWeChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WX_testWeChatTests.m; path = ../WX_testWeChatTests/WX_testWeChatTests.m; sourceTree = "<group>"; };
+		3198ABB91D4C624A00AB1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../WX_testWeChatTests/Info.plist; sourceTree = "<group>"; };
 		3198ABBE1D4C624A00AB1F9B /* WX_testWeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WX_testWeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3198ABC21D4C624A00AB1F9B /* WX_testWeChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WX_testWeChatUITests.m; sourceTree = "<group>"; };
 		3198ABC41D4C624A00AB1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		319DB3921D52E68E000222FE /* StyleCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleCellTableViewCell.h; path = StyleCell/StyleCellTableViewCell.h; sourceTree = "<group>"; };
-		319DB3931D52E68E000222FE /* StyleCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleCellTableViewCell.m; path = StyleCell/StyleCellTableViewCell.m; sourceTree = "<group>"; };
-		319DB3961D530569000222FE /* ContactDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactDetailsTableViewController.h; path = ContactDetail/ContactDetailsTableViewController.h; sourceTree = "<group>"; };
-		319DB3971D530569000222FE /* ContactDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactDetailsTableViewController.m; path = ContactDetail/ContactDetailsTableViewController.m; sourceTree = "<group>"; };
-		31B113B91D51AB760061C15B /* NewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewCell.h; path = NewCellStyle/NewCell.h; sourceTree = "<group>"; };
-		31B113BA1D51AB760061C15B /* NewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewCell.m; path = NewCellStyle/NewCell.m; sourceTree = "<group>"; };
-		31B9BF5C1D544015003A8B3F /* ContactDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDatas.h; sourceTree = "<group>"; };
-		31B9BF5D1D544015003A8B3F /* ContactDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDatas.m; sourceTree = "<group>"; };
-		31D22B561D56FAFF003C50F6 /* TextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMessageCell.h; sourceTree = "<group>"; };
-		31D22B571D56FAFF003C50F6 /* TextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMessageCell.m; sourceTree = "<group>"; };
-		31DE83E81D4C7FB800ED8B38 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
-		31DE83E91D4C7FB800ED8B38 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
-		31DE83EB1D4C7FD200ED8B38 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		31DE83EC1D4C7FD200ED8B38 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		31DE83EE1D4C7FEE00ED8B38 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
-		31DE83EF1D4C7FEE00ED8B38 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
-		31DE83F11D4C7FFB00ED8B38 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
-		31DE83F21D4C7FFB00ED8B38 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C36B381D620B9B0061FFA1 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,61 +140,312 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3112CF2A1D4F25CA001E0279 /* WX_Login */ = {
+		314615741D75524E008D689C /* WX_Mine */ = {
 			isa = PBXGroup;
 			children = (
-				3112CF2B1D4F25CA001E0279 /* LoginViewController.h */,
-				3112CF2C1D4F25CA001E0279 /* LoginViewController.m */,
+				3146157C1D75552F008D689C /* Models */,
+				3146158F1D755C14008D689C /* View */,
+				3146157B1D755528008D689C /* Controllers */,
 			);
-			path = WX_Login;
+			name = WX_Mine;
 			sourceTree = "<group>";
 		};
-		3112CF2E1D4F2F57001E0279 /* WX_Guide */ = {
+		314615751D755260008D689C /* WX_WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				3112CF2F1D4F2F82001E0279 /* GuideViewController.h */,
-				3112CF301D4F2F82001E0279 /* GuideViewController.m */,
+				314615781D7553F6008D689C /* Models */,
+				314615841D7557DE008D689C /* View */,
+				314615771D7553BC008D689C /* Controllers */,
+				314615851D755806008D689C /* Others */,
 			);
-			name = WX_Guide;
+			name = WX_WeChat;
 			sourceTree = "<group>";
 		};
-		317FA0E31D59B6FF0012B129 /* Chat */ = {
+		314615761D7552AF008D689C /* WX_Contact */ = {
 			isa = PBXGroup;
 			children = (
-				317FA0E41D59B74A0012B129 /* ChatView.h */,
-				317FA0E51D59B74A0012B129 /* ChatView.m */,
+				3146157A1D7554F4008D689C /* Models */,
+				314615791D75549C008D689C /* Controllers */,
+				314615821D755775008D689C /* View */,
+				314615861D755862008D689C /* Others */,
 			);
-			name = Chat;
+			name = WX_Contact;
 			sourceTree = "<group>";
 		};
-		318C8FAF1D503E0100EA01B2 /* WX_Messagedatas */ = {
+		314615771D7553BC008D689C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				318C8FB01D503E0100EA01B2 /* Message.h */,
-				318C8FB11D503E0100EA01B2 /* Message.m */,
-				318C8FB61D503EA100EA01B2 /* WX_Chat */,
-				31D22B551D56FACC003C50F6 /* Chatdata */,
+				314615AB1D75642B008D689C /* ConversionViewController.h */,
+				314615AC1D75642B008D689C /* ConversionViewController.m */,
+				314615871D755940008D689C /* ChatController */,
 			);
-			name = WX_Messagedatas;
-			path = WX_testWeChat/WX_Messagedatas;
-			sourceTree = SOURCE_ROOT;
+			name = Controllers;
+			sourceTree = "<group>";
 		};
-		318C8FB61D503EA100EA01B2 /* WX_Chat */ = {
+		314615781D7553F6008D689C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				318C8FB71D503EA100EA01B2 /* ChatViewController.h */,
-				318C8FB81D503EA100EA01B2 /* ChatViewController.m */,
-				317FA0E31D59B6FF0012B129 /* Chat */,
+				314615A21D75633E008D689C /* ConversionDatasModel.h */,
+				314615A31D75633E008D689C /* ConversionDatasModel.m */,
+				314615A41D75633E008D689C /* MessageModel.h */,
+				314615A51D75633E008D689C /* MessageModel.m */,
 			);
-			name = WX_Chat;
-			path = WX_testWeChat/WX_Chat;
-			sourceTree = SOURCE_ROOT;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		314615791D75549C008D689C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				314615BD1D7565EF008D689C /* ContactViewController.h */,
+				314615BE1D7565EF008D689C /* ContactViewController.m */,
+				314615881D755970008D689C /* DetailController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3146157A1D7554F4008D689C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				314615BA1D7565D0008D689C /* ContactModel.h */,
+				314615BB1D7565D0008D689C /* ContactModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3146157B1D755528008D689C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				314615C61D7566D8008D689C /* MineViewController.h */,
+				314615C71D7566D8008D689C /* MineViewController.m */,
+				3146158C1D755B4E008D689C /* ClickSet */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3146157C1D75552F008D689C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3146157D1D755582008D689C /* WX_Find */ = {
+			isa = PBXGroup;
+			children = (
+				3146157F1D7555FD008D689C /* Models */,
+				3146157E1D7555E5008D689C /* Controllers */,
+				3146158E1D755BF7008D689C /* View */,
+				3146158D1D755BED008D689C /* Others */,
+			);
+			name = WX_Find;
+			sourceTree = "<group>";
+		};
+		3146157E1D7555E5008D689C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				314615CF1D75678E008D689C /* FindViewController.h */,
+				314615D01D75678E008D689C /* FindViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3146157F1D7555FD008D689C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		314615801D755678008D689C /* WX_Login */ = {
+			isa = PBXGroup;
+			children = (
+				314615811D755694008D689C /* Controllers */,
+			);
+			name = WX_Login;
+			sourceTree = "<group>";
+		};
+		314615811D755694008D689C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				314615991D7561F7008D689C /* GuideViewController.h */,
+				3146159A1D7561F7008D689C /* GuideViewController.m */,
+				3146159B1D7561F7008D689C /* LoginViewController.h */,
+				3146159C1D7561F7008D689C /* LoginViewController.m */,
+				3146159D1D7561F7008D689C /* OtherLogin.h */,
+				3146159E1D7561F7008D689C /* OtherLogin.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		314615821D755775008D689C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		314615841D7557DE008D689C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				314615A81D7563E2008D689C /* ChatTableView.h */,
+				314615A91D7563E2008D689C /* ChatTableView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		314615851D755806008D689C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				314615AE1D756442008D689C /* NewCell.h */,
+				314615AF1D756442008D689C /* NewCell.m */,
+				314615B01D756442008D689C /* TextMessageCell.h */,
+				314615B11D756442008D689C /* TextMessageCell.m */,
+				314615B41D75647A008D689C /* ImageCellModelTableViewCell.h */,
+				314615B51D75647A008D689C /* ImageCellModelTableViewCell.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		314615861D755862008D689C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				314615C31D756679008D689C /* StyleCellTableViewCell.h */,
+				314615C41D756679008D689C /* StyleCellTableViewCell.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		314615871D755940008D689C /* ChatController */ = {
+			isa = PBXGroup;
+			children = (
+				314615B71D7564E6008D689C /* ChatViewController.h */,
+				314615B81D7564E6008D689C /* ChatViewController.m */,
+				3146158A1D755A4A008D689C /* DetailImage */,
+			);
+			name = ChatController;
+			sourceTree = "<group>";
+		};
+		314615881D755970008D689C /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				314615C01D75663A008D689C /* ContactDetailsTableViewController.h */,
+				314615C11D75663A008D689C /* ContactDetailsTableViewController.m */,
+			);
+			name = DetailController;
+			sourceTree = "<group>";
+		};
+		3146158A1D755A4A008D689C /* DetailImage */ = {
+			isa = PBXGroup;
+			children = (
+				314615CC1D756713008D689C /* DetailImage.h */,
+				314615CD1D756713008D689C /* DetailImage.m */,
+			);
+			name = DetailImage;
+			sourceTree = "<group>";
+		};
+		3146158B1D755AF1008D689C /* WX_DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				314615D51D75684F008D689C /* Sqlite3 */,
+			);
+			name = WX_DataBase;
+			sourceTree = "<group>";
+		};
+		3146158C1D755B4E008D689C /* ClickSet */ = {
+			isa = PBXGroup;
+			children = (
+				314615C91D7566E6008D689C /* ClickSetTableView.h */,
+				314615CA1D7566E6008D689C /* ClickSetTableView.m */,
+			);
+			name = ClickSet;
+			sourceTree = "<group>";
+		};
+		3146158D1D755BED008D689C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		3146158E1D755BF7008D689C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3146158F1D755C14008D689C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		314615911D755DCA008D689C /* WX_Public */ = {
+			isa = PBXGroup;
+			children = (
+				314615931D755DF5008D689C /* Macro */,
+				314615921D755DE0008D689C /* Categroy */,
+			);
+			name = WX_Public;
+			sourceTree = "<group>";
+		};
+		314615921D755DE0008D689C /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				3146154D1D733009008D689C /* NSObject+UUID.h */,
+				3146154E1D733009008D689C /* NSObject+UUID.m */,
+			);
+			name = Categroy;
+			sourceTree = "<group>";
+		};
+		314615931D755DF5008D689C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				314615D41D756814008D689C /* WX_testWeChat.pch */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		314615941D755E0D008D689C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				314615961D756132008D689C /* AppDelegate.h */,
+				314615971D756132008D689C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		314615951D755E27008D689C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				314615D21D7567C2008D689C /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		314615D51D75684F008D689C /* Sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				314615D61D756860008D689C /* SQLManager.h */,
+				314615D71D756860008D689C /* SQLManager.m */,
+			);
+			name = Sqlite3;
+			sourceTree = "<group>";
 		};
 		3198AB911D4C624A00AB1F9B = {
 			isa = PBXGroup;
 			children = (
-				3198AB9C1D4C624A00AB1F9B /* WX_testWeChat */,
-				3198ABB61D4C624A00AB1F9B /* WX_testWeChatTests */,
+				31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */,
+				314615941D755E0D008D689C /* AppDelegate */,
+				314615801D755678008D689C /* WX_Login */,
+				314615751D755260008D689C /* WX_WeChat */,
+				314615761D7552AF008D689C /* WX_Contact */,
+				314615741D75524E008D689C /* WX_Mine */,
+				3146157D1D755582008D689C /* WX_Find */,
+				314615951D755E27008D689C /* Resources */,
+				314615911D755DCA008D689C /* WX_Public */,
+				3146158B1D755AF1008D689C /* WX_DataBase */,
 				3198ABC11D4C624A00AB1F9B /* WX_testWeChatUITests */,
 				3198AB9B1D4C624A00AB1F9B /* Products */,
 			);
@@ -190,138 +461,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3198AB9C1D4C624A00AB1F9B /* WX_testWeChat */ = {
-			isa = PBXGroup;
-			children = (
-				3198ABA01D4C624A00AB1F9B /* AppDelegate.h */,
-				3198ABA11D4C624A00AB1F9B /* AppDelegate.m */,
-				3198ABA31D4C624A00AB1F9B /* ViewController.h */,
-				3198ABA41D4C624A00AB1F9B /* ViewController.m */,
-				3112CF2E1D4F2F57001E0279 /* WX_Guide */,
-				3112CF2A1D4F25CA001E0279 /* WX_Login */,
-				3198ABE31D4C657F00AB1F9B /* WX_Message */,
-				3198ABEF1D4C665B00AB1F9B /* WX_Mine */,
-				3198ABDB1D4C648C00AB1F9B /* WX_Contact */,
-				3198ABEB1D4C65FA00AB1F9B /* WX_Find */,
-				3198AB9D1D4C624A00AB1F9B /* Supporting Files */,
-			);
-			path = WX_testWeChat;
-			sourceTree = "<group>";
-		};
-		3198AB9D1D4C624A00AB1F9B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3198ABA61D4C624A00AB1F9B /* Main.storyboard */,
-				3198ABA91D4C624A00AB1F9B /* Assets.xcassets */,
-				3198ABAB1D4C624A00AB1F9B /* LaunchScreen.storyboard */,
-				3198ABAE1D4C624A00AB1F9B /* Info.plist */,
-				3198AB9E1D4C624A00AB1F9B /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3198ABB61D4C624A00AB1F9B /* WX_testWeChatTests */ = {
+		3198ABC11D4C624A00AB1F9B /* WX_testWeChatUITests */ = {
 			isa = PBXGroup;
 			children = (
 				3198ABB71D4C624A00AB1F9B /* WX_testWeChatTests.m */,
 				3198ABB91D4C624A00AB1F9B /* Info.plist */,
-			);
-			path = WX_testWeChatTests;
-			sourceTree = "<group>";
-		};
-		3198ABC11D4C624A00AB1F9B /* WX_testWeChatUITests */ = {
-			isa = PBXGroup;
-			children = (
+				314615051D733009008D689C /* Main.storyboard */,
+				314615D91D756915008D689C /* Info.plist */,
+				314615DB1D756915008D689C /* main.m */,
 				3198ABC21D4C624A00AB1F9B /* WX_testWeChatUITests.m */,
 				3198ABC41D4C624A00AB1F9B /* Info.plist */,
 			);
 			path = WX_testWeChatUITests;
-			sourceTree = "<group>";
-		};
-		3198ABDB1D4C648C00AB1F9B /* WX_Contact */ = {
-			isa = PBXGroup;
-			children = (
-				31DE83EE1D4C7FEE00ED8B38 /* ContactViewController.h */,
-				31DE83EF1D4C7FEE00ED8B38 /* ContactViewController.m */,
-				31B9BF5B1D544015003A8B3F /* Contactdatas */,
-				319DB3951D52FA11000222FE /* ContactDetail */,
-				319DB3911D52E650000222FE /* StyleCell */,
-			);
-			path = WX_Contact;
-			sourceTree = "<group>";
-		};
-		3198ABE31D4C657F00AB1F9B /* WX_Message */ = {
-			isa = PBXGroup;
-			children = (
-				31DE83E81D4C7FB800ED8B38 /* MessageViewController.h */,
-				31DE83E91D4C7FB800ED8B38 /* MessageViewController.m */,
-				31B113B81D51AB310061C15B /* NewCellStyle */,
-				318C8FAF1D503E0100EA01B2 /* WX_Messagedatas */,
-			);
-			path = WX_Message;
-			sourceTree = "<group>";
-		};
-		3198ABEB1D4C65FA00AB1F9B /* WX_Find */ = {
-			isa = PBXGroup;
-			children = (
-				31DE83F11D4C7FFB00ED8B38 /* FindViewController.h */,
-				31DE83F21D4C7FFB00ED8B38 /* FindViewController.m */,
-			);
-			name = WX_Find;
-			sourceTree = "<group>";
-		};
-		3198ABEF1D4C665B00AB1F9B /* WX_Mine */ = {
-			isa = PBXGroup;
-			children = (
-				31DE83EB1D4C7FD200ED8B38 /* MineViewController.h */,
-				31DE83EC1D4C7FD200ED8B38 /* MineViewController.m */,
-			);
-			path = WX_Mine;
-			sourceTree = "<group>";
-		};
-		319DB3911D52E650000222FE /* StyleCell */ = {
-			isa = PBXGroup;
-			children = (
-				319DB3921D52E68E000222FE /* StyleCellTableViewCell.h */,
-				319DB3931D52E68E000222FE /* StyleCellTableViewCell.m */,
-			);
-			name = StyleCell;
-			sourceTree = "<group>";
-		};
-		319DB3951D52FA11000222FE /* ContactDetail */ = {
-			isa = PBXGroup;
-			children = (
-				319DB3961D530569000222FE /* ContactDetailsTableViewController.h */,
-				319DB3971D530569000222FE /* ContactDetailsTableViewController.m */,
-			);
-			name = ContactDetail;
-			sourceTree = "<group>";
-		};
-		31B113B81D51AB310061C15B /* NewCellStyle */ = {
-			isa = PBXGroup;
-			children = (
-				31B113B91D51AB760061C15B /* NewCell.h */,
-				31B113BA1D51AB760061C15B /* NewCell.m */,
-			);
-			name = NewCellStyle;
-			sourceTree = "<group>";
-		};
-		31B9BF5B1D544015003A8B3F /* Contactdatas */ = {
-			isa = PBXGroup;
-			children = (
-				31B9BF5C1D544015003A8B3F /* ContactDatas.h */,
-				31B9BF5D1D544015003A8B3F /* ContactDatas.m */,
-			);
-			path = Contactdatas;
-			sourceTree = "<group>";
-		};
-		31D22B551D56FACC003C50F6 /* Chatdata */ = {
-			isa = PBXGroup;
-			children = (
-				31D22B561D56FAFF003C50F6 /* TextMessageCell.h */,
-				31D22B571D56FAFF003C50F6 /* TextMessageCell.m */,
-			);
-			name = Chatdata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,9 +578,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3198ABAD1D4C624A00AB1F9B /* LaunchScreen.storyboard in Resources */,
-				3198ABAA1D4C624A00AB1F9B /* Assets.xcassets in Resources */,
-				3198ABA81D4C624A00AB1F9B /* Main.storyboard in Resources */,
+				314615531D733009008D689C /* Main.storyboard in Resources */,
+				314615D31D7567C2008D689C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +594,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314615DD1D756915008D689C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,23 +605,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B113BB1D51AB760061C15B /* NewCell.m in Sources */,
-				3198ABA51D4C624A00AB1F9B /* ViewController.m in Sources */,
-				31DE83F01D4C7FEE00ED8B38 /* ContactViewController.m in Sources */,
-				318C8FB91D503EA100EA01B2 /* ChatViewController.m in Sources */,
-				31B9BF5E1D544015003A8B3F /* ContactDatas.m in Sources */,
-				3198ABA21D4C624A00AB1F9B /* AppDelegate.m in Sources */,
-				3112CF2D1D4F25CA001E0279 /* LoginViewController.m in Sources */,
-				31DE83ED1D4C7FD200ED8B38 /* MineViewController.m in Sources */,
-				31DE83EA1D4C7FB800ED8B38 /* MessageViewController.m in Sources */,
-				3112CF311D4F2F82001E0279 /* GuideViewController.m in Sources */,
-				319DB3981D530569000222FE /* ContactDetailsTableViewController.m in Sources */,
-				317FA0E61D59B74A0012B129 /* ChatView.m in Sources */,
-				3198AB9F1D4C624A00AB1F9B /* main.m in Sources */,
-				318C8FB21D503E0100EA01B2 /* Message.m in Sources */,
-				319DB3941D52E68E000222FE /* StyleCellTableViewCell.m in Sources */,
-				31DE83F31D4C7FFB00ED8B38 /* FindViewController.m in Sources */,
-				31D22B581D56FAFF003C50F6 /* TextMessageCell.m in Sources */,
+				314615A11D7561F7008D689C /* OtherLogin.m in Sources */,
+				314615AA1D7563E2008D689C /* ChatTableView.m in Sources */,
+				314615A01D7561F7008D689C /* LoginViewController.m in Sources */,
+				314615BC1D7565D0008D689C /* ContactModel.m in Sources */,
+				3146159F1D7561F7008D689C /* GuideViewController.m in Sources */,
+				314615C51D756679008D689C /* StyleCellTableViewCell.m in Sources */,
+				314615AD1D75642B008D689C /* ConversionViewController.m in Sources */,
+				314615B31D756442008D689C /* TextMessageCell.m in Sources */,
+				314615A61D75633E008D689C /* ConversionDatasModel.m in Sources */,
+				314615BF1D7565EF008D689C /* ContactViewController.m in Sources */,
+				314615B91D7564E6008D689C /* ChatViewController.m in Sources */,
+				314615CE1D756713008D689C /* DetailImage.m in Sources */,
+				314615C81D7566D8008D689C /* MineViewController.m in Sources */,
+				314615D11D75678E008D689C /* FindViewController.m in Sources */,
+				3146156D1D733009008D689C /* NSObject+UUID.m in Sources */,
+				314615981D756132008D689C /* AppDelegate.m in Sources */,
+				314615D81D756860008D689C /* SQLManager.m in Sources */,
+				314615CB1D7566E6008D689C /* ClickSetTableView.m in Sources */,
+				314615B21D756442008D689C /* NewCell.m in Sources */,
+				314615A71D75633E008D689C /* MessageModel.m in Sources */,
+				314615B61D75647A008D689C /* ImageCellModelTableViewCell.m in Sources */,
+				314615C21D75663A008D689C /* ContactDetailsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,20 +662,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3198ABA61D4C624A00AB1F9B /* Main.storyboard */ = {
+		314615051D733009008D689C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3198ABA71D4C624A00AB1F9B /* Base */,
+				314615061D733009008D689C /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../WX_testWeChat;
 			sourceTree = "<group>";
 		};
-		3198ABAB1D4C624A00AB1F9B /* LaunchScreen.storyboard */ = {
+		314615D91D756915008D689C /* Info.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3198ABAC1D4C624A00AB1F9B /* Base */,
+				314615DA1D756915008D689C /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		314615DB1D756915008D689C /* main.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				314615DC1D756915008D689C /* Base */,
+			);
+			name = main.m;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -611,6 +776,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WX_testWeChat/WX_testWeChat.pch;
 				INFOPLIST_FILE = WX_testWeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile.os.WX-testWeChat";
@@ -622,6 +789,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WX_testWeChat/WX_testWeChat.pch;
 				INFOPLIST_FILE = WX_testWeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile.os.WX-testWeChat";
