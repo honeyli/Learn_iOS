@@ -38,7 +38,7 @@
     [bubbleImage addGestureRecognizer:tap];
     bubbleImage.userInteractionEnabled = YES;
     bubbleImage.backgroundColor = [UIColor clearColor];
-    bubbleImage.image                    = [UIImage imageWithContentsOfFile:imagePath];
+    bubbleImage.image = [UIImage imageWithContentsOfFile:[WXDocuments stringByAppendingPathComponent:imagePath]];
     bubbleImageView.frame              = CGRectMake
                                             (0.0f, 14.0f, bubbleImage.frame.size.width+30.0f,
                                             bubbleImage.frame.size.height+20.0f);

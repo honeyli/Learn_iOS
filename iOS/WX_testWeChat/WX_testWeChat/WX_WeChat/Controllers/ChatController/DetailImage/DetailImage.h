@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailImage : UIViewController
+-(instancetype)initWithPath:(NSString *)path;
 
 @end

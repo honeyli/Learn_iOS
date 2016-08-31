@@ -38,6 +38,7 @@
 		319A30831D75C38500F2137C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319A30801D75C38500F2137C /* Main.storyboard */; };
 		319A30871D75C46200F2137C /* ClickSetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A30861D75C46200F2137C /* ClickSetTableView.m */; };
 		319A308B1D75C4AF00F2137C /* StyleCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A308A1D75C4AF00F2137C /* StyleCellTableViewCell.m */; };
+		319A308F1D76CC2600F2137C /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 319A30911D76CC2600F2137C /* File.strings */; };
 		31C36B381D620B9B0061FFA1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,9 @@
 		319A30861D75C46200F2137C /* ClickSetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickSetTableView.m; sourceTree = "<group>"; };
 		319A30891D75C4AF00F2137C /* StyleCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleCellTableViewCell.h; sourceTree = "<group>"; };
 		319A308A1D75C4AF00F2137C /* StyleCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleCellTableViewCell.m; sourceTree = "<group>"; };
+		319A308C1D75D26D00F2137C /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		319A30901D76CC2600F2137C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/File.strings; sourceTree = "<group>"; };
+		319A30921D76CC2800F2137C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
 		31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -201,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				319A2FEE1D75BCFD00F2137C /* AppDelegate.h */,
+				319A30911D76CC2600F2137C /* File.strings */,
 				319A2FEF1D75BCFD00F2137C /* AppDelegate.m */,
 			);
 			path = AppDelegate;
@@ -387,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				319A302C1D75BCFD00F2137C /* WX_testWeChat.pch */,
+				319A308C1D75D26D00F2137C /* Macro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -623,6 +629,7 @@
 			files = (
 				314615531D733009008D689C /* Main.storyboard in Resources */,
 				319A30831D75C38500F2137C /* Main.storyboard in Resources */,
+				319A308F1D76CC2600F2137C /* File.strings in Resources */,
 				319A30821D75C38500F2137C /* LaunchScreen.storyboard in Resources */,
 				319A30491D75BCFD00F2137C /* Assets.xcassets in Resources */,
 				319A30701D75C12B00F2137C /* Info.plist in Resources */,
@@ -741,6 +748,16 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+		};
+		319A30911D76CC2600F2137C /* File.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				319A30901D76CC2600F2137C /* Base */,
+				319A30921D76CC2800F2137C /* en */,
+			);
+			name = File.strings;
+			path = WX_testWeChat/WX_Public;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 

@@ -9,21 +9,25 @@
 #import "DetailImage.h"
 
 @interface DetailImage ()
-
+{
+    NSString *imageName;
+}
 @end
 
 @implementation DetailImage
-
+-(instancetype)initWithPath:(NSString *)path
+{
+    if (self = [super init]) {
+        imageName = path;
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UIScrollView *scrollView = [[UIScrollView alloc] init];
-//    scrollView.frame = self.view.frame;
-//    scrollView.backgroundColor = [UIColor blackColor];
-//    [self.view addSubview:scrollView];
-//    
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y/2, 200, 200);
+    imageView.frame = self.view.frame;
+    imageView.image = [UIImage imageWithContentsOfFile:[WXDocuments stringByAppendingPathComponent:imageName]];
     [self.view addSubview:imageView];
     
 }

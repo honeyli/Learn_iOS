@@ -28,10 +28,8 @@ static SQLManager *manger = nil;
 //获取路径
 -(NSString *)applicationDocumentsDirectoryFile
 {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
     //拼接路径并返回
-    NSString *finalPath = [documentsDirectory stringByAppendingPathComponent:@"Message.sqlite"];
+    NSString *finalPath = [WXDocuments stringByAppendingPathComponent:@"Message.sqlite"];
     NSLog(@"%@",finalPath);
     return finalPath;
 }

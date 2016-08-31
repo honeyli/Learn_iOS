@@ -21,7 +21,10 @@
     ChatTableView *msgTableView;
     UIToolbar *toolBar;
     ConversionDatasModel * receiverModel;
+    UIImageView *imageViewMore;
+    
 }
+
 @property(nonatomic,strong)NSMutableArray *resultArray;
 
 @end
@@ -62,15 +65,14 @@
     CGFloat toolBarWidth = [UIScreen mainScreen].bounds.size.width;
     toolBar = [[UIToolbar alloc] init];
     toolBar.frame = CGRectMake(0, toolBarY, toolBarWidth, 49);
-    toolBar.backgroundColor = [UIColor whiteColor];
+    toolBar.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:255/255.0];
     [self.view addSubview:toolBar];
     
     
     commitField = [[UITextField alloc] initWithFrame:CGRectMake(1,0, [UIScreen mainScreen].bounds.size.width, 45)];
     commitField.borderStyle = UITextBorderStyleNone;
-//    commitField.layer.cornerRadius = 5;
-//    commitField.layer.borderWidth = 1;
-//    commitField.layer.borderColor = [UIColor grayColor].CGColor;
+    commitField.leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 0)];
+    commitField.leftViewMode = UITextFieldViewModeAlways;
     commitField.returnKeyType = UIReturnKeyDone;
     commitField.enablesReturnKeyAutomatically = YES;
     commitField.placeholder = @"请输入内容!";
@@ -78,49 +80,58 @@
     commitField.delegate = self;
     [toolBar addSubview:commitField];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 20, [UIScreen mainScreen].bounds.size.width, 1)];
-    label.text = @"";
-    label.tintColor = [UIColor grayColor];
-    [toolBar addSubview:label];
-    
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 20, [UIScreen mainScreen].bounds.size.width, 1)];
+//    label.text = @"";
+//    label.tintColor = [UIColor grayColor];
+//    [toolBar addSubview:label];
     CGFloat offsetY = 8;
     CGFloat toolStyleWidth = 30;
     CGFloat toolStyleHeight = 30;
     
+    
     UIImageView *imageViewVoice = [[UIImageView alloc] init];
-    imageViewVoice.frame = CGRectMake(5, offsetY, 35, 35);
+    imageViewVoice.frame = CGRectMake(8, 5, 33,33);
     imageViewVoice.image = [UIImage imageNamed:@"ToolViewInputVoice"];
     [toolBar addSubview:imageViewVoice];
     
-    UIImageView *imageViewMore = [[UIImageView alloc] init];
-    imageViewMore.frame = CGRectMake(325, offsetY, toolStyleWidth,toolStyleHeight);
-    imageViewMore.image = [UIImage imageNamed:@"chatBar_face"];
-    [toolBar addSubview:imageViewMore];
     UIImageView *imageViewFace = [[UIImageView alloc] init];
-    imageViewFace.frame = CGRectMake(370, offsetY, toolStyleWidth, toolStyleHeight);
-    imageViewFace.image = [UIImage imageNamed:@"chatBar_more"];
+    imageViewFace.frame = CGRectMake(315, offsetY, toolStyleWidth,toolStyleHeight);
+    imageViewFace.image = [UIImage imageNamed:@"chatBar_face"];
     [toolBar addSubview:imageViewFace];
+    
+    
+    imageViewMore = [[UIImageView alloc] init];
+    UITapGestureRecognizer *tapImage = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageViewMore:)];
+    [imageViewMore addGestureRecognizer:tapImage];
+    imageViewMore.frame = CGRectMake(360, offsetY, toolStyleWidth, toolStyleHeight);
+    imageViewMore.image = [UIImage imageNamed:@"chatBar_more"];
+    [toolBar addSubview:imageViewMore];
     
     UIButton *senderButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [senderButton addTarget:self action:@selector(sendMsg:) forControlEvents:UIControlEventTouchUpInside];
     [senderButton setTitle:@"sender" forState:UIControlStateNormal];
     [senderButton setTintColor:[UIColor blackColor]];
-    senderButton.frame = CGRectMake(212 , 11, 50, 50);
+    senderButton.frame = CGRectMake(220 , 7, 50, 50);
     [toolBar addSubview:senderButton];
     
-    UIButton *photoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    photoButton.frame = CGRectMake(225, 11, 50, 50);
-    [photoButton addTarget:self action:@selector(clickPhotoButton:) forControlEvents:UIControlEventTouchUpInside];
-    [photoButton setTitle:@"选择图片" forState:UIControlStateNormal];
-    [photoButton setTintColor:[UIColor blackColor]];
-    [toolBar addSubview:photoButton];
+//    UIButton *photoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    photoButton.frame = CGRectMake(225, 11, 50, 50);
+//    [photoButton addTarget:self action:@selector(clickPhotoButton:) forControlEvents:UIControlEventTouchUpInside];
+//    [photoButton setTitle:@"选择图片" forState:UIControlStateNormal];
+//    [photoButton setTintColor:[UIColor blackColor]];
+//    [toolBar addSubview:photoButton];
+    
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillShowChange:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillShowChange:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissKeyboard:) name:@"TouchedTableView" object:nil];
-
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(WriteTextField:) name:@"DidWriteTextField" object:nil];
 }
 
+-(void)tapImageViewMore:(UITapGestureRecognizer *)gestureRecognizer
+{
+    }
 -(void)clickPhotoButton:(id)sender
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
@@ -132,7 +143,7 @@
 
 -(void) saveImage:(UIImage *)currentImage withName:(NSString *)imageName{
     NSData *imageData = UIImageJPEGRepresentation(currentImage, 1);
-    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:imageName];
+    NSString *fullPath = [WXDocuments stringByAppendingPathComponent:imageName];
     [imageData writeToFile:fullPath atomically:NO];
 }
 
@@ -142,7 +153,6 @@
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     NSString *imageName = [NSString stringWithFormat:@"%@.png",[self uuid]];
     [self saveImage:image withName:imageName];
-    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:imageName];
     
     MessageModel *message = [[MessageModel alloc] init];
     message.messageType = TypeMsgImage;
@@ -150,7 +160,7 @@
     message.nickName =@"Sky";
     message.isMyself = YES;
     message.time = @"周五";
-    message.message = fullPath;
+    message.message = imageName;
     message.conversionID = receiverModel.conversionID;
     [_resultArray addObject:message];
     [[SQLManager shareManger] insertMessage:message];
@@ -270,9 +280,21 @@
 }
 -(void)showBigImage:(NSString *)path
 {
-    DetailImage *detail = [[DetailImage alloc] init];
+    DetailImage *detail = [[DetailImage alloc] initWithPath:path];
     [self.navigationController pushViewController:detail animated:YES];
 }
 
+-(void)WriteTextField:(NSNotification *)notification
+{
+    UIButton *SendButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [SendButton addTarget:self action:@selector(SendMessage:) forControlEvents:UIControlStateNormal];
+    SendButton.frame = CGRectMake(360, 8, 30, 30);
+    [SendButton setTintColor:[UIColor greenColor]];
+    SendButton.layer.cornerRadius = 5;
+    [SendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [SendButton setTitle:@"发送" forState:UIControlStateNormal];
+    [toolBar addSubview:SendButton];
+    
+}
 @end
 
