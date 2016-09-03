@@ -1,0 +1,2 @@
+platform :iOS
+pod ‘MWPhotoBrowser’,’6.0’

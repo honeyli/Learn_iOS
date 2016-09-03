@@ -77,6 +77,7 @@
     commitField.returnKeyType = UIReturnKeySend;
     commitField.backgroundColor = [UIColor whiteColor];
     commitField.delegate = self;
+    commitField.userInteractionEnabled = YES;
     [toolBar addSubview:commitField];
     
     CGFloat offsetY = 8;

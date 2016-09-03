@@ -1,18 +1,18 @@
 //
-//  TestPodsTests.m
-//  TestPodsTests
+//  testPodsTests.m
+//  testPodsTests
 //
-//  Created by xuyanli on 16/8/31.
+//  Created by xuyanli on 16/9/2.
 //  Copyright © 2016年 xuyanli. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface TestPodsTests : XCTestCase
+@interface testPodsTests : XCTestCase
 
 @end
 
-@implementation TestPodsTests
+@implementation testPodsTests
 
 - (void)setUp {
     [super setUp];

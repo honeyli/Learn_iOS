@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "319A30DA1D7722E900F2137C"
-               BuildableName = "TestPods.app"
-               BlueprintName = "TestPods"
-               ReferencedContainer = "container:TestPods.xcodeproj">
+               BlueprintIdentifier = "31F441EB1D794B80009C2731"
+               BuildableName = "testPods.app"
+               BlueprintName = "testPods"
+               ReferencedContainer = "container:testPods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "319A30F31D7722EA00F2137C"
-               BuildableName = "TestPodsTests.xctest"
-               BlueprintName = "TestPodsTests"
-               ReferencedContainer = "container:TestPods.xcodeproj">
+               BlueprintIdentifier = "31F442041D794B80009C2731"
+               BuildableName = "testPodsTests.xctest"
+               BlueprintName = "testPodsTests"
+               ReferencedContainer = "container:testPods.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "319A30FE1D7722EA00F2137C"
-               BuildableName = "TestPodsUITests.xctest"
-               BlueprintName = "TestPodsUITests"
-               ReferencedContainer = "container:TestPods.xcodeproj">
+               BlueprintIdentifier = "31F4420F1D794B80009C2731"
+               BuildableName = "testPodsUITests.xctest"
+               BlueprintName = "testPodsUITests"
+               ReferencedContainer = "container:testPods.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "319A30DA1D7722E900F2137C"
-            BuildableName = "TestPods.app"
-            BlueprintName = "TestPods"
-            ReferencedContainer = "container:TestPods.xcodeproj">
+            BlueprintIdentifier = "31F441EB1D794B80009C2731"
+            BuildableName = "testPods.app"
+            BlueprintName = "testPods"
+            ReferencedContainer = "container:testPods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "319A30DA1D7722E900F2137C"
-            BuildableName = "TestPods.app"
-            BlueprintName = "TestPods"
-            ReferencedContainer = "container:TestPods.xcodeproj">
+            BlueprintIdentifier = "31F441EB1D794B80009C2731"
+            BuildableName = "testPods.app"
+            BlueprintName = "testPods"
+            ReferencedContainer = "container:testPods.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "319A30DA1D7722E900F2137C"
-            BuildableName = "TestPods.app"
-            BlueprintName = "TestPods"
-            ReferencedContainer = "container:TestPods.xcodeproj">
+            BlueprintIdentifier = "31F441EB1D794B80009C2731"
+            BuildableName = "testPods.app"
+            BlueprintName = "testPods"
+            ReferencedContainer = "container:testPods.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
