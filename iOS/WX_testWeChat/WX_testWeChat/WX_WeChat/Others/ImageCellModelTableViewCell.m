@@ -9,6 +9,7 @@
 #import "ImageCellModelTableViewCell.h"
 #import "ChatViewController.h"
 #import "DetailImage.h"
+#import "MWPhotoBrowser.h"
 @implementation ImageCellModelTableViewCell
 {
     UIImageView *bubbleImage;

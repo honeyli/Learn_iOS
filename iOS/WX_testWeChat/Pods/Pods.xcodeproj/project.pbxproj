@@ -26,12 +26,10 @@
 		27BF9283DD5F0645034ADB91E693A654 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE55ED2B5DB97A1BDE315F18442A00 /* SDWebImageCompat.m */; };
 		289DE20CC48BD0824F4D93AEB13044F2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5ABA9F05B41B4B139A363FB6F18CF8 /* MediaPlayer.framework */; };
 		2B6066637145116D118CAA5E557DDBE2 /* VideoOverlay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2914F6A8500A455656E2B449A5428717 /* VideoOverlay@3x.png */; };
-		2EA25027C4344AD29395AE0CD279B0E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD47BA5F1B77532EB70ECA7068EAF7C7 /* Foundation.framework */; };
 		311D5C7B166178CCB79CFD7E8DD4F641 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A594D892B986B74EF4EF7E1725BBEE4B /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F30E1314EC4C287E6B89477C2D0FB4 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = C79C705927FA9503690E98F518850216 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3936D1AA08B9C1C008599DD7A6CB5FC4 /* UIBarButtonItemArrowLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9603B80E78781775AF253E6DC19D95CC /* UIBarButtonItemArrowLeft@3x.png */; };
 		3939EE53B37025D6F0E05FF8A4C7DCF0 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D863BA48564603D6B48DC2DAF2AE12 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39CC09CC360F624024FEC66BD7B8E24A /* Pods-WX_testWeChat-WX_testWeChatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D3FF234B7D4C7C76241FB0141C8A2C /* Pods-WX_testWeChat-WX_testWeChatTests-dummy.m */; };
 		3B332CC633C291A7A96AD0922CFD8AB0 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E68E9AA4767E95A76B8ECB01A0EE995 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DF945E53D76650B6BA16406281A4D95 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F6196E558E1FEB857945EFE799F4D7 /* ImageIO.framework */; };
 		3F14A3DC0EFDE2703E26428A8B9567D5 /* PlayButtonOverlayLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EC0F65816677DF42943803D7419A18 /* PlayButtonOverlayLarge@2x.png */; };
@@ -52,10 +50,10 @@
 		5F4AECEF356E35995112F9167B219AD6 /* DACircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CECD898A0F7D5C48CDD9436812F2A6E /* DACircularProgress-dummy.m */; };
 		60262C4B68C1B0EF7D3E4FADACB10CD7 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E96C954BCC50853975B26135D1216C4A /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6330FE4E426526E83B9D7067FEF6077F /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F7FDED0383943AA5749D9EAD9AF33 /* MWTapDetectingImageView.m */; };
+		671D328B17D01EDD7928E183BF353D24 /* Pods-WX_testWeChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4A563DE287C99AD84BD7B683AA6A50 /* Pods-WX_testWeChat-dummy.m */; };
 		68F869F425A902C39C39BF0D9E173FE9 /* UIBarButtonItemArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C16AF309FB02D6E18B7FAA1F63E597 /* UIBarButtonItemArrowRight@2x.png */; };
 		69DC2FB163EAB23712D9C3C13C72518E /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F802DA12FF6D0EA035C80BE62638BF /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B6A25433F14C5C71405A4162F76DD12 /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A828907BD01A0169C303B6B16E823268 /* ImageSelectedOn@2x.png */; };
-		6E3FD1BA38C3D1E1CA8C1AAABBEF1E51 /* Pods-WX_testWeChatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28B49FCEE5180B13D420AC4484C55F /* Pods-WX_testWeChatUITests-dummy.m */; };
 		6F72582D5FED8E735DA3B73BCCE7D834 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 24435FAF8FA9D5EA35A0E9C45C36FCBA /* SDWebImagePrefetcher.m */; };
 		6FCC438B6D6426ADCB5A12FC9C0F40B7 /* ImageSelectedSmallOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 468CDB6EC254A1AD3A8660DB5F404F4D /* ImageSelectedSmallOff.png */; };
 		6FF59A4FB6AB15C1DDA10DA26046AE4F /* MWPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCCCB2112A3A1ED2E30D08B3AEE811A /* MWPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,6 +71,7 @@
 		8EF8EB8E5D4F2474B8FD4C1E4A851A68 /* ImageSelectedOn.png in Resources */ = {isa = PBXBuildFile; fileRef = D015C4EBEB13FF2087E9A162EF1BB4D8 /* ImageSelectedOn.png */; };
 		90A49E8C4CDB263E93CF0BB46A8059D4 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF2C2D85DE57F7C5D456BB7A941CEBD /* SDWebImageManager.m */; };
 		91D3D617784A6D91CA952E6A793B4838 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CEE40DAE778C3455832AF65D09A6E /* SDImageCache.m */; };
+		9342315DE5672949D37447642718C75A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD47BA5F1B77532EB70ECA7068EAF7C7 /* Foundation.framework */; };
 		9348AED6AAA0B11EBB5B98645EB42D5D /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 96622924627C7CAACE7C1C38B6D9AEC3 /* UIImage+MultiFormat.m */; };
 		93A841B8DB950B43DF5F0996B4B6C3D2 /* PlayButtonOverlayLargeTap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0BAE1DF2E1FD2FBFE8A1D1208E9156 /* PlayButtonOverlayLargeTap@3x.png */; };
 		943FE6144EBB219A1D48EB5BE9903A24 /* MWGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E271C8CD33195F96ABF97F206ABD9437 /* MWGridViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,10 +85,8 @@
 		AD3C6FA77BBE58E858D579BF813566B7 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B687C6D2F2D71D97127ABE7898DE7BC /* ImageError@2x.png */; };
 		AEE26E40C45DB6A4D13E084331742770 /* ImageSelectedSmallOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1136CE21FFCD799A6A6A861A07620C8A /* ImageSelectedSmallOn@2x.png */; };
 		AF7404A4462C49837386BE45E07C646D /* PlayButtonOverlayLarge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F5D91F58BBEEC578BAA9A3B8EA63E4 /* PlayButtonOverlayLarge@3x.png */; };
-		B5BDA8A041A6F14AC67781D7261B1837 /* Pods-WX_testWeChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0721869F30F36D35288257C470CE5F /* Pods-WX_testWeChat-dummy.m */; };
 		B77708239C2E444C4480FEE97F873159 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 894833A9FC4DAA7049B6398D66C5B44D /* UIImageView+WebCache.m */; };
 		B79D1B6F33E6229F2C9C4E039A2C3D4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F96242F4639EDAE6F1CD8226877393 /* CoreGraphics.framework */; };
-		B7D568C19B7E82D06C3DD0EEE3F8AD6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD47BA5F1B77532EB70ECA7068EAF7C7 /* Foundation.framework */; };
 		C16C9E56CBDDE2AD1FCF3EFFF3127C20 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E286F7ACD35C8AFF9A45B087FFAD02 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4EC0BB53D4350DB5508B2454246DFB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD47BA5F1B77532EB70ECA7068EAF7C7 /* Foundation.framework */; };
 		C4ECADBB9BA0C2744C1E591BB5E72FF2 /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FECA9B889D379C434478FF28F0E1915 /* MWCaptionView.m */; };
@@ -102,7 +99,6 @@
 		D761EE9B5D106050E75596579B4F9313 /* ImageSelectedSmallOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F431A4B6CFDF5D17EB66C112B7F1FB4F /* ImageSelectedSmallOn@3x.png */; };
 		D7721A4CCFBA756D2BFEB915610987B5 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B16F8DED9B274E3E30228C58BDDF724 /* SDWebImageDownloaderOperation.m */; };
 		D791C7B718024D8AED15BE84AA2FAAD0 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BDC5CCCEA6F15F188F11AF15DD153DD /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D906F00564E3F79B180BD2C2B547D8F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD47BA5F1B77532EB70ECA7068EAF7C7 /* Foundation.framework */; };
 		DB4290A45C35377BF5D50992EA5D9D16 /* UIBarButtonItemArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = E316A6B1E14E2446154A4F4E1EF14348 /* UIBarButtonItemArrowLeft.png */; };
 		DD701AAA2376CEB058549B182C3E9EEC /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AE09DDB8BBEDB7C50354E0180A9F2C99 /* UIButton+WebCache.m */; };
 		E20E28FD4A1BFA49377C4252BBC4BA7F /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 912236AC36DD282068BF92A4E8F2B0C8 /* UIImage+MWPhotoBrowser.m */; };
@@ -127,12 +123,26 @@
 			remoteGlobalIDString = 9775596B3CA16905FC8F66DA8E2A3C67;
 			remoteInfo = DACircularProgress;
 		};
-		53BEB71731A76651C6D843A8DD457FE5 /* PBXContainerItemProxy */ = {
+		3DC49D0FE7B4F521664D5ABD44A20A72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = DE3B07ED7FF04F506B0C5E00F4973589;
+			remoteInfo = SDWebImage;
+		};
+		70C02655C8C114119DC68DCBB5931238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9775596B3CA16905FC8F66DA8E2A3C67;
+			remoteInfo = DACircularProgress;
+		};
+		77782783FAEDA5196B3224EF64E372DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FE87384A67337831E53490EEA8BF11;
+			remoteInfo = MWPhotoBrowser;
 		};
 		90C5595E0565CBEBB42EFEBB157FF619 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -141,13 +151,6 @@
 			remoteGlobalIDString = DE3B07ED7FF04F506B0C5E00F4973589;
 			remoteInfo = SDWebImage;
 		};
-		93FF7554B5DE332F697918A11EEFA93E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2FE87384A67337831E53490EEA8BF11;
-			remoteInfo = MWPhotoBrowser;
-		};
 		999D9522F4AD2757D76E2BC0D6606B4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -155,21 +158,14 @@
 			remoteGlobalIDString = 5813251FEA21E4AEE97385709F1912DE;
 			remoteInfo = "MWPhotoBrowser-MWPhotoBrowser";
 		};
-		CECEB80A16A198B3CCEA68492260DEB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE3B07ED7FF04F506B0C5E00F4973589;
-			remoteInfo = SDWebImage;
-		};
-		D392049E3A8BE7B73360A1BF7CA21254 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9775596B3CA16905FC8F66DA8E2A3C67;
-			remoteInfo = DACircularProgress;
-		};
 		D7B59E66FA2C765426650ADECEF955EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
+		};
+		DE01617D9DCD3698ED5B58613DE91E79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -180,12 +176,12 @@
 
 /* Begin PBXFileReference section */
 		0588434F165FFB6BF5A6FDF5467D4BB2 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
-		087C4FEEF0953439DD056964E04E177B /* Pods-WX_testWeChat-WX_testWeChatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WX_testWeChat-WX_testWeChatTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0AE0AE291C073E93BD5578B95581FAFF /* Pods-WX_testWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		096BD56438C693C3C4362F8631708937 /* Pods-WX_testWeChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChat-resources.sh"; sourceTree = "<group>"; };
 		0B16F8DED9B274E3E30228C58BDDF724 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		0D3AB9EF7B2D01E3228F52F2308B0BB2 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		0DE4A6FD2C564689ECFC4856A5D7BD71 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		1136CE21FFCD799A6A6A861A07620C8A /* ImageSelectedSmallOn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOn@2x.png"; path = "Pod/Assets/ImageSelectedSmallOn@2x.png"; sourceTree = "<group>"; };
+		12CF341611FE889B643626DD4177C79F /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FAFF314A75DCB2200FDCF5FD69E70B /* MWGridCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWGridCell.h; path = Pod/Classes/MWGridCell.h; sourceTree = "<group>"; };
 		1F1F7FDED0383943AA5749D9EAD9AF33 /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWTapDetectingImageView.m; path = Pod/Classes/MWTapDetectingImageView.m; sourceTree = "<group>"; };
 		24435FAF8FA9D5EA35A0E9C45C36FCBA /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
@@ -193,11 +189,8 @@
 		2914F6A8500A455656E2B449A5428717 /* VideoOverlay@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "VideoOverlay@3x.png"; path = "Pod/Assets/VideoOverlay@3x.png"; sourceTree = "<group>"; };
 		2A831060EC4E93EF8595CAF0E04B0BC8 /* MWPhotoBrowserPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowserPrivate.h; path = Pod/Classes/MWPhotoBrowserPrivate.h; sourceTree = "<group>"; };
 		2B425E4DF27CC3F2D6871A2A11251923 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DALabeledCircularProgressView.h; path = DACircularProgress/DALabeledCircularProgressView.h; sourceTree = "<group>"; };
-		2C746F7B5338686C87A83EE65F0337AD /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CE8310C36D3608C9C16E8E680D089AF /* libPods-WX_testWeChatUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WX_testWeChatUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A6BD17C629C5E9AE9A1557C8C615DC /* PlayButtonOverlayLargeTap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = PlayButtonOverlayLargeTap.png; path = Pod/Assets/PlayButtonOverlayLargeTap.png; sourceTree = "<group>"; };
 		320858C81163C788A945EA8AED59784A /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		3280C79C2FE4ECA1CE838E65D4744210 /* Pods-WX_testWeChatUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChatUITests-frameworks.sh"; sourceTree = "<group>"; };
 		3308A9DE053DF297203F35C6B8B5946E /* MWPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MWPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
 		3329643264F6F0C3AF289C3F3C225B30 /* ResourceBundle-MWPhotoBrowser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MWPhotoBrowser-Info.plist"; sourceTree = "<group>"; };
 		333023E3D7FFA26001890B78994BA87C /* MWPhotoProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoProtocol.h; path = Pod/Classes/MWPhotoProtocol.h; sourceTree = "<group>"; };
@@ -206,51 +199,46 @@
 		35525B8C90F021F2362613681FB00B5F /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		3B0BAE1DF2E1FD2FBFE8A1D1208E9156 /* PlayButtonOverlayLargeTap@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLargeTap@3x.png"; path = "Pod/Assets/PlayButtonOverlayLargeTap@3x.png"; sourceTree = "<group>"; };
 		3E9B69BA20376308F0802346AAEC4F18 /* UIBarButtonItemArrowRight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowRight@3x.png"; path = "Pod/Assets/UIBarButtonItemArrowRight@3x.png"; sourceTree = "<group>"; };
-		404F93423B33627AD7133BC8483CDF76 /* libDACircularProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		422863F2D854F17EEF41720939A46F81 /* ImageSelectedOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedOn@3x.png"; path = "Pod/Assets/ImageSelectedOn@3x.png"; sourceTree = "<group>"; };
-		4410F4C940B44B67D3F79D5656CDF077 /* Pods-WX_testWeChat-WX_testWeChatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WX_testWeChat-WX_testWeChatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4455B0B244D09F4B6310F73EB373E3AC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		4523F9FCB26BAA007F950B67EE15F0F6 /* MWTapDetectingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingView.h; path = Pod/Classes/MWTapDetectingView.h; sourceTree = "<group>"; };
 		45F6196E558E1FEB857945EFE799F4D7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		46441CF2F42893DC338A0E81A25FF87C /* ImageSelectedSmallOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOff@3x.png"; path = "Pod/Assets/ImageSelectedSmallOff@3x.png"; sourceTree = "<group>"; };
 		468CDB6EC254A1AD3A8660DB5F404F4D /* ImageSelectedSmallOff.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageSelectedSmallOff.png; path = Pod/Assets/ImageSelectedSmallOff.png; sourceTree = "<group>"; };
 		4785037EE2FCBDBAA50D2558951BB67A /* VideoOverlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "VideoOverlay@2x.png"; path = "Pod/Assets/VideoOverlay@2x.png"; sourceTree = "<group>"; };
-		47A805CC4CA77F7B392AE276E710D3B3 /* Pods-WX_testWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4918193F1D613FC09C71B279DEAD0131 /* MWTapDetectingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWTapDetectingView.m; path = Pod/Classes/MWTapDetectingView.m; sourceTree = "<group>"; };
 		4AA7243F27CA6145081A7F909B9C9673 /* MWGridCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWGridCell.m; path = Pod/Classes/MWGridCell.m; sourceTree = "<group>"; };
-		4D36130A07A954F10CEC2597D5E1FD63 /* Pods-WX_testWeChatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChatUITests-resources.sh"; sourceTree = "<group>"; };
-		4D94445D688BB81274D48FA5FB82AAE6 /* Pods-WX_testWeChatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WX_testWeChatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B4B26A3BCD487648D75A902C7A296C5 /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWPhotoBrowser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC41981F4B27B2176370645DEE696C2 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		504B05DD0469916399887FB459BE392F /* UIBarButtonItemGrid@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemGrid@3x.png"; path = "Pod/Assets/UIBarButtonItemGrid@3x.png"; sourceTree = "<group>"; };
+		5224BAE4044BFE4219DC9A5795CC30DC /* Pods-WX_testWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		578CEE40DAE778C3455832AF65D09A6E /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		57B7720AA3F7D84CC2941E4C49E91F11 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingImageView.h; path = Pod/Classes/MWTapDetectingImageView.h; sourceTree = "<group>"; };
 		57FDEBAA31E4F8C2EDD3D52F04425E97 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		5D2370EDFFEB3021BAEFAD949AAFBC92 /* Pods-WX_testWeChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WX_testWeChat-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E68E9AA4767E95A76B8ECB01A0EE995 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		5FDA68965E6D5683C5884F6A9129AD3F /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		602C47A54DCD1B3A0A1EBEAEFC773495 /* libDACircularProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F5D91F58BBEEC578BAA9A3B8EA63E4 /* PlayButtonOverlayLarge@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLarge@3x.png"; path = "Pod/Assets/PlayButtonOverlayLarge@3x.png"; sourceTree = "<group>"; };
 		692B7683ACA4D64C1AC2CDFDB374C42A /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		6B687C6D2F2D71D97127ABE7898DE7BC /* ImageError@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageError@2x.png"; path = "Pod/Assets/ImageError@2x.png"; sourceTree = "<group>"; };
+		6CBF4F80129FE4DA605CD63DCA6D4C6C /* Pods-WX_testWeChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WX_testWeChat-acknowledgements.plist"; sourceTree = "<group>"; };
 		6DF2C2D85DE57F7C5D456BB7A941CEBD /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
-		6E0721869F30F36D35288257C470CE5F /* Pods-WX_testWeChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WX_testWeChat-dummy.m"; sourceTree = "<group>"; };
 		6FECA9B889D379C434478FF28F0E1915 /* MWCaptionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWCaptionView.m; path = Pod/Classes/MWCaptionView.m; sourceTree = "<group>"; };
 		743C1E86C441C3591BEA1D4003A1F970 /* MWZoomingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWZoomingScrollView.h; path = Pod/Classes/MWZoomingScrollView.h; sourceTree = "<group>"; };
-		75F1FC3CA11495BD1FAE943EA94A14F7 /* Pods-WX_testWeChatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WX_testWeChatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75F802DA12FF6D0EA035C80BE62638BF /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
 		782041C419BBF01EAAE2A588387FE45F /* DACircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DACircularProgress.xcconfig; sourceTree = "<group>"; };
 		7DF49F3385F2FFDA5B08DF419FC9744A /* ImageSelectedSmallOff@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOff@2x.png"; path = "Pod/Assets/ImageSelectedSmallOff@2x.png"; sourceTree = "<group>"; };
 		80558FB68CF3BCA76E72B0BE37D3A5E9 /* MWPhoto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWPhoto.m; path = Pod/Classes/MWPhoto.m; sourceTree = "<group>"; };
-		80A0C17AA7A76C214F02ECAE42BA76F8 /* Pods-WX_testWeChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChat-frameworks.sh"; sourceTree = "<group>"; };
 		856FA5E327AD03FFBA44F62AA2C8BAFE /* VideoOverlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = VideoOverlay.png; path = Pod/Assets/VideoOverlay.png; sourceTree = "<group>"; };
 		88EC0F65816677DF42943803D7419A18 /* PlayButtonOverlayLarge@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLarge@2x.png"; path = "Pod/Assets/PlayButtonOverlayLarge@2x.png"; sourceTree = "<group>"; };
 		894833A9FC4DAA7049B6398D66C5B44D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		89FCDAF4C2F4C7B035930705453C42B2 /* libMWPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDC5CCCEA6F15F188F11AF15DD153DD /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		8CECD898A0F7D5C48CDD9436812F2A6E /* DACircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DACircularProgress-dummy.m"; sourceTree = "<group>"; };
 		8D166E44DB026FACB5B2D7F16037EABA /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		8D2CBE8C71973F5BB00B4330A13ABCA3 /* MWPhotoBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWPhotoBrowser.m; path = Pod/Classes/MWPhotoBrowser.m; sourceTree = "<group>"; };
 		8E587EF89A24527F42C109C61BC36ED0 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		8EA5D205609743CDD00C04E31DE0A89E /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		90806299D2054B648B776F575D0E5FA5 /* libMWPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		912236AC36DD282068BF92A4E8F2B0C8 /* UIImage+MWPhotoBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MWPhotoBrowser.m"; path = "Pod/Classes/UIImage+MWPhotoBrowser.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94C7034146CB3DC15FFB510ED0BA394F /* ImageSelectedOff.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageSelectedOff.png; path = Pod/Assets/ImageSelectedOff.png; sourceTree = "<group>"; };
@@ -258,39 +246,35 @@
 		9603B80E78781775AF253E6DC19D95CC /* UIBarButtonItemArrowLeft@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowLeft@3x.png"; path = "Pod/Assets/UIBarButtonItemArrowLeft@3x.png"; sourceTree = "<group>"; };
 		96622924627C7CAACE7C1C38B6D9AEC3 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		990307664E35C066399F900D06DF380E /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
-		993D1F2A65047B8A8DFC971B4F82D5BD /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBC0FAE114C743CBBDF57F649737107 /* UIBarButtonItemArrowLeft@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowLeft@2x.png"; path = "Pod/Assets/UIBarButtonItemArrowLeft@2x.png"; sourceTree = "<group>"; };
+		9C219E05A462BF0EE95EAD6056D40DF1 /* Pods-WX_testWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		9DD07F0B4238FF46D657D9D8A1EFA0BB /* DACircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DACircularProgressView.h; path = DACircularProgress/DACircularProgressView.h; sourceTree = "<group>"; };
 		9F032D07FCF236D97583656EC41F41E3 /* ImageError.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageError.png; path = Pod/Assets/ImageError.png; sourceTree = "<group>"; };
+		9FB48356C6FBA03F696592B488377CA9 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1624088961D44DD3C6E5745561DE713 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		A29CAC2CFF41FB3ADE43FF70AF9CA4C5 /* MWPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowser.h; path = Pod/Classes/MWPhotoBrowser.h; sourceTree = "<group>"; };
 		A594D892B986B74EF4EF7E1725BBEE4B /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A828907BD01A0169C303B6B16E823268 /* ImageSelectedOn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedOn@2x.png"; path = "Pod/Assets/ImageSelectedOn@2x.png"; sourceTree = "<group>"; };
-		A8D3FF234B7D4C7C76241FB0141C8A2C /* Pods-WX_testWeChat-WX_testWeChatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WX_testWeChat-WX_testWeChatTests-dummy.m"; sourceTree = "<group>"; };
 		A9A4CA0A175F43EEC758CBAEA5CE9638 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZoomingScrollView.m; path = Pod/Classes/MWZoomingScrollView.m; sourceTree = "<group>"; };
+		AA4A563DE287C99AD84BD7B683AA6A50 /* Pods-WX_testWeChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WX_testWeChat-dummy.m"; sourceTree = "<group>"; };
 		AE09DDB8BBEDB7C50354E0180A9F2C99 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		AF5ABA9F05B41B4B139A363FB6F18CF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		B295515D6C9B97DD87E77979E3C65B49 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		B4E286F7ACD35C8AFF9A45B087FFAD02 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		B63CE6C049BFB756BF396F47DEB4493A /* Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig"; sourceTree = "<group>"; };
-		BB43029BC96872C461EED9EA0504FC84 /* Pods-WX_testWeChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBB7BA6CC725C0A80D8FB3AB5EEFE013 /* ImageError@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageError@3x.png"; path = "Pod/Assets/ImageError@3x.png"; sourceTree = "<group>"; };
 		BCF8608191544D25A8EDD66FEAD1E73D /* MWPhotoBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWPhotoBrowser.xcconfig; sourceTree = "<group>"; };
 		BD47BA5F1B77532EB70ECA7068EAF7C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C10908671FCADF180AF7A4546553BA7B /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
-		C2644FAF62A957B322F793CC80DB174D /* Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C389D7FB7C7CB150638D047FE8A31E15 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MWPhotoBrowser.h"; path = "Pod/Classes/UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
 		C5145DDF17083E2E6D2B72F3185CDD42 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		C548DB62E20174468AC46176A6B39AA5 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedOff@2x.png"; path = "Pod/Assets/ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
 		C58725D8E0CF52151847D4ED9CFD559A /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
 		C5CC694ADB372BBD6051A1E7300379F5 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		C5E0AA6F0A6DFC831A488822B49D2A4B /* Pods-WX_testWeChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WX_testWeChat-acknowledgements.plist"; sourceTree = "<group>"; };
-		C6136AC8553C376C3E069B90AA0EA562 /* Pods-WX_testWeChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChat-resources.sh"; sourceTree = "<group>"; };
 		C712A7015527F1DDB998B3C4B0CCCB93 /* DACircularProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DACircularProgressView.m; path = DACircularProgress/DACircularProgressView.m; sourceTree = "<group>"; };
 		C79C705927FA9503690E98F518850216 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		CADDFAEE688CFCA64259A84ABD65B69A /* MWPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
-		CBC4DB438ABC768FEDE620A2EBAE4931 /* libPods-WX_testWeChat-WX_testWeChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WX_testWeChat-WX_testWeChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D015C4EBEB13FF2087E9A162EF1BB4D8 /* ImageSelectedOn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageSelectedOn.png; path = Pod/Assets/ImageSelectedOn.png; sourceTree = "<group>"; };
+		D0BFD435FC3721C22588ABDD8F8B50A7 /* libPods-WX_testWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WX_testWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F96242F4639EDAE6F1CD8226877393 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		D4FA00E6CFCCE92CFB1AB18C0615BF02 /* UIBarButtonItemGrid.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIBarButtonItemGrid.png; path = Pod/Assets/UIBarButtonItemGrid.png; sourceTree = "<group>"; };
 		D755F03A227C5B27C592240495EF3546 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
@@ -303,44 +287,24 @@
 		E5C2D0603CF5AF32B2F3F9CD964FB888 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E96C954BCC50853975B26135D1216C4A /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		EA785A6DF14EC527C23E53CA98B95905 /* MWCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWCommon.h; path = Pod/Classes/MWCommon.h; sourceTree = "<group>"; };
-		EC28A31AC9633B8EBB29417BB35652A3 /* libPods-WX_testWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WX_testWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB0335076A03B6824927D81E31F23FE /* UIBarButtonItemArrowRight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIBarButtonItemArrowRight.png; path = Pod/Assets/UIBarButtonItemArrowRight.png; sourceTree = "<group>"; };
-		F1F2EB3ECD1B705F194059B852C0AF28 /* Pods-WX_testWeChat-WX_testWeChatTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChat-WX_testWeChatTests-frameworks.sh"; sourceTree = "<group>"; };
 		F22CC8D0030A8A84FB2E8D2839E6D682 /* PlayButtonOverlayLarge.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = PlayButtonOverlayLarge.png; path = Pod/Assets/PlayButtonOverlayLarge.png; sourceTree = "<group>"; };
 		F2B4B2F2B3306D361ADC4A71598C694C /* UIBarButtonItemGrid@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemGrid@2x.png"; path = "Pod/Assets/UIBarButtonItemGrid@2x.png"; sourceTree = "<group>"; };
 		F2C16AF309FB02D6E18B7FAA1F63E597 /* UIBarButtonItemArrowRight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowRight@2x.png"; path = "Pod/Assets/UIBarButtonItemArrowRight@2x.png"; sourceTree = "<group>"; };
 		F431A4B6CFDF5D17EB66C112B7F1FB4F /* ImageSelectedSmallOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOn@3x.png"; path = "Pod/Assets/ImageSelectedSmallOn@3x.png"; sourceTree = "<group>"; };
-		F46F5CB91C27A0F0F0AB1CC2D5570165 /* Pods-WX_testWeChat-WX_testWeChatTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChat-WX_testWeChatTests-resources.sh"; sourceTree = "<group>"; };
-		F496AF701500AAD0658C768218B0DE74 /* Pods-WX_testWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WX_testWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		F8DDB69792C7CB3D386F45D35B3852FD /* ImageSelectedSmallOn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageSelectedSmallOn.png; path = Pod/Assets/ImageSelectedSmallOn.png; sourceTree = "<group>"; };
 		F9D863BA48564603D6B48DC2DAF2AE12 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		F9DE55ED2B5DB97A1BDE315F18442A00 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		FBF09C6147FE488AE40FCD62B3B1CDBC /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWPhotoBrowser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD28B49FCEE5180B13D420AC4484C55F /* Pods-WX_testWeChatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WX_testWeChatUITests-dummy.m"; sourceTree = "<group>"; };
+		FBD75947B797DE6299E2A5BF5660B96B /* Pods-WX_testWeChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WX_testWeChat-frameworks.sh"; sourceTree = "<group>"; };
+		FDA3F69DD1024E486650B0964CF4F9A8 /* Pods-WX_testWeChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WX_testWeChat-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		166A034C6609E5FCDD23532D504DD2D8 /* Frameworks */ = {
+		1CB34907C552FB87C12BA7D9604992C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA25027C4344AD29395AE0CD279B0E0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		23A18BF45E3EDF257BA6FE15030ECF22 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D906F00564E3F79B180BD2C2B547D8F8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		473B46E23FF736470C27B47E296E1D5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7D568C19B7E82D06C3DD0EEE3F8AD6B /* Foundation.framework in Frameworks */,
+				9342315DE5672949D37447642718C75A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,21 +365,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		128DBDDD98F0EF60773D692F7B194539 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				404F93423B33627AD7133BC8483CDF76 /* libDACircularProgress.a */,
-				993D1F2A65047B8A8DFC971B4F82D5BD /* libMBProgressHUD.a */,
-				90806299D2054B648B776F575D0E5FA5 /* libMWPhotoBrowser.a */,
-				EC28A31AC9633B8EBB29417BB35652A3 /* libPods-WX_testWeChat.a */,
-				CBC4DB438ABC768FEDE620A2EBAE4931 /* libPods-WX_testWeChat-WX_testWeChatTests.a */,
-				2CE8310C36D3608C9C16E8E680D089AF /* libPods-WX_testWeChatUITests.a */,
-				2C746F7B5338686C87A83EE65F0337AD /* libSDWebImage.a */,
-				FBF09C6147FE488AE40FCD62B3B1CDBC /* MWPhotoBrowser.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1AF07A1E07CEF0AA504658983EFBF5F9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,31 +374,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DACircularProgress";
-			sourceTree = "<group>";
-		};
-		280207249F807D8D218F327EBCF4B7A7 /* Pods-WX_testWeChat */ = {
-			isa = PBXGroup;
-			children = (
-				5D2370EDFFEB3021BAEFAD949AAFBC92 /* Pods-WX_testWeChat-acknowledgements.markdown */,
-				C5E0AA6F0A6DFC831A488822B49D2A4B /* Pods-WX_testWeChat-acknowledgements.plist */,
-				6E0721869F30F36D35288257C470CE5F /* Pods-WX_testWeChat-dummy.m */,
-				80A0C17AA7A76C214F02ECAE42BA76F8 /* Pods-WX_testWeChat-frameworks.sh */,
-				C6136AC8553C376C3E069B90AA0EA562 /* Pods-WX_testWeChat-resources.sh */,
-				F496AF701500AAD0658C768218B0DE74 /* Pods-WX_testWeChat.debug.xcconfig */,
-				0AE0AE291C073E93BD5578B95581FAFF /* Pods-WX_testWeChat.release.xcconfig */,
-			);
-			name = "Pods-WX_testWeChat";
-			path = "Target Support Files/Pods-WX_testWeChat";
-			sourceTree = "<group>";
-		};
-		2E08CFC8D7249146474123C902F41ADF /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				280207249F807D8D218F327EBCF4B7A7 /* Pods-WX_testWeChat */,
-				729A6AF4DC6C2BF190F8EBBEEDC6C19F /* Pods-WX_testWeChat-WX_testWeChatTests */,
-				9F9D4078AF319AEF056EC48BFF50CF1F /* Pods-WX_testWeChatUITests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		329D73320A1189AB162EE195BDFBDC52 /* Support Files */ = {
@@ -520,19 +444,25 @@
 			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
-		729A6AF4DC6C2BF190F8EBBEEDC6C19F /* Pods-WX_testWeChat-WX_testWeChatTests */ = {
+		754DCFEAB47CE7C3B8176DEC27C38279 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4410F4C940B44B67D3F79D5656CDF077 /* Pods-WX_testWeChat-WX_testWeChatTests-acknowledgements.markdown */,
-				087C4FEEF0953439DD056964E04E177B /* Pods-WX_testWeChat-WX_testWeChatTests-acknowledgements.plist */,
-				A8D3FF234B7D4C7C76241FB0141C8A2C /* Pods-WX_testWeChat-WX_testWeChatTests-dummy.m */,
-				F1F2EB3ECD1B705F194059B852C0AF28 /* Pods-WX_testWeChat-WX_testWeChatTests-frameworks.sh */,
-				F46F5CB91C27A0F0F0AB1CC2D5570165 /* Pods-WX_testWeChat-WX_testWeChatTests-resources.sh */,
-				C2644FAF62A957B322F793CC80DB174D /* Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig */,
-				B63CE6C049BFB756BF396F47DEB4493A /* Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig */,
+				EFAC58D117E3B19568E442C60FACAD2E /* Pods-WX_testWeChat */,
 			);
-			name = "Pods-WX_testWeChat-WX_testWeChatTests";
-			path = "Target Support Files/Pods-WX_testWeChat-WX_testWeChatTests";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7D88EF056B042624E646F43938F9E849 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				602C47A54DCD1B3A0A1EBEAEFC773495 /* libDACircularProgress.a */,
+				9FB48356C6FBA03F696592B488377CA9 /* libMBProgressHUD.a */,
+				89FCDAF4C2F4C7B035930705453C42B2 /* libMWPhotoBrowser.a */,
+				D0BFD435FC3721C22588ABDD8F8B50A7 /* libPods-WX_testWeChat.a */,
+				12CF341611FE889B643626DD4177C79F /* libSDWebImage.a */,
+				4B4B26A3BCD487648D75A902C7A296C5 /* MWPhotoBrowser.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -541,24 +471,9 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
 				336661F75B5373EBEAEBE57BA9C6EDA9 /* Pods */,
-				128DBDDD98F0EF60773D692F7B194539 /* Products */,
-				2E08CFC8D7249146474123C902F41ADF /* Targets Support Files */,
+				7D88EF056B042624E646F43938F9E849 /* Products */,
+				754DCFEAB47CE7C3B8176DEC27C38279 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9F9D4078AF319AEF056EC48BFF50CF1F /* Pods-WX_testWeChatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D94445D688BB81274D48FA5FB82AAE6 /* Pods-WX_testWeChatUITests-acknowledgements.markdown */,
-				75F1FC3CA11495BD1FAE943EA94A14F7 /* Pods-WX_testWeChatUITests-acknowledgements.plist */,
-				FD28B49FCEE5180B13D420AC4484C55F /* Pods-WX_testWeChatUITests-dummy.m */,
-				3280C79C2FE4ECA1CE838E65D4744210 /* Pods-WX_testWeChatUITests-frameworks.sh */,
-				4D36130A07A954F10CEC2597D5E1FD63 /* Pods-WX_testWeChatUITests-resources.sh */,
-				47A805CC4CA77F7B392AE276E710D3B3 /* Pods-WX_testWeChatUITests.debug.xcconfig */,
-				BB43029BC96872C461EED9EA0504FC84 /* Pods-WX_testWeChatUITests.release.xcconfig */,
-			);
-			name = "Pods-WX_testWeChatUITests";
-			path = "Target Support Files/Pods-WX_testWeChatUITests";
 			sourceTree = "<group>";
 		};
 		AB289B6CE50B5082FC3AAD563C9D1F96 /* MWPhotoBrowser */ = {
@@ -650,6 +565,21 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MWPhotoBrowser";
+			sourceTree = "<group>";
+		};
+		EFAC58D117E3B19568E442C60FACAD2E /* Pods-WX_testWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				FDA3F69DD1024E486650B0964CF4F9A8 /* Pods-WX_testWeChat-acknowledgements.markdown */,
+				6CBF4F80129FE4DA605CD63DCA6D4C6C /* Pods-WX_testWeChat-acknowledgements.plist */,
+				AA4A563DE287C99AD84BD7B683AA6A50 /* Pods-WX_testWeChat-dummy.m */,
+				FBD75947B797DE6299E2A5BF5660B96B /* Pods-WX_testWeChat-frameworks.sh */,
+				096BD56438C693C3C4362F8631708937 /* Pods-WX_testWeChat-resources.sh */,
+				9C219E05A462BF0EE95EAD6056D40DF1 /* Pods-WX_testWeChat.debug.xcconfig */,
+				5224BAE4044BFE4219DC9A5795CC30DC /* Pods-WX_testWeChat.release.xcconfig */,
+			);
+			name = "Pods-WX_testWeChat";
+			path = "Target Support Files/Pods-WX_testWeChat";
 			sourceTree = "<group>";
 		};
 		F789BBC07CA119B1BB560BB334308654 /* Core */ = {
@@ -766,44 +696,8 @@
 			);
 			name = "MWPhotoBrowser-MWPhotoBrowser";
 			productName = "MWPhotoBrowser-MWPhotoBrowser";
-			productReference = FBF09C6147FE488AE40FCD62B3B1CDBC /* MWPhotoBrowser.bundle */;
+			productReference = 4B4B26A3BCD487648D75A902C7A296C5 /* MWPhotoBrowser.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		6306B4E52A7B37745A9704E02039BF25 /* Pods-WX_testWeChat-WX_testWeChatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9E9CA15305EE3DA302B9EF890EED9B68 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChat-WX_testWeChatTests" */;
-			buildPhases = (
-				524CB3D9F203F1F23E03667568250307 /* Sources */,
-				473B46E23FF736470C27B47E296E1D5B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F54C3505C40003D869D4FE5730978F72 /* PBXTargetDependency */,
-				2F9B3119225EA3EF481C4E1BA3EEE269 /* PBXTargetDependency */,
-				F50E1395EC4B6C77AB1A8E46D8AAD0AB /* PBXTargetDependency */,
-				C120D5007FE9BB0FFD38F7CCC060BA3D /* PBXTargetDependency */,
-			);
-			name = "Pods-WX_testWeChat-WX_testWeChatTests";
-			productName = "Pods-WX_testWeChat-WX_testWeChatTests";
-			productReference = CBC4DB438ABC768FEDE620A2EBAE4931 /* libPods-WX_testWeChat-WX_testWeChatTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		71CF63C66B7C6DB6A8D7428428997D31 /* Pods-WX_testWeChat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 94E338DAE44826F30407674DFFDE3681 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChat" */;
-			buildPhases = (
-				F5645D7F548A24972C951C137DCE40E0 /* Sources */,
-				23A18BF45E3EDF257BA6FE15030ECF22 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-WX_testWeChat";
-			productName = "Pods-WX_testWeChat";
-			productReference = EC28A31AC9633B8EBB29417BB35652A3 /* libPods-WX_testWeChat.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 		9775596B3CA16905FC8F66DA8E2A3C67 /* DACircularProgress */ = {
 			isa = PBXNativeTarget;
@@ -819,23 +713,27 @@
 			);
 			name = DACircularProgress;
 			productName = DACircularProgress;
-			productReference = 404F93423B33627AD7133BC8483CDF76 /* libDACircularProgress.a */;
+			productReference = 602C47A54DCD1B3A0A1EBEAEFC773495 /* libDACircularProgress.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CB5204D6DA82EC5BA432A304A14462CF /* Pods-WX_testWeChatUITests */ = {
+		D1EC1917625EB9B0E2AD3E1FEC366458 /* Pods-WX_testWeChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A310AA6277035A455EC01625F3A1926 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChatUITests" */;
+			buildConfigurationList = 5C69A090CDACC6654096A2BDBB27EFF9 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChat" */;
 			buildPhases = (
-				95ED63DC490E128CFD619868B223430C /* Sources */,
-				166A034C6609E5FCDD23532D504DD2D8 /* Frameworks */,
+				1589F67877366C443FA0312EAD8B9350 /* Sources */,
+				1CB34907C552FB87C12BA7D9604992C2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				566543EBF1597D9BABB72BB661299CF1 /* PBXTargetDependency */,
+				EE504C009D4AA1F26B0072199D2D8740 /* PBXTargetDependency */,
+				8C023B91C9F5EE21A7832CC5E1BC069A /* PBXTargetDependency */,
+				505DC6867EAE8FD23707A3D9C33305BE /* PBXTargetDependency */,
 			);
-			name = "Pods-WX_testWeChatUITests";
-			productName = "Pods-WX_testWeChatUITests";
-			productReference = 2CE8310C36D3608C9C16E8E680D089AF /* libPods-WX_testWeChatUITests.a */;
+			name = "Pods-WX_testWeChat";
+			productName = "Pods-WX_testWeChat";
+			productReference = D0BFD435FC3721C22588ABDD8F8B50A7 /* libPods-WX_testWeChat.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		DE3B07ED7FF04F506B0C5E00F4973589 /* SDWebImage */ = {
@@ -852,7 +750,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = 2C746F7B5338686C87A83EE65F0337AD /* libSDWebImage.a */;
+			productReference = 12CF341611FE889B643626DD4177C79F /* libSDWebImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E2FE87384A67337831E53490EEA8BF11 /* MWPhotoBrowser */ = {
@@ -873,7 +771,7 @@
 			);
 			name = MWPhotoBrowser;
 			productName = MWPhotoBrowser;
-			productReference = 90806299D2054B648B776F575D0E5FA5 /* libMWPhotoBrowser.a */;
+			productReference = 89FCDAF4C2F4C7B035930705453C42B2 /* libMWPhotoBrowser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
@@ -890,7 +788,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 993D1F2A65047B8A8DFC971B4F82D5BD /* libMBProgressHUD.a */;
+			productReference = 9FB48356C6FBA03F696592B488377CA9 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -910,7 +808,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 128DBDDD98F0EF60773D692F7B194539 /* Products */;
+			productRefGroup = 7D88EF056B042624E646F43938F9E849 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -918,9 +816,7 @@
 				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
 				E2FE87384A67337831E53490EEA8BF11 /* MWPhotoBrowser */,
 				5813251FEA21E4AEE97385709F1912DE /* MWPhotoBrowser-MWPhotoBrowser */,
-				71CF63C66B7C6DB6A8D7428428997D31 /* Pods-WX_testWeChat */,
-				6306B4E52A7B37745A9704E02039BF25 /* Pods-WX_testWeChat-WX_testWeChatTests */,
-				CB5204D6DA82EC5BA432A304A14462CF /* Pods-WX_testWeChatUITests */,
+				D1EC1917625EB9B0E2AD3E1FEC366458 /* Pods-WX_testWeChat */,
 				DE3B07ED7FF04F506B0C5E00F4973589 /* SDWebImage */,
 			);
 		};
@@ -979,6 +875,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1589F67877366C443FA0312EAD8B9350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D328B17D01EDD7928E183BF353D24 /* Pods-WX_testWeChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		255D757EA0F7652CFBF27D14BBC3231D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1018,22 +922,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		524CB3D9F203F1F23E03667568250307 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				39CC09CC360F624024FEC66BD7B8E24A /* Pods-WX_testWeChat-WX_testWeChatTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95ED63DC490E128CFD619868B223430C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E3FD1BA38C3D1E1CA8C1AAABBEF1E51 /* Pods-WX_testWeChatUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A6993E0B001E6EB572176DFCF9B87C6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1051,14 +939,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5645D7F548A24972C951C137DCE40E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5BDA8A041A6F14AC67781D7261B1837 /* Pods-WX_testWeChat-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1068,23 +948,29 @@
 			target = DE3B07ED7FF04F506B0C5E00F4973589 /* SDWebImage */;
 			targetProxy = 90C5595E0565CBEBB42EFEBB157FF619 /* PBXContainerItemProxy */;
 		};
-		2F9B3119225EA3EF481C4E1BA3EEE269 /* PBXTargetDependency */ = {
+		505DC6867EAE8FD23707A3D9C33305BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
-			targetProxy = 53BEB71731A76651C6D843A8DD457FE5 /* PBXContainerItemProxy */;
+			name = SDWebImage;
+			target = DE3B07ED7FF04F506B0C5E00F4973589 /* SDWebImage */;
+			targetProxy = 3DC49D0FE7B4F521664D5ABD44A20A72 /* PBXContainerItemProxy */;
+		};
+		566543EBF1597D9BABB72BB661299CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DACircularProgress;
+			target = 9775596B3CA16905FC8F66DA8E2A3C67 /* DACircularProgress */;
+			targetProxy = 70C02655C8C114119DC68DCBB5931238 /* PBXContainerItemProxy */;
+		};
+		8C023B91C9F5EE21A7832CC5E1BC069A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MWPhotoBrowser;
+			target = E2FE87384A67337831E53490EEA8BF11 /* MWPhotoBrowser */;
+			targetProxy = 77782783FAEDA5196B3224EF64E372DE /* PBXContainerItemProxy */;
 		};
 		8EE5D8EDB6C595B190E81B76D3190EB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
 			targetProxy = D7B59E66FA2C765426650ADECEF955EF /* PBXContainerItemProxy */;
-		};
-		C120D5007FE9BB0FFD38F7CCC060BA3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = DE3B07ED7FF04F506B0C5E00F4973589 /* SDWebImage */;
-			targetProxy = CECEB80A16A198B3CCEA68492260DEB3 /* PBXContainerItemProxy */;
 		};
 		C3D6913F5E4E594A29E40A526602BBB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1098,17 +984,11 @@
 			target = 9775596B3CA16905FC8F66DA8E2A3C67 /* DACircularProgress */;
 			targetProxy = 386634C7797B60DF71C8AD13DAAD315D /* PBXContainerItemProxy */;
 		};
-		F50E1395EC4B6C77AB1A8E46D8AAD0AB /* PBXTargetDependency */ = {
+		EE504C009D4AA1F26B0072199D2D8740 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MWPhotoBrowser;
-			target = E2FE87384A67337831E53490EEA8BF11 /* MWPhotoBrowser */;
-			targetProxy = 93FF7554B5DE332F697918A11EEFA93E /* PBXContainerItemProxy */;
-		};
-		F54C3505C40003D869D4FE5730978F72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DACircularProgress;
-			target = 9775596B3CA16905FC8F66DA8E2A3C67 /* DACircularProgress */;
-			targetProxy = D392049E3A8BE7B73360A1BF7CA21254 /* PBXContainerItemProxy */;
+			name = MBProgressHUD;
+			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
+			targetProxy = DE01617D9DCD3698ED5B58613DE91E79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1197,27 +1077,6 @@
 			};
 			name = Release;
 		};
-		289C7857731CB3FF50F81AE41AB0D74B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47A805CC4CA77F7B392AE276E710D3B3 /* Pods-WX_testWeChatUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		2B87B0306148ED34BC445ECAEE1D97BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCF8608191544D25A8EDD66FEAD1E73D /* MWPhotoBrowser.xcconfig */;
@@ -1232,27 +1091,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		34240E6A1D07A5ED5EDC8963F98283C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB43029BC96872C461EED9EA0504FC84 /* Pods-WX_testWeChatUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1374,9 +1212,9 @@
 			};
 			name = Debug;
 		};
-		6FDB3CFD6090417DBE2F7F72E4E78B99 /* Debug */ = {
+		66AA8CE3D9CFBBF857DE4DABE126C4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2644FAF62A957B322F793CC80DB174D /* Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig */;
+			baseConfigurationReference = 9C219E05A462BF0EE95EAD6056D40DF1 /* Pods-WX_testWeChat.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1395,51 +1233,9 @@
 			};
 			name = Debug;
 		};
-		7430F3D17FB07A8A5AE07C0EDFED9239 /* Debug */ = {
+		8F1836152A5B4AF74171CD87138F1F4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F496AF701500AAD0658C768218B0DE74 /* Pods-WX_testWeChat.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		79DFEDF7EE851907703F9F1D0ACEE65D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AE0AE291C073E93BD5578B95581FAFF /* Pods-WX_testWeChat.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		941670B9A7462918400BB818CE636551 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B63CE6C049BFB756BF396F47DEB4493A /* Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig */;
+			baseConfigurationReference = 5224BAE4044BFE4219DC9A5795CC30DC /* Pods-WX_testWeChat.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1542,11 +1338,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A310AA6277035A455EC01625F3A1926 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChatUITests" */ = {
+		5C69A090CDACC6654096A2BDBB27EFF9 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				289C7857731CB3FF50F81AE41AB0D74B /* Debug */,
-				34240E6A1D07A5ED5EDC8963F98283C9 /* Release */,
+				66AA8CE3D9CFBBF857DE4DABE126C4F1 /* Debug */,
+				8F1836152A5B4AF74171CD87138F1F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1565,24 +1361,6 @@
 			buildConfigurations = (
 				120690748ABA86BFCECDDDA70E55F8F8 /* Debug */,
 				039AAC4D43180422DF42C7DB2A7EF427 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94E338DAE44826F30407674DFFDE3681 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7430F3D17FB07A8A5AE07C0EDFED9239 /* Debug */,
-				79DFEDF7EE851907703F9F1D0ACEE65D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9E9CA15305EE3DA302B9EF890EED9B68 /* Build configuration list for PBXNativeTarget "Pods-WX_testWeChat-WX_testWeChatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FDB3CFD6090417DBE2F7F72E4E78B99 /* Debug */,
-				941670B9A7462918400BB818CE636551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

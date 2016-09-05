@@ -40,9 +40,7 @@
 		319A308B1D75C4AF00F2137C /* StyleCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A308A1D75C4AF00F2137C /* StyleCellTableViewCell.m */; };
 		319A308F1D76CC2600F2137C /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 319A30911D76CC2600F2137C /* File.strings */; };
 		31C36B381D620B9B0061FFA1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */; };
-		6D9FFE6AD929C8F287A39461 /* libPods-WX_testWeChat-WX_testWeChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70046FE431F3D6391549C2AA /* libPods-WX_testWeChat-WX_testWeChatTests.a */; };
 		75943CDD8D57FACF45D4FCC8 /* libPods-WX_testWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A837256FAE4E38CB80B21 /* libPods-WX_testWeChat.a */; };
-		7A0774BF0A310CD6BE5CB907 /* libPods-WX_testWeChatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0C2C2E44F4BA3B19F896C0 /* libPods-WX_testWeChatUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,11 +125,7 @@
 		319A30901D76CC2600F2137C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/File.strings; sourceTree = "<group>"; };
 		319A30921D76CC2800F2137C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
 		31C36B371D620B9B0061FFA1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		48D3AF255209788E72EEF695 /* Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WX_testWeChat-WX_testWeChatTests/Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6B888495B06D3C618BCBA5B3 /* Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WX_testWeChat-WX_testWeChatTests/Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		70046FE431F3D6391549C2AA /* libPods-WX_testWeChat-WX_testWeChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WX_testWeChat-WX_testWeChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9319BDAEC73DE3D6D277B1F9 /* Pods-WX_testWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WX_testWeChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WX_testWeChatUITests/Pods-WX_testWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		967918045ADE682A80858502 /* Pods-WX_testWeChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WX_testWeChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WX_testWeChatUITests/Pods-WX_testWeChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D0A61A1F4042EFC7BF9379B0 /* Pods-WX_testWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WX_testWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WX_testWeChat/Pods-WX_testWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		E265C7359D62CE4D486A5E02 /* Pods-WX_testWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WX_testWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WX_testWeChat/Pods-WX_testWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0A837256FAE4E38CB80B21 /* libPods-WX_testWeChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WX_testWeChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9FFE6AD929C8F287A39461 /* libPods-WX_testWeChat-WX_testWeChatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +152,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A0774BF0A310CD6BE5CB907 /* libPods-WX_testWeChatUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,10 +548,6 @@
 			children = (
 				E265C7359D62CE4D486A5E02 /* Pods-WX_testWeChat.debug.xcconfig */,
 				D0A61A1F4042EFC7BF9379B0 /* Pods-WX_testWeChat.release.xcconfig */,
-				48D3AF255209788E72EEF695 /* Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig */,
-				6B888495B06D3C618BCBA5B3 /* Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig */,
-				9319BDAEC73DE3D6D277B1F9 /* Pods-WX_testWeChatUITests.debug.xcconfig */,
-				967918045ADE682A80858502 /* Pods-WX_testWeChatUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1045,7 +1033,6 @@
 		};
 		3198ABCB1D4C624A00AB1F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48D3AF255209788E72EEF695 /* Pods-WX_testWeChat-WX_testWeChatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WX_testWeChatTests/Info.plist;
@@ -1058,7 +1045,6 @@
 		};
 		3198ABCC1D4C624A00AB1F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B888495B06D3C618BCBA5B3 /* Pods-WX_testWeChat-WX_testWeChatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WX_testWeChatTests/Info.plist;
@@ -1071,7 +1057,6 @@
 		};
 		3198ABCE1D4C624A00AB1F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9319BDAEC73DE3D6D277B1F9 /* Pods-WX_testWeChatUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WX_testWeChatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1083,7 +1068,6 @@
 		};
 		3198ABCF1D4C624A00AB1F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 967918045ADE682A80858502 /* Pods-WX_testWeChatUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WX_testWeChatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
