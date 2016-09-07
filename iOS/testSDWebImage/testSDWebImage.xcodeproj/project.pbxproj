@@ -15,7 +15,7 @@
 		319754A11D7C62080070C9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3197549F1D7C62080070C9E7 /* LaunchScreen.storyboard */; };
 		319754AC1D7C62080070C9E7 /* testSDWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319754AB1D7C62080070C9E7 /* testSDWebImageTests.m */; };
 		319754B71D7C62080070C9E7 /* testSDWebImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319754B61D7C62080070C9E7 /* testSDWebImageUITests.m */; };
-		31A006071D7D440F00F66B52 /* testTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A006061D7D440F00F66B52 /* testTableViewController.m */; };
+		31A006071D7D440F00F66B52 /* testWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A006061D7D440F00F66B52 /* testWebImage.m */; };
 		90560F96895726FD2DB913E4 /* libPods-testSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 749EFADA391AF6B94AEFA3A7 /* libPods-testSDWebImage.a */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,8 @@
 		319754B21D7C62080070C9E7 /* testSDWebImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testSDWebImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319754B61D7C62080070C9E7 /* testSDWebImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testSDWebImageUITests.m; sourceTree = "<group>"; };
 		319754B81D7C62080070C9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31A006051D7D440F00F66B52 /* testTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testTableViewController.h; sourceTree = "<group>"; };
-		31A006061D7D440F00F66B52 /* testTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testTableViewController.m; sourceTree = "<group>"; };
+		31A006051D7D440F00F66B52 /* testWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testWebImage.h; sourceTree = "<group>"; };
+		31A006061D7D440F00F66B52 /* testWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testWebImage.m; sourceTree = "<group>"; };
 		3308156D4748DAE6031705C0 /* Pods-testSDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testSDWebImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testSDWebImage/Pods-testSDWebImage.debug.xcconfig"; sourceTree = "<group>"; };
 		749EFADA391AF6B94AEFA3A7 /* libPods-testSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testSDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0CC51FDC567CD5E3A0D1F2 /* Pods-testSDWebImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testSDWebImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-testSDWebImage/Pods-testSDWebImage.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 				319754951D7C62080070C9E7 /* AppDelegate.m */,
 				319754971D7C62080070C9E7 /* ViewController.h */,
 				319754981D7C62080070C9E7 /* ViewController.m */,
-				31A006051D7D440F00F66B52 /* testTableViewController.h */,
-				31A006061D7D440F00F66B52 /* testTableViewController.m */,
+				31A006051D7D440F00F66B52 /* testWebImage.h */,
+				31A006061D7D440F00F66B52 /* testWebImage.m */,
 				3197549A1D7C62080070C9E7 /* Main.storyboard */,
 				3197549D1D7C62080070C9E7 /* Assets.xcassets */,
 				3197549F1D7C62080070C9E7 /* LaunchScreen.storyboard */,
@@ -353,7 +353,7 @@
 				319754991D7C62080070C9E7 /* ViewController.m in Sources */,
 				319754961D7C62080070C9E7 /* AppDelegate.m in Sources */,
 				319754931D7C62080070C9E7 /* main.m in Sources */,
-				31A006071D7D440F00F66B52 /* testTableViewController.m in Sources */,
+				31A006071D7D440F00F66B52 /* testWebImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

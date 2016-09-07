@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    
+    <student>
+        <pid>1001</pid>
+        <name>小明</name>
+        <gender>20</gender>
+        <sex>男</sex>
+    </student>
+    
+    <student>
+        <pid>1002</pid>
+        <name>小红</name>
+        <gender>21</gender>
+        <sex>女</sex>
+    </student>
+    
+    <student>
+        <pid>1003</pid>
+        <name>小丽</name>
+        <gender>21</gender>
+        <sex>女</sex>
+        </student>
+    
+</person>

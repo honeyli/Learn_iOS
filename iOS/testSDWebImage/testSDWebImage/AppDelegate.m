@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
+#import "testWebImage.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //监听网络状况
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    testWebImage *test = [[testWebImage alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:test];
+    self.window.rootViewController = nav;
     return YES;
 }
 
