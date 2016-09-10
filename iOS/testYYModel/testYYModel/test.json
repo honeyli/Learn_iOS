@@ -1,0 +1,15 @@
+{
+    "userName": "向阳",
+    "userPass": "xiang",
+    "age": 10,
+    "ident": [
+              {
+              "price": 100.56,
+              "priceDate": "1987-06-13 00:00:00"
+              },
+              {
+              "price": 100,
+              "priceDate": "1987-06-13"
+              }
+              ]
+}

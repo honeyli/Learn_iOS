@@ -16,6 +16,8 @@
 		31E1A9761D7DBB2C00AAD15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E1A9741D7DBB2C00AAD15C /* LaunchScreen.storyboard */; };
 		31E1A9811D7DBB2C00AAD15C /* TestAFNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1A9801D7DBB2C00AAD15C /* TestAFNetworkingTests.m */; };
 		31E1A98C1D7DBB2C00AAD15C /* TestAFNetworkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1A98B1D7DBB2C00AAD15C /* TestAFNetworkingUITests.m */; };
+		31E1AAC81D80601B00AAD15C /* Casts.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1AAC71D80601B00AAD15C /* Casts.m */; };
+		31E1AACB1D80604700AAD15C /* Avatars.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1AACA1D80604700AAD15C /* Avatars.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		31E1A9871D7DBB2C00AAD15C /* TestAFNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAFNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E1A98B1D7DBB2C00AAD15C /* TestAFNetworkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAFNetworkingUITests.m; sourceTree = "<group>"; };
 		31E1A98D1D7DBB2C00AAD15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E1AAC61D80601B00AAD15C /* Casts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casts.h; sourceTree = "<group>"; };
+		31E1AAC71D80601B00AAD15C /* Casts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casts.m; sourceTree = "<group>"; };
+		31E1AAC91D80604700AAD15C /* Avatars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatars.h; sourceTree = "<group>"; };
+		31E1AACA1D80604700AAD15C /* Avatars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatars.m; sourceTree = "<group>"; };
 		7A220405704464BF3FE82E30 /* Pods-TestAFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAFNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAFNetworking/Pods-TestAFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		887C9AEFB9F9F5E6F68E2E68 /* libPods-TestAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C0309DD040539B9B492A72 /* Pods-TestAFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAFNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAFNetworking/Pods-TestAFNetworking.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +118,10 @@
 				31E1A96A1D7DBB2C00AAD15C /* AppDelegate.m */,
 				31E1A96C1D7DBB2C00AAD15C /* ViewController.h */,
 				31E1A96D1D7DBB2C00AAD15C /* ViewController.m */,
+				31E1AAC61D80601B00AAD15C /* Casts.h */,
+				31E1AAC71D80601B00AAD15C /* Casts.m */,
+				31E1AAC91D80604700AAD15C /* Avatars.h */,
+				31E1AACA1D80604700AAD15C /* Avatars.m */,
 				31E1A96F1D7DBB2C00AAD15C /* Main.storyboard */,
 				31E1A9721D7DBB2C00AAD15C /* Assets.xcassets */,
 				31E1A9741D7DBB2C00AAD15C /* LaunchScreen.storyboard */,
@@ -345,8 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E1AAC81D80601B00AAD15C /* Casts.m in Sources */,
 				31E1A96E1D7DBB2C00AAD15C /* ViewController.m in Sources */,
 				31E1A96B1D7DBB2C00AAD15C /* AppDelegate.m in Sources */,
+				31E1AACB1D80604700AAD15C /* Avatars.m in Sources */,
 				31E1A9681D7DBB2C00AAD15C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

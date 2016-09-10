@@ -3,5 +3,5 @@
 
 target 'TestAFNetworking' do
   pod 'AFNetworking';
-
+  pod 'YYModel';
 end
