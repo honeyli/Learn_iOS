@@ -579,12 +579,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3198ABCA1D4C624A00AB1F9B /* Build configuration list for PBXNativeTarget "WX_testWeChatTests" */;
 			buildPhases = (
-				E6960CDABF63F15ACF67664B /* [CP] Check Pods Manifest.lock */,
 				3198ABAF1D4C624A00AB1F9B /* Sources */,
 				3198ABB01D4C624A00AB1F9B /* Frameworks */,
 				3198ABB11D4C624A00AB1F9B /* Resources */,
-				DAB8185F9CCD51F4EF50AFD0 /* [CP] Embed Pods Frameworks */,
-				E21173611FC6135E1FB849D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -600,11 +597,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3198ABCD1D4C624A00AB1F9B /* Build configuration list for PBXNativeTarget "WX_testWeChatUITests" */;
 			buildPhases = (
-				E1E8672A8F35A126946BCD49 /* [CP] Check Pods Manifest.lock */,
 				3198ABBA1D4C624A00AB1F9B /* Sources */,
 				3198ABBB1D4C624A00AB1F9B /* Frameworks */,
 				3198ABBC1D4C624A00AB1F9B /* Resources */,
-				5ECA39C3A68BE264AFEE1752 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -705,21 +700,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5ECA39C3A68BE264AFEE1752 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WX_testWeChatUITests/Pods-WX_testWeChatUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A6AC1A841722DEF3AF7320A8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -733,66 +713,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WX_testWeChat/Pods-WX_testWeChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DAB8185F9CCD51F4EF50AFD0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WX_testWeChat-WX_testWeChatTests/Pods-WX_testWeChat-WX_testWeChatTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1E8672A8F35A126946BCD49 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E21173611FC6135E1FB849D5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WX_testWeChat-WX_testWeChatTests/Pods-WX_testWeChat-WX_testWeChatTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6960CDABF63F15ACF67664B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F5A810365536C5DFD8AF2C98 /* [CP] Copy Pods Resources */ = {

@@ -8,4 +8,5 @@ target 'Test_ZhihuDaily' do
   pod 'SDWebImage';
   pod 'TOWebViewController';
   pod 'MMDrawerController';
+  pod 'ViewDeck';
 end

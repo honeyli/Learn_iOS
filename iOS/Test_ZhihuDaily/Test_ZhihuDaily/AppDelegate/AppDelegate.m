@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "HomePageController.h"
+#import "LeftMenuViewController.h"
+#import "ZhihuSideMenuViewController.h"
+#import "SideMenuViewController.h"
+
+#define STATUS_BAR_TAP_NOTIFICATION @"STATUS_BAR_TAP_NOTIFICATION"
 @interface AppDelegate ()
 {
     UILabel *statusLabel;
@@ -21,21 +26,44 @@
     self.window.frame = [[UIScreen mainScreen] bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    HomePageController *homePageVC = [[HomePageController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homePageVC];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1]];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont systemFontOfSize:17], NSFontAttributeName, nil]];
+    [self configureRootVC];
     
-   
-    
-    self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
     return YES;
 }
 
-
+-(void)configureRootVC
+{
+    LeftMenuViewController *leftVC = [[LeftMenuViewController alloc] init];
+    HomePageController *rightVC = [[HomePageController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rightVC];
+    
+    ZhihuSideMenuViewController *sideMenu = [[ZhihuSideMenuViewController alloc] initWithContentViewController:navigationController menuViewController:leftVC];
+    leftVC.sideMenuViewController = sideMenu;
+    rightVC.sideMenuViewController = sideMenu;
+    
+    leftVC.homePageController = rightVC;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = sideMenu;
+    [self.window makeKeyAndVisible];
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    
+    NSSet<UITouch *> *events = [event allTouches];
+    UITouch *touch = [events anyObject];
+    CGPoint location = [touch locationInView:self.window];
+    CGRect statusBarFram = [UIApplication sharedApplication].statusBarFrame;
+    
+    if (CGRectContainsPoint(statusBarFram, location)) {
+        [[NSNotificationCenter defaultCenter] postNotificationName: STATUS_BAR_TAP_NOTIFICATION object:nil];
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -59,3 +87,4 @@
 }
 
 @end
+

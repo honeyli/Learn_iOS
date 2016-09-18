@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ZhihuSideMenuViewController.h"
 @interface HomePageController : UITableViewController
-
+@property (nonatomic, strong) ZhihuSideMenuViewController *sideMenuViewController;
 @end

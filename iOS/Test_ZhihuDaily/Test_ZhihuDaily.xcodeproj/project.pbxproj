@@ -15,6 +15,14 @@
 		31162DEA1D82B8D10065BAEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31162DE91D82B8D10065BAEA /* AppDelegate.m */; };
 		31162DFA1D82C4880065BAEA /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31162DF91D82C4880065BAEA /* HomePageController.m */; };
 		31162DFC1D83F7FB0065BAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31162DFB1D83F7FB0065BAEA /* Main.storyboard */; };
+		3124E0C61D87D68400BCCA4A /* WTImageScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3124E0C51D87D68400BCCA4A /* WTImageScroll.m */; };
+		3124E0C91D87DAE500BCCA4A /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3124E0C81D87DAE500BCCA4A /* CircleView.m */; };
+		3181183A1D8A6A7200BE50BD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318118391D8A6A7200BE50BD /* BaseViewController.m */; };
+		3181183D1D8A6A9D00BE50BD /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3181183C1D8A6A9D00BE50BD /* SideMenuViewController.m */; };
+		318118401D8A6AE900BE50BD /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3181183F1D8A6AE900BE50BD /* LeftMenuViewController.m */; };
+		318118441D8A6B4000BE50BD /* LanuchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318118431D8A6B4000BE50BD /* LanuchViewController.m */; };
+		318118471D8A6B5F00BE50BD /* ZhihuSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318118461D8A6B5F00BE50BD /* ZhihuSideMenuViewController.m */; };
+		318785A71D8521D200B5BDC4 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 318785A61D8521D200B5BDC4 /* TopView.m */; };
 		F6FA4169C487E9A9F76568D7 /* libPods-Test_ZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF001A3F735A4C92AF8E3EB /* libPods-Test_ZhihuDaily.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +60,22 @@
 		31162DF81D82C4880065BAEA /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		31162DF91D82C4880065BAEA /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		31162DFB1D83F7FB0065BAEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = HomePage/Controllers/Main.storyboard; sourceTree = "<group>"; };
+		3124E0C41D87D68400BCCA4A /* WTImageScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTImageScroll.h; path = "../../../../Demo/WTImageScorll-master/WTImageScroll.h"; sourceTree = "<group>"; };
+		3124E0C51D87D68400BCCA4A /* WTImageScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTImageScroll.m; path = "../../../../Demo/WTImageScorll-master/WTImageScroll.m"; sourceTree = "<group>"; };
+		3124E0C71D87DAE500BCCA4A /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		3124E0C81D87DAE500BCCA4A /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		318118381D8A6A7200BE50BD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Test_ZhihuDaily/BaseVC/BaseViewController.h; sourceTree = "<group>"; };
+		318118391D8A6A7200BE50BD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Test_ZhihuDaily/BaseVC/BaseViewController.m; sourceTree = "<group>"; };
+		3181183B1D8A6A9D00BE50BD /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenuViewController.h; path = Test_ZhihuDaily/BaseVC/SideMenuViewController.h; sourceTree = "<group>"; };
+		3181183C1D8A6A9D00BE50BD /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenuViewController.m; path = Test_ZhihuDaily/BaseVC/SideMenuViewController.m; sourceTree = "<group>"; };
+		3181183E1D8A6AE900BE50BD /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		3181183F1D8A6AE900BE50BD /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		318118421D8A6B4000BE50BD /* LanuchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchViewController.h; sourceTree = "<group>"; };
+		318118431D8A6B4000BE50BD /* LanuchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchViewController.m; sourceTree = "<group>"; };
+		318118451D8A6B5F00BE50BD /* ZhihuSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhihuSideMenuViewController.h; sourceTree = "<group>"; };
+		318118461D8A6B5F00BE50BD /* ZhihuSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhihuSideMenuViewController.m; sourceTree = "<group>"; };
+		318785A51D8521D200B5BDC4 /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		318785A61D8521D200B5BDC4 /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
 		6EF001A3F735A4C92AF8E3EB /* libPods-Test_ZhihuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test_ZhihuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8547BF5A2B04796E8E10BFEE /* Pods-Test_ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test_ZhihuDaily/Pods-Test_ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
 		BF3E623436DDDF017B759025 /* Pods-Test_ZhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_ZhihuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test_ZhihuDaily/Pods-Test_ZhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +110,8 @@
 		31162DA71D829CAF0065BAEA = {
 			isa = PBXGroup;
 			children = (
+				318118411D8A6B1200BE50BD /* Launch */,
+				318118371D8A6A2500BE50BD /* BaseVC */,
 				31162DB21D829CAF0065BAEA /* Test_ZhihuDaily */,
 				31162DCC1D829CB00065BAEA /* Test_ZhihuDailyTests */,
 				31162DD71D829CB00065BAEA /* Test_ZhihuDailyUITests */,
@@ -108,8 +134,8 @@
 		31162DB21D829CAF0065BAEA /* Test_ZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
-				31162DEE1D82C09B0065BAEA /* HomePage */,
 				31162DE71D82B8D10065BAEA /* AppDelegate */,
+				31162DEE1D82C09B0065BAEA /* HomePage */,
 				31162DB31D829CAF0065BAEA /* Supporting Files */,
 			);
 			path = Test_ZhihuDaily;
@@ -118,6 +144,8 @@
 		31162DB31D829CAF0065BAEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3124E0C41D87D68400BCCA4A /* WTImageScroll.h */,
+				3124E0C51D87D68400BCCA4A /* WTImageScroll.m */,
 				31162DFB1D83F7FB0065BAEA /* Main.storyboard */,
 				31162DBF1D829CB00065BAEA /* Assets.xcassets */,
 				31162DC11D829CB00065BAEA /* LaunchScreen.storyboard */,
@@ -169,6 +197,8 @@
 			children = (
 				31162DF81D82C4880065BAEA /* HomePageController.h */,
 				31162DF91D82C4880065BAEA /* HomePageController.m */,
+				3181183E1D8A6AE900BE50BD /* LeftMenuViewController.h */,
+				3181183F1D8A6AE900BE50BD /* LeftMenuViewController.m */,
 			);
 			name = Controllers;
 			path = HomePage/Controllers;
@@ -185,9 +215,35 @@
 		31162DF61D82C3F60065BAEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				318785A51D8521D200B5BDC4 /* TopView.h */,
+				318785A61D8521D200B5BDC4 /* TopView.m */,
+				3124E0C71D87DAE500BCCA4A /* CircleView.h */,
+				3124E0C81D87DAE500BCCA4A /* CircleView.m */,
 			);
 			name = Views;
 			path = HomePage/Views;
+			sourceTree = "<group>";
+		};
+		318118371D8A6A2500BE50BD /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				318118381D8A6A7200BE50BD /* BaseViewController.h */,
+				318118391D8A6A7200BE50BD /* BaseViewController.m */,
+				3181183B1D8A6A9D00BE50BD /* SideMenuViewController.h */,
+				3181183C1D8A6A9D00BE50BD /* SideMenuViewController.m */,
+			);
+			name = BaseVC;
+			sourceTree = "<group>";
+		};
+		318118411D8A6B1200BE50BD /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				318118421D8A6B4000BE50BD /* LanuchViewController.h */,
+				318118431D8A6B4000BE50BD /* LanuchViewController.m */,
+				318118451D8A6B5F00BE50BD /* ZhihuSideMenuViewController.h */,
+				318118461D8A6B5F00BE50BD /* ZhihuSideMenuViewController.m */,
+			);
+			name = Launch;
 			sourceTree = "<group>";
 		};
 		6F002488231AEF63F4F45339 /* Pods */ = {
@@ -389,8 +445,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				31162DEA1D82B8D10065BAEA /* AppDelegate.m in Sources */,
+				318118441D8A6B4000BE50BD /* LanuchViewController.m in Sources */,
 				31162DFA1D82C4880065BAEA /* HomePageController.m in Sources */,
+				3124E0C91D87DAE500BCCA4A /* CircleView.m in Sources */,
+				318785A71D8521D200B5BDC4 /* TopView.m in Sources */,
+				318118401D8A6AE900BE50BD /* LeftMenuViewController.m in Sources */,
+				3181183D1D8A6A9D00BE50BD /* SideMenuViewController.m in Sources */,
 				31162DB51D829CAF0065BAEA /* main.m in Sources */,
+				318118471D8A6B5F00BE50BD /* ZhihuSideMenuViewController.m in Sources */,
+				3181183A1D8A6A7200BE50BD /* BaseViewController.m in Sources */,
+				3124E0C61D87D68400BCCA4A /* WTImageScroll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

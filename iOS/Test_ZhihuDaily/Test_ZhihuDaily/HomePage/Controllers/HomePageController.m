@@ -7,7 +7,7 @@
 //
 
 #import "HomePageController.h"
-
+#import "CircleView.h"
 @interface HomePageController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -16,28 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"首页";
-    
+    CircleView *circle = [[CircleView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 150)];
+    circle.backgroundColor = [UIColor redColor];
+    self.edgesForExtendedLayout = UIRectEdgeTop;
+    self.extendedLayoutIncludesOpaqueBars = YES;
+    self.automaticallyAdjustsScrollViewInsets = YES;
+    self.tableView.tableHeaderView = circle;
 }
-
--(void)myStatusBarStyle
-{
-    UIView *statusBar = [[UIView alloc] init];
-    statusBar.frame = CGRectMake(0, -20, 420, 20);
-    statusBar.backgroundColor = [UIColor colorWithRed:22/255.0 green:95/255.0 blue:196/255.0 alpha:1];
-    [self.navigationController.navigationBar  addSubview:statusBar];
-    [self preferredStatusBarStyle];
-}
-
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    
-    return UIStatusBarStyleLightContent;
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source

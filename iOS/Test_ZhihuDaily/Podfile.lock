@@ -33,6 +33,7 @@ PODS:
   - TOWebViewController (2.2.6):
     - TOWebViewController/Core (= 2.2.6)
   - TOWebViewController/Core (2.2.6)
+  - ViewDeck (2.4.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - MMDrawerController
   - SDWebImage
   - TOWebViewController
+  - ViewDeck
   - YYModel
 
 SPEC CHECKSUMS:
@@ -49,8 +51,9 @@ SPEC CHECKSUMS:
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TOWebViewController: a29908019f7e0e0f8eccfab8a1ee8dcdf4fc5aac
+  ViewDeck: 0b7b83bc2782a20dfb76207d0a2e8c5e6a6d182d
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 8d179b83607c9c6e5177cb37bc232ff72b32c402
+PODFILE CHECKSUM: 4c3aeb7b226b587fee57e9e3bc6239519007492f
 
 COCOAPODS: 1.0.1
