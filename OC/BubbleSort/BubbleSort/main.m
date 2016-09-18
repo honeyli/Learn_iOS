@@ -13,9 +13,9 @@ int main(int argc, const char * argv[]) {
         NSMutableArray *array = [[NSMutableArray alloc]                                                                                             initWithObjects:@"4",@"7",@"1",@"5",@"3",@"6",@"2", nil];
         for (int i = 0; i < array.count; i ++) {
             for (int j = i + 1; j < array.count ; j ++) {
-                NSString *array1 = array[i];
-                NSString *array2 = array[j];
-                if (array1 > array2 ) {
+                NSString *str1 = array[i];
+                NSString *str2 = array[j];
+                if ([str1 compare:str2] == NSOrderedDescending ) {
                     [array exchangeObjectAtIndex:i withObjectAtIndex:j];
                 }
             }
