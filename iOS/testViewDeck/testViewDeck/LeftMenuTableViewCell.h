@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "LeftMenuModel.h"
 @interface LeftMenuTableViewCell : UITableViewCell
-
+-(void)configureCell:(LeftMenuModel *)model ;
 @end

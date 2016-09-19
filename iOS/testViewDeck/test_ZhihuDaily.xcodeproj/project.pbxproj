@@ -59,17 +59,17 @@
 		31F18C3A1D8D0742005A34CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F18C461D8D075B005A34CC /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		31F18C471D8D075B005A34CC /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		31F18C491D8D0773005A34CC /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
-		31F18C4A1D8D0773005A34CC /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
-		31F18C4C1D8D2DA5005A34CC /* LeftMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuModel.h; sourceTree = "<group>"; };
-		31F18C4D1D8D2DA5005A34CC /* LeftMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuModel.m; sourceTree = "<group>"; };
-		31F18C4F1D8D507E005A34CC /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
-		31F18C501D8D507E005A34CC /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
-		31F18C521D8E6F7B005A34CC /* HearderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HearderView.h; sourceTree = "<group>"; };
-		31F18C531D8E6F7B005A34CC /* HearderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HearderView.m; sourceTree = "<group>"; };
+		31F18C491D8D0773005A34CC /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMenuViewController.h; path = testViewDeck/LeftMenuViewController.h; sourceTree = "<group>"; };
+		31F18C4A1D8D0773005A34CC /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMenuViewController.m; path = testViewDeck/LeftMenuViewController.m; sourceTree = "<group>"; };
+		31F18C4C1D8D2DA5005A34CC /* LeftMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMenuModel.h; path = testViewDeck/LeftMenuModel.h; sourceTree = "<group>"; };
+		31F18C4D1D8D2DA5005A34CC /* LeftMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMenuModel.m; path = testViewDeck/LeftMenuModel.m; sourceTree = "<group>"; };
+		31F18C4F1D8D507E005A34CC /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMenuTableViewCell.h; path = testViewDeck/LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		31F18C501D8D507E005A34CC /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMenuTableViewCell.m; path = testViewDeck/LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		31F18C521D8E6F7B005A34CC /* HearderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HearderView.h; path = testViewDeck/HearderView.h; sourceTree = "<group>"; };
+		31F18C531D8E6F7B005A34CC /* HearderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HearderView.m; path = testViewDeck/HearderView.m; sourceTree = "<group>"; };
 		31F18C571D8E7A63005A34CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		31F18C591D8E9079005A34CC /* FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterView.h; sourceTree = "<group>"; };
-		31F18C5A1D8E9079005A34CC /* FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterView.m; sourceTree = "<group>"; };
+		31F18C591D8E9079005A34CC /* FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FooterView.h; path = testViewDeck/FooterView.h; sourceTree = "<group>"; };
+		31F18C5A1D8E9079005A34CC /* FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FooterView.m; path = testViewDeck/FooterView.m; sourceTree = "<group>"; };
 		31F18C5C1D8EE3DE005A34CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		582230679F420B1224C6C969 /* libPods-testViewDeck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testViewDeck.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FBFB3C99CDE54F89DF0161 /* Pods-testViewDeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testViewDeck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testViewDeck/Pods-testViewDeck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +111,90 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		313D75AE1D8FC8F500BA8FB6 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				313D75B01D8FC92700BA8FB6 /* Models */,
+				313D75B11D8FC94A00BA8FB6 /* Views */,
+				313D75AF1D8FC91200BA8FB6 /* Controllers */,
+			);
+			name = LeftMenu;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		313D75AF1D8FC91200BA8FB6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31F18C491D8D0773005A34CC /* LeftMenuViewController.h */,
+				31F18C4A1D8D0773005A34CC /* LeftMenuViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		313D75B01D8FC92700BA8FB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31F18C4C1D8D2DA5005A34CC /* LeftMenuModel.h */,
+				31F18C4D1D8D2DA5005A34CC /* LeftMenuModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		313D75B11D8FC94A00BA8FB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31F18C521D8E6F7B005A34CC /* HearderView.h */,
+				31F18C531D8E6F7B005A34CC /* HearderView.m */,
+				31F18C591D8E9079005A34CC /* FooterView.h */,
+				31F18C5A1D8E9079005A34CC /* FooterView.m */,
+				31F18C4F1D8D507E005A34CC /* LeftMenuTableViewCell.h */,
+				31F18C501D8D507E005A34CC /* LeftMenuTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		313D75B21D8FC99500BA8FB6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				31F18C161D8D0742005A34CC /* AppDelegate.h */,
+				31F18C171D8D0742005A34CC /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		313D75B61D8FD02000BA8FB6 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				313D75B91D8FD05800BA8FB6 /* models */,
+				313D75B81D8FD05200BA8FB6 /* views */,
+				313D75B71D8FD04700BA8FB6 /* Controllers */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		313D75B71D8FD04700BA8FB6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31F18C461D8D075B005A34CC /* HomePageViewController.h */,
+				31F18C471D8D075B005A34CC /* HomePageViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		313D75B81D8FD05200BA8FB6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		313D75B91D8FD05800BA8FB6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		31F18C071D8D0742005A34CC = {
 			isa = PBXGroup;
 			children = (
@@ -136,19 +220,10 @@
 		31F18C121D8D0742005A34CC /* test_ZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
-				31F18C161D8D0742005A34CC /* AppDelegate.h */,
-				31F18C171D8D0742005A34CC /* AppDelegate.m */,
-				31F18C191D8D0742005A34CC /* ViewController.h */,
-				31F18C1A1D8D0742005A34CC /* ViewController.m */,
-				31F18C461D8D075B005A34CC /* HomePageViewController.h */,
-				31F18C471D8D075B005A34CC /* HomePageViewController.m */,
-				31F18C491D8D0773005A34CC /* LeftMenuViewController.h */,
-				31F18C4A1D8D0773005A34CC /* LeftMenuViewController.m */,
-				31F18C1C1D8D0742005A34CC /* Main.storyboard */,
-				31F18C211D8D0742005A34CC /* LaunchScreen.storyboard */,
-				31F18C241D8D0742005A34CC /* Info.plist */,
+				313D75B21D8FC99500BA8FB6 /* AppDelegate */,
+				313D75B61D8FD02000BA8FB6 /* HomePage */,
+				313D75AE1D8FC8F500BA8FB6 /* LeftMenu */,
 				31F18C131D8D0742005A34CC /* Supporting Files */,
-				31F18C571D8E7A63005A34CC /* Assets.xcassets */,
 			);
 			name = test_ZhihuDaily;
 			path = testViewDeck;
@@ -157,15 +232,13 @@
 		31F18C131D8D0742005A34CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				31F18C571D8E7A63005A34CC /* Assets.xcassets */,
+				31F18C191D8D0742005A34CC /* ViewController.h */,
+				31F18C1A1D8D0742005A34CC /* ViewController.m */,
+				31F18C1C1D8D0742005A34CC /* Main.storyboard */,
+				31F18C211D8D0742005A34CC /* LaunchScreen.storyboard */,
+				31F18C241D8D0742005A34CC /* Info.plist */,
 				31F18C141D8D0742005A34CC /* main.m */,
-				31F18C521D8E6F7B005A34CC /* HearderView.h */,
-				31F18C531D8E6F7B005A34CC /* HearderView.m */,
-				31F18C4C1D8D2DA5005A34CC /* LeftMenuModel.h */,
-				31F18C4D1D8D2DA5005A34CC /* LeftMenuModel.m */,
-				31F18C4F1D8D507E005A34CC /* LeftMenuTableViewCell.h */,
-				31F18C501D8D507E005A34CC /* LeftMenuTableViewCell.m */,
-				31F18C591D8E9079005A34CC /* FooterView.h */,
-				31F18C5A1D8E9079005A34CC /* FooterView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

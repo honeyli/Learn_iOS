@@ -9,9 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "ConversionDatasModel.h"
 @interface NewCell : UITableViewCell
-{
- 
-}
-
 -(void)configureCell:(ConversionDatasModel *)msg;
 @end
