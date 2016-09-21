@@ -15,7 +15,7 @@
     UIImageView *imageViewOne;
     UIImageView *imageViewTwo;
     UIImageView *imageViewThree;
-}
+ }
 @end
 
 @implementation GuideViewController
@@ -33,10 +33,7 @@
     pageController.currentPageIndicatorTintColor=[UIColor colorWithRed:0.153 green:0.533 blue:0.796 alpha:1.0];
     [self.view addSubview:pageController];
     
-    [self createViewOne];
-    [self createViewTwo];
-    [self createViewThree];
-
+    
 }
 -(void)createViewOne
 {
