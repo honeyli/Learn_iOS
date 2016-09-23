@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Mantle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MyZhihuDaily.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00257A9557E637BEDC0C288B028481E6</key>
+		<key>31DFACE8379F0C8690587D63F505A74E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>334C2133D27D26417D8D4C3480CBB72D</key>
+		<key>426BC4549A625B5E1E4200D5261A98BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>489D8BF2C5A1326A7E0F38C6C1A99BC7</key>
+		<key>51D2F99E2BA5EDEB34BBD9E02AD2AF7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F84A9B92744E3972183BF632CBD7267</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BDCCBCD7E44A5186B11E3B97D0B4618</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AA29D010142520D95FC14616C9F8DA12</key>
 		<dict>
 			<key>primary</key>
 			<true/>

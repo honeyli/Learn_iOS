@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B3CD780F4F36B1ECCEDAA8E /* libPods-MyZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CDA6673126F71E8B45D43 /* libPods-MyZhihuDaily.a */; };
+		318AAC5B1D93A608001EF7FC /* NewsListResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 318AAC5A1D93A608001EF7FC /* NewsListResponseModel.m */; };
+		318AAC5E1D93A80B001EF7FC /* NewsResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 318AAC5D1D93A80B001EF7FC /* NewsResponseModel.m */; };
+		318AAC611D93AA62001EF7FC /* TopNewsResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 318AAC601D93AA62001EF7FC /* TopNewsResponseModel.m */; };
 		31B61A321D92C1E5004340B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B61A311D92C1E5004340B8 /* main.m */; };
 		31B61A381D92C1E5004340B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B61A371D92C1E5004340B8 /* ViewController.m */; };
 		31B61A3B1D92C1E5004340B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B61A391D92C1E5004340B8 /* Main.storyboard */; };
@@ -45,6 +48,14 @@
 
 /* Begin PBXFileReference section */
 		221CDA6673126F71E8B45D43 /* libPods-MyZhihuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyZhihuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		318AAC591D93A608001EF7FC /* NewsListResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListResponseModel.h; path = MyZhihuDaily/NewsListResponseModel.h; sourceTree = "<group>"; };
+		318AAC5A1D93A608001EF7FC /* NewsListResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListResponseModel.m; path = MyZhihuDaily/NewsListResponseModel.m; sourceTree = "<group>"; };
+		318AAC5C1D93A80B001EF7FC /* NewsResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsResponseModel.h; sourceTree = "<group>"; };
+		318AAC5D1D93A80B001EF7FC /* NewsResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsResponseModel.m; sourceTree = "<group>"; };
+		318AAC5F1D93AA62001EF7FC /* TopNewsResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopNewsResponseModel.h; sourceTree = "<group>"; };
+		318AAC601D93AA62001EF7FC /* TopNewsResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopNewsResponseModel.m; sourceTree = "<group>"; };
+		318AAC761D93BF9E001EF7FC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		318AAC771D93BFCB001EF7FC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		31B61A2D1D92C1E5004340B8 /* MyZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B61A311D92C1E5004340B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31B61A361D92C1E5004340B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -124,9 +135,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		318AAC571D93A5AC001EF7FC /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				318AAC581D93A5B6001EF7FC /* JsonModels */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		318AAC581D93A5B6001EF7FC /* JsonModels */ = {
+			isa = PBXGroup;
+			children = (
+				318AAC591D93A608001EF7FC /* NewsListResponseModel.h */,
+				318AAC5A1D93A608001EF7FC /* NewsListResponseModel.m */,
+				318AAC5C1D93A80B001EF7FC /* NewsResponseModel.h */,
+				318AAC5D1D93A80B001EF7FC /* NewsResponseModel.m */,
+				318AAC5F1D93AA62001EF7FC /* TopNewsResponseModel.h */,
+				318AAC601D93AA62001EF7FC /* TopNewsResponseModel.m */,
+			);
+			name = JsonModels;
+			sourceTree = "<group>";
+		};
 		31B61A241D92C1E5004340B8 = {
 			isa = PBXGroup;
 			children = (
+				318AAC571D93A5AC001EF7FC /* NetWork */,
 				31B61A2F1D92C1E5004340B8 /* MyZhihuDaily */,
 				31B61A491D92C1E5004340B8 /* MyZhihuDailyTests */,
 				31B61A541D92C1E5004340B8 /* MyZhihuDailyUITests */,
@@ -167,6 +200,8 @@
 				31B61A3E1D92C1E5004340B8 /* LaunchScreen.storyboard */,
 				31B61A411D92C1E5004340B8 /* Info.plist */,
 				31B61A311D92C1E5004340B8 /* main.m */,
+				318AAC761D93BF9E001EF7FC /* PrefixHeader.pch */,
+				318AAC771D93BFCB001EF7FC /* Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -463,10 +498,13 @@
 				31B61A381D92C1E5004340B8 /* ViewController.m in Sources */,
 				31B61AA81D92C4DB004340B8 /* HomePageViewController.m in Sources */,
 				31B61AB21D92C511004340B8 /* FooterView.m in Sources */,
+				318AAC5B1D93A608001EF7FC /* NewsListResponseModel.m in Sources */,
 				31B61AB31D92C511004340B8 /* HearderView.m in Sources */,
 				31B61AA51D92C4CF004340B8 /* HeadView.m in Sources */,
+				318AAC5E1D93A80B001EF7FC /* NewsResponseModel.m in Sources */,
 				31B61AA21D92C4B7004340B8 /* ReponseTableViewModel.m in Sources */,
 				31B61AB41D92C511004340B8 /* LeftMenuTableViewCell.m in Sources */,
+				318AAC611D93AA62001EF7FC /* TopNewsResponseModel.m in Sources */,
 				31B61AAB1D92C4E7004340B8 /* LeftMenuModel.m in Sources */,
 				31B61A9F1D92C4AB004340B8 /* AppDelegate.m in Sources */,
 				31B61A321D92C1E5004340B8 /* main.m in Sources */,
