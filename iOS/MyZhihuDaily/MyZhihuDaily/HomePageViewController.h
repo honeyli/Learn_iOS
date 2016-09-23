@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "IIViewDeckController.h"
 @interface HomePageViewController : UIViewController
-@property (nonatomic, strong) NSMutableArray *homeArray;
+@property (nonatomic, strong) NSArray *homeArrayList;
 @property (nonatomic, strong) NSArray *topArray;
 @end
