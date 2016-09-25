@@ -17,11 +17,18 @@
 #import "UIImageView+WebCache.h"
 #define   kScreenWidth  [UIScreen mainScreen].bounds.size.width
 
-@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 {
-    NSMutableString *string;
+
     UITableView *homeTableView;
+    UIView *view;
+    NewsListResponseModel *model;
+    int i;
 }
+
+@property (nonatomic, strong) UIImageView *headImageView;
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIPageControl *pageControl;
 @end
 
 @implementation HomePageViewController
@@ -29,7 +36,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    automaticallyAdjustsScrollViewInsets根据按所在界面的status bar，navigationbar，与tabbar的高度，自动调整scrollview的 inset,设置为no，不让viewController调整，我们自己修改布局即可~
-    [self initData];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Home_Icon"] style:UIBarButtonItemStylePlain target:self action:@selector(OpenLeftVC:)];
@@ -51,17 +57,21 @@
     [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 
 
-    HeadView *headView = [[HeadView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
+//    HeadView* headView = [[HeadView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
+    view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
+
     homeTableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y  , self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     homeTableView.delegate = self;
     homeTableView.dataSource = self;
     homeTableView.rowHeight = 80;
-    homeTableView.tableHeaderView = headView;
+    homeTableView.tableHeaderView = view;
     homeTableView.showsVerticalScrollIndicator = NO;
     homeTableView.showsHorizontalScrollIndicator = NO;
-    
     [self.view addSubview:homeTableView];
-    [homeTableView reloadData];
+    
+    [self initHeadView];
+    [self initData];
+
 }
 -(void)initData
 {
@@ -80,11 +90,38 @@
             NSLog(@"%@ %@", response, responseObject);
         }
         
-      NewsListResponseModel *model =[NewsListResponseModel yy_modelWithJSON:responseObject];
+        model =[NewsListResponseModel yy_modelWithJSON:responseObject];
         _homeArrayList = model.stories;
+        _topArray = model.topStories;
+        for (i = 0; i < _topArray.count; i ++) {
+            TopNewsResponseModel *topNews = [_topArray objectAtIndex:i];
+            _headImageView = [[UIImageView alloc] initWithFrame:view.frame];
+            [_headImageView sd_setImageWithURL:[NSURL URLWithString:topNews.image]placeholderImage:[UIImage imageNamed:@"Home_Icon"] options:SDWebImageRetryFailed];
+        }
+        _scrollView.contentSize = CGSizeMake(i * 320, 200);
+        [_scrollView addSubview:_headImageView];
         [homeTableView reloadData];
     }];
     [dataTask resume];
+}
+
+-(void)initHeadView
+{
+    _scrollView = [[UIScrollView alloc] initWithFrame:view.frame];
+//    _scrollView.contentSize = CGSizeMake(i * 320, 200);
+    _scrollView.delegate = self;
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.showsVerticalScrollIndicator = NO;
+    _scrollView.pagingEnabled = YES;
+    _scrollView.scrollEnabled = YES;
+    [view addSubview:_scrollView];
+    
+    _pageControl = [[UIPageControl alloc] initWithFrame:view.frame];
+    _pageControl.numberOfPages = _topArray.count;
+    _pageControl.enabled = NO;
+    _pageControl.currentPage = 0;
+    [_scrollView addSubview:_pageControl];
+    
 }
 -(void)OpenLeftVC:(id)sender
 {
@@ -118,19 +155,19 @@
         [cell.contentView addSubview:imageView];
         
     }
-    NewsResponseModel *model = [_homeArrayList objectAtIndex:indexPath.row];
-    
+    NewsResponseModel *news = [_homeArrayList objectAtIndex:indexPath.row];
+
     UILabel *homeLabel = (UILabel *)[cell.contentView viewWithTag:1];
-    homeLabel.text = model.title;
+    homeLabel.text = news.title;
     homeLabel.numberOfLines = 0;
     homeLabel.lineBreakMode = NSLineBreakByWordWrapping;
     homeLabel.font = [UIFont systemFontOfSize:15];
     
     UIImageView *newsImageView = (UIImageView *)[cell.contentView viewWithTag:2];
     
-    if (model.images.count > 0) {
-        NSString *urlStr = [model.images objectAtIndex:0];
-        [newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageLowPriority];
+    if (news.images.count > 0) {
+        NSString *urlStr = [news.images objectAtIndex:0];
+        [newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"Home_Icon"] options:SDWebImageLowPriority];
     }
     
     return cell;

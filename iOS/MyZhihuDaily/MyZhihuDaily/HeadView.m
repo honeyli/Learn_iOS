@@ -7,7 +7,9 @@
 //
 
 #import "HeadView.h"
-
+#import "NewsListResponseModel.h"
+#import "UIImageView+webCache.h"
+#import "TopNewsResponseModel.h"
 #define   kScreenWidth  [UIScreen mainScreen].bounds.size.width
 
 @implementation HeadView
@@ -25,7 +27,7 @@
 {
     int i;
     self.frame = CGRectMake(0, 0, kScreenWidth, 200);
-    _imageArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"bg"],[UIImage imageNamed:@"bg"],[UIImage imageNamed:@"bg"],[UIImage imageNamed:@"bg"], nil];
+    _imageArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"bg"], [UIImage imageNamed:@"bg"], nil];
     for ( i = 0; i < _imageArray.count; i ++) {
         _headImageView = [[UIImageView alloc] init];
         _headImageView.image = [UIImage animatedImageWithImages:_imageArray duration:5.0];
@@ -65,14 +67,14 @@
         [_scrollView addSubview:_pageControl];
 }
 
-////用户滑动页面停下后调用改函数
-//-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-//{
-//    //更新UIpageController的当前页
-//    CGPoint offset = scrollView.contentOffset;
-//    CGRect bounds = scrollView.frame;
-//    [_pageControl setCurrentPage:offset.x / bounds.size.width];
-//    NSLog(@"%f",offset.x / bounds.size.width);
-//}
-//
+//用户滑动页面停下后调用改函数
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    //更新UIpageController的当前页
+    CGPoint offset = scrollView.contentOffset;
+    CGRect bounds = scrollView.frame;
+    [_pageControl setCurrentPage:offset.x / bounds.size.width];
+    NSLog(@"%f",offset.x / bounds.size.width);
+}
+
 @end
