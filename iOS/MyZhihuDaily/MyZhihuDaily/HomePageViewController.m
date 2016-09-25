@@ -95,11 +95,20 @@
         _topArray = model.topStories;
         for (i = 0; i < _topArray.count; i ++) {
             TopNewsResponseModel *topNews = [_topArray objectAtIndex:i];
-            _headImageView = [[UIImageView alloc] initWithFrame:view.frame];
+            _headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * kScreenWidth, 0, kScreenWidth, 200)];
             [_headImageView sd_setImageWithURL:[NSURL URLWithString:topNews.image]placeholderImage:[UIImage imageNamed:@"Home_Icon"] options:SDWebImageRetryFailed];
+            [_scrollView addSubview:_headImageView];
         }
-        _scrollView.contentSize = CGSizeMake(i * 320, 200);
-        [_scrollView addSubview:_headImageView];
+        [_scrollView bringSubviewToFront:_pageControl];
+        _scrollView.contentSize = CGSizeMake(_topArray.count * kScreenWidth, 200);
+        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 150, kScreenWidth, 10)];
+        _pageControl.numberOfPages = _topArray.count;
+        _pageControl.enabled = NO;
+        _pageControl.currentPage = 0;
+        [view addSubview:_pageControl];
+        
+        
+
         [homeTableView reloadData];
     }];
     [dataTask resume];
@@ -108,19 +117,12 @@
 -(void)initHeadView
 {
     _scrollView = [[UIScrollView alloc] initWithFrame:view.frame];
-//    _scrollView.contentSize = CGSizeMake(i * 320, 200);
     _scrollView.delegate = self;
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.pagingEnabled = YES;
     _scrollView.scrollEnabled = YES;
     [view addSubview:_scrollView];
-    
-    _pageControl = [[UIPageControl alloc] initWithFrame:view.frame];
-    _pageControl.numberOfPages = _topArray.count;
-    _pageControl.enabled = NO;
-    _pageControl.currentPage = 0;
-    [_scrollView addSubview:_pageControl];
     
 }
 -(void)OpenLeftVC:(id)sender

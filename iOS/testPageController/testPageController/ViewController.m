@@ -26,7 +26,7 @@
     array = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"1"] ,[UIImage imageNamed:@"2"] ,[UIImage imageNamed:@"3"], nil];
     for ( i = 0; i < array.count; i ++) {
         imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
-        imageView.image = [UIImage animatedImageWithImages:array duration:5.0];
+        
     }
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.frame = scrollView.frame;
@@ -48,7 +48,6 @@
     pageControl.numberOfPages = array.count;
     [pageControl addTarget:self action:@selector(pageTurn:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:pageControl];
-    [scrollView addSubview:pageControl];
 }
 
 -(void)createLabel
