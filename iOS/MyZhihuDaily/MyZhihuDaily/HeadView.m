@@ -13,68 +13,55 @@
 #define   kScreenWidth  [UIScreen mainScreen].bounds.size.width
 
 @implementation HeadView
-
+{
+    NewsListResponseModel *data;
+}
 -(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initHeadViewUI];
+        [self initScrollView];
+        [self initTopTitles];
     }
     return  self;
 }
 
--(void)initHeadViewUI
+-(void)initTopdata
 {
     int i;
-    self.frame = CGRectMake(0, 0, kScreenWidth, 200);
-    _imageArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"bg"], [UIImage imageNamed:@"bg"], nil];
-    for ( i = 0; i < _imageArray.count; i ++) {
-        _headImageView = [[UIImageView alloc] init];
-        _headImageView.image = [UIImage animatedImageWithImages:_imageArray duration:5.0];
+    for (i = 0; i < _topArray.count; i ++) {
+        TopNewsResponseModel *topNews = [_topArray objectAtIndex:i];
+        _headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * kScreenWidth, 0, kScreenWidth, 200)];
+        [_headImageView sd_setImageWithURL:[NSURL URLWithString:topNews.image]placeholderImage:[UIImage imageNamed:@"Home_Icon"] options:SDWebImageRetryFailed];
+        [_scrollView addSubview:_headImageView];
     }
+    [_scrollView bringSubviewToFront:_pageControl];
+    _scrollView.contentSize = CGSizeMake(_topArray.count * kScreenWidth, 200);
+    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 150, kScreenWidth, 10)];
+    _pageControl.numberOfPages = _topArray.count;
+    _pageControl.enabled = NO;
+    _pageControl.currentPage = 0;
+    [self addSubview:_pageControl];
+}
+
+-(void)initScrollView
+{
     _scrollView = [[UIScrollView alloc] initWithFrame:self.frame];
-    _scrollView.contentSize = CGSizeMake(i * 320, 200);
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.pagingEnabled = YES;
     _scrollView.scrollEnabled = YES;
     [self addSubview:_scrollView];
-    [self pageControl];
-    [self initImageView];
-}
-//-(void)initScrollView
-//{
-//    _scrollView = [[UIScrollView alloc] initWithFrame:self.frame];
-//    _scrollView.contentSize = CGSizeMake(i * 320, 200);
-//    _scrollView.showsHorizontalScrollIndicator = NO;
-//    _scrollView.showsVerticalScrollIndicator = NO;
-//    _scrollView.pagingEnabled = NO;
-//    [self addSubview:_scrollView];
-//}
--(void)initImageView
-{
-    _headImageView.frame = self.frame;
-    _headImageView.contentMode = UIViewContentModeScaleToFill;
-    [_scrollView addSubview:_headImageView];
+    
 }
 
--(void)initPageControl
+-(void)initTopTitles
 {
-        _pageControl = [[UIPageControl alloc] init];
-        _pageControl.frame = self.frame;
-        _pageControl.numberOfPages = _imageArray.count ;//总的图片页数
-        _pageControl.currentPage = 0;//当前页
-        [_scrollView addSubview:_pageControl];
-}
-
-//用户滑动页面停下后调用改函数
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    //更新UIpageController的当前页
-    CGPoint offset = scrollView.contentOffset;
-    CGRect bounds = scrollView.frame;
-    [_pageControl setCurrentPage:offset.x / bounds.size.width];
-    NSLog(@"%f",offset.x / bounds.size.width);
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(10, 60, kScreenWidth - 100, 35);
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.text = @"flskdfjsdsldkfjsasldkjfsldfjslkdfjslkdfjslkdfjsklfj";
+    [_headImageView addSubview:label];
 }
 
 @end

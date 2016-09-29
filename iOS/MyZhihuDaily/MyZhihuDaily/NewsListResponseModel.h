@@ -10,6 +10,6 @@
 #import "NewsResponseModel.h"
 @interface NewsListResponseModel : NSObject
 @property (nonatomic, strong) NSString *date;
-@property (nonatomic, strong) NSArray *stories;
+@property (nonatomic, strong) NSMutableArray *stories;
 @property (nonatomic, strong) NSArray *topStories;
 @end

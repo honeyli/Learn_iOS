@@ -12,5 +12,8 @@
 @property (nonatomic, strong) UIImageView *headImageView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIPageControl *pageControl;
-@property (nonatomic, strong) NSArray *imageArray;
+@property (nonatomic, strong) NSArray *topArray;
+
+-(void)initTopdata;
+
 @end

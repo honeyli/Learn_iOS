@@ -8,4 +8,6 @@ target 'MyZhihuDaily' do
 	pod 'SDWebImage';
 	pod 'YYModel';
 	pod 'Mantle';
+	pod 'MJRefresh';
+	pod 'MBProgressHUD';
 end
