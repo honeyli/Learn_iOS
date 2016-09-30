@@ -26,7 +26,7 @@
     return  self;
 }
 
--(void)initTopdata
+-(void)showTopNews
 {
     int i;
     for (i = 0; i < _topArray.count; i ++) {

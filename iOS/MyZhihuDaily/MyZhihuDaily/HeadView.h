@@ -14,6 +14,6 @@
 @property (nonatomic, strong) UIPageControl *pageControl;
 @property (nonatomic, strong) NSArray *topArray;
 
--(void)initTopdata;
+-(void)showTopNews;
 
 @end

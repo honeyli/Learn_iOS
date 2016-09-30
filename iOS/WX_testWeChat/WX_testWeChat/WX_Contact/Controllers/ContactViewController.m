@@ -23,10 +23,6 @@
 
 @implementation ContactViewController
 
--(void)loadContactDatas
-{
- 
-}
 
 - (void)loadContacts {
     ContactModel *datatitle1 = [[ContactModel alloc] init];

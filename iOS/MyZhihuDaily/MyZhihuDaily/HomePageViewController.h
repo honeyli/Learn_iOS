@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "IIViewDeckController.h"
+#import "NewsResponseModel.h"
 @interface HomePageViewController : UIViewController
 @property (nonatomic, strong) NSMutableArray *homeArrayList;
 @property (nonatomic, strong) NSMutableArray *previousArray;
+
 @end

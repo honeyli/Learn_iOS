@@ -12,7 +12,6 @@
 #import "NewsResponseModel.h"
 #import "TopNewsResponseModel.h"
 #import "HomepageCell.h"
-#import "PreviousNewsModel.h"
 
 #import "IIViewDeckController.h"
 #import "AFNetworking.h"
@@ -27,9 +26,8 @@
 
     UITableView *homeTableView;
     HeadView *headView;
-    NewsListResponseModel *model;
     CGFloat navBarAlpha;
-    NewsListResponseModel *previousNews;
+    NSMutableArray *title;
 }
 @property (nonatomic, strong) NSString *currentDate;
 @property (nonatomic, strong) UILabel *label;
@@ -39,14 +37,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self initNav];
+
+    _homeArrayList = [[NSMutableArray alloc] init];
+    [self setNav];
     [self createTableView];
-    [self initData];
+    [self requestLatestNews];
     
     homeTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     homeTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
-//    homeTableView.mj_footer.automaticallyHidden = YES;
 }
 
 - (void)changeNavColor
@@ -62,7 +60,7 @@
     [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 }
 
--(void)initNav
+-(void)setNav
 {
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
@@ -89,7 +87,7 @@
     
 }
 
--(void)initData
+-(void)requestLatestNews
 {
     NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *sessionManager = [[AFURLSessionManager alloc] initWithSessionConfiguration:sessionConfiguration];
@@ -100,19 +98,20 @@
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
         NSLog(@" http response : %ld",(long)httpResponse.statusCode);
         
-        if (error) {
-            NSLog(@"%@", error);
-        }else
-        {
-            NSLog(@"%@ %@", response, responseObject);
+        if (httpResponse.statusCode == 200) {
+           NewsListResponseModel *model =[NewsListResponseModel yy_modelWithJSON:responseObject];
+            [_homeArrayList removeAllObjects];
+            [_homeArrayList addObject:model];
+            headView.topArray = model.topStories;
+            self.currentDate = model.date;
+            [headView showTopNews];
+            [homeTableView reloadData];
         }
-        model =[NewsListResponseModel yy_modelWithJSON:responseObject];
-        _homeArrayList = model.stories;
-        headView.topArray = model.topStories;
-        self.currentDate = model.date;
-        [headView initTopdata];
+        else
+        {
+                //toast
+        }
         
-        [homeTableView reloadData];
     }];
     [dataTask resume];
 }
@@ -137,15 +136,16 @@
             NSLog(@"%@ %@",response,responseObject);
         }
 
-        previousNews = [NewsListResponseModel yy_modelWithJSON:responseObject];
+        NewsListResponseModel *previousNews = [NewsListResponseModel yy_modelWithJSON:responseObject];
         NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
         self.currentDate = previousNews.date;
         for (int i = 0; i < previousNews.stories.count; i ++) {
-            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_homeArrayList.count + i inSection:0];
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:[_homeArrayList count]];
             [indexPaths addObject:indexPath];
         }
-        [self.homeArrayList addObjectsFromArray:previousNews.stories];
-        [homeTableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+        NSIndexSet *set = [NSIndexSet indexSetWithIndex:[_homeArrayList count]];
+        [_homeArrayList addObject:previousNews];
+        [homeTableView insertSections:set withRowAnimation:UITableViewRowAnimationNone];
         [homeTableView.mj_footer endRefreshing];
     }];
     [dataTask resume];
@@ -161,9 +161,18 @@
 {
     return [_homeArrayList count];
 }
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:section];
+    return newsList.date;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[_homeArrayList objectAtIndex:section] count];
+
+    NewsListResponseModel *newsListModel = [_homeArrayList objectAtIndex:section];
+    return [newsListModel.stories count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -172,8 +181,8 @@
     if (!cell) {
         cell = [[HomepageCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifider];
     }
-    NSMutableArray *array = [_homeArrayList objectAtIndex:indexPath.section];
-    NewsResponseModel *news = [array objectAtIndex:indexPath.row];
+    NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:indexPath.section];
+    NewsResponseModel *news = [newsList.stories objectAtIndex:indexPath.row];
     [cell configureCellWithModel:news];
     return cell;
 }
@@ -198,7 +207,7 @@
 
 -(void)refresh
 {
-    [self initData];
+    [self requestLatestNews];
     [homeTableView reloadData];
 }
 
