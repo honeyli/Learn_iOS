@@ -7,7 +7,7 @@
 //
 
 #import "DetailNewsViewController.h"
-
+#import "SetBarView.h"
 @interface DetailNewsViewController ()
 
 @end
@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    SetBarView *barView = [[SetBarView alloc] init];
+    [self.view addSubview:barView];
+    
     
 }
 

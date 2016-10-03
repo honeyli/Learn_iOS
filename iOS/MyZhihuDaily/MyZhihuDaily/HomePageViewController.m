@@ -12,14 +12,18 @@
 #import "NewsResponseModel.h"
 #import "TopNewsResponseModel.h"
 #import "HomepageCell.h"
+#import "DetailNewsViewController.h"
+#import "SectionHeaderView.h"
 
 #import "IIViewDeckController.h"
 #import "AFNetworking.h"
 #import "YYModel.h"
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
+#import "MBProgressHUD.h"
 
 #define   kScreenWidth  [UIScreen mainScreen].bounds.size.width
+
 
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 {
@@ -30,10 +34,12 @@
     NSMutableArray *title;
 }
 @property (nonatomic, strong) NSString *currentDate;
-@property (nonatomic, strong) UILabel *label;
 @end
 
 @implementation HomePageViewController
+
+static NSString * const JPHeaderId = @"header";
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -109,7 +115,13 @@
         }
         else
         {
-                //toast
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            hud.mode = MBProgressHUDModeText;
+            hud.label.text = @"加载失败....";
+            hud.margin = 10.f;
+            hud.removeFromSuperViewOnHide = YES;
+            [hud  hideAnimated:YES afterDelay:3];
+
         }
         
     }];
@@ -162,15 +174,8 @@
     return [_homeArrayList count];
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:section];
-    return newsList.date;
-}
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     NewsListResponseModel *newsListModel = [_homeArrayList objectAtIndex:section];
     return [newsListModel.stories count];
 }
@@ -186,6 +191,28 @@
     [cell configureCellWithModel:news];
     return cell;
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:section];
+    SectionHeaderView *headerView = [SectionHeaderView headerViewWithTableView:tableView];
+    headerView.dateLabel.text = newsList.date;
+    [headerView setData:newsList.date];
+    return headerView;
+}
+-(void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return 0;
+    }
+    return 30;
+}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     
@@ -216,4 +243,10 @@
     [self loadMoreRequest];
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailNewsViewController *detailNews = [[DetailNewsViewController alloc] init];
+    [self.navigationController pushViewController:detailNews animated:YES];
+}
 @end
