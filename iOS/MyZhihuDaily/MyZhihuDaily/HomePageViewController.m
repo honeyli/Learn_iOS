@@ -34,6 +34,7 @@
     NSMutableArray *title;
 }
 @property (nonatomic, strong) NSString *currentDate;
+@property (nonatomic, strong) NSString *storyID;
 @end
 
 @implementation HomePageViewController
@@ -51,6 +52,7 @@ static NSString * const JPHeaderId = @"header";
     
     homeTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     homeTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
+    homeTableView.mj_footer.hidden = YES;
 }
 
 - (void)changeNavColor
@@ -121,7 +123,7 @@ static NSString * const JPHeaderId = @"header";
             hud.margin = 10.f;
             hud.removeFromSuperViewOnHide = YES;
             [hud  hideAnimated:YES afterDelay:3];
-
+            [homeTableView.mj_footer endRefreshing];
         }
         
     }];
@@ -151,6 +153,7 @@ static NSString * const JPHeaderId = @"header";
         NewsListResponseModel *previousNews = [NewsListResponseModel yy_modelWithJSON:responseObject];
         NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
         self.currentDate = previousNews.date;
+        
         for (int i = 0; i < previousNews.stories.count; i ++) {
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:[_homeArrayList count]];
             [indexPaths addObject:indexPath];
@@ -243,10 +246,14 @@ static NSString * const JPHeaderId = @"header";
     [self loadMoreRequest];
 }
 
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:indexPath.section];
+    NewsResponseModel *news = [newsList.stories objectAtIndex:indexPath.row];
+    
     DetailNewsViewController *detailNews = [[DetailNewsViewController alloc] init];
+    [detailNews receiveModel:news];
     [self.navigationController pushViewController:detailNews animated:YES];
+    
 }
 @end

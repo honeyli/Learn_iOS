@@ -43,7 +43,7 @@
     //创建UIpageViewController
     pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 400, bounds.size.width, 30)];//位置在最下方
     pageControl.numberOfPages = 3 ;//总的图片页数
-    pageControl.currentPage = 0;//当前页
+    pageControl.currentPage = 1;//当前页
     [pageControl addTarget:self action:@selector(pageTurn:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:pageControl];
 }

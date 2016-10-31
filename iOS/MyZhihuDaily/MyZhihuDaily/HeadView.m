@@ -14,13 +14,13 @@
 @implementation HeadView
 {
     UILabel *topLabel;
+    NSTimer *timer;
 }
 -(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         [self initScrollView];
-        
     }
     return  self;
 }
@@ -35,7 +35,7 @@
         [_scrollView addSubview:_headImageView];
         [self topTitle];
         topLabel.text = topNews.title;
-        
+
     }
     [_scrollView bringSubviewToFront:_pageControl];
     _scrollView.contentSize = CGSizeMake(_topArray.count * kScreenWidth, 200);
@@ -44,6 +44,25 @@
     _pageControl.enabled = NO;
     _pageControl.currentPage = 0;
     [self addSubview:_pageControl];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(topTimer) userInfo:nil repeats:YES];
+}
+-(void)topTimer
+{
+    
+    if ( _pageControl.currentPage == _topArray.count - 1) {
+        _pageControl.currentPage = 0;
+    }else
+    {
+        _pageControl.currentPage ++;
+    }
+    CGSize viewSize = _scrollView.frame.size;
+    CGRect rect = CGRectMake(_pageControl.currentPage * viewSize.width, 0, viewSize.width, viewSize.height);
+    BOOL animate = YES;
+    if (_pageControl.currentPage == 0) {
+        animate = NO;
+    }
+    [_scrollView scrollRectToVisible:rect animated:animate];
 }
 
 -(void)initScrollView
@@ -52,6 +71,7 @@
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.pagingEnabled = YES;
+    _scrollView.delegate = self;
     _scrollView.scrollEnabled = YES;
     [self addSubview:_scrollView];
     
@@ -67,22 +87,6 @@
     topLabel.numberOfLines = 0;
     topLabel.font = [UIFont systemFontOfSize:19];
     [_headImageView addSubview:topLabel];
-}
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
-//    int page = (scrollView.contentOffset.x / scrollView.frame.size.width);
-//    if(page != _pageControl.currentPage)
-//    {
-//        _pageControl.currentPage = page;
-//    }
-//}
-
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    //更新UIpageController的当前页
-    CGPoint offset = scrollView.contentOffset;
-    CGRect bounds = scrollView.frame;
-    [_pageControl setCurrentPage:offset.x / bounds.size.width];
 }
 
 @end

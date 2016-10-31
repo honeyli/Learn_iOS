@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NewsResponseModel.h"
 @interface DetailNewsViewController : UIViewController
+
+@property (nonatomic, assign) NSInteger storyID;
+
+-(void)receiveModel:(NewsResponseModel *)model;
 
 @end

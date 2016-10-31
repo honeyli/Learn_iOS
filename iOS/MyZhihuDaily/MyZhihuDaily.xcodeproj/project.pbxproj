@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1B3CD780F4F36B1ECCEDAA8E /* libPods-MyZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CDA6673126F71E8B45D43 /* libPods-MyZhihuDaily.a */; };
+		312922B51DA8C8CA0059885C /* DetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 312922B41DA8C8CA0059885C /* DetailHeaderView.m */; };
 		317ECCB81D9A538900E8D00E /* TopNewsResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 317ECCB71D9A538900E8D00E /* TopNewsResponseModel.m */; };
 		317ECCBB1D9A53A300E8D00E /* NewsResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 317ECCBA1D9A53A300E8D00E /* NewsResponseModel.m */; };
 		318AAC5B1D93A608001EF7FC /* NewsListResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 318AAC5A1D93A608001EF7FC /* NewsListResponseModel.m */; };
+		31A1D1A51DC5B20500D97652 /* DetailNewsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A1D1A41DC5B20500D97652 /* DetailNewsResponse.m */; };
 		31A575531DA0F555001C4746 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A575521DA0F555001C4746 /* SectionHeaderView.m */; };
 		31B61A321D92C1E5004340B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B61A311D92C1E5004340B8 /* main.m */; };
 		31B61A381D92C1E5004340B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B61A371D92C1E5004340B8 /* ViewController.m */; };
@@ -29,7 +31,6 @@
 		31B61AB91D92C52B004340B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B61AB81D92C52B004340B8 /* Assets.xcassets */; };
 		31D74B1B1D9D052D0047B190 /* DetailNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D74B1A1D9D052D0047B190 /* DetailNewsViewController.m */; };
 		31D74B211D9D0E5F0047B190 /* DetailNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D74B201D9D0E5F0047B190 /* DetailNewsView.m */; };
-		31D74B241D9F7E560047B190 /* SetBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D74B231D9F7E560047B190 /* SetBarView.m */; };
 		31ED134C1D98EA6800CB5A56 /* HomepageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED134B1D98EA6800CB5A56 /* HomepageCell.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		221CDA6673126F71E8B45D43 /* libPods-MyZhihuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyZhihuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		312922B31DA8C8CA0059885C /* DetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailHeaderView.h; sourceTree = "<group>"; };
+		312922B41DA8C8CA0059885C /* DetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailHeaderView.m; sourceTree = "<group>"; };
 		317ECCB61D9A538900E8D00E /* TopNewsResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopNewsResponseModel.h; path = MyZhihuDaily/TopNewsResponseModel.h; sourceTree = "<group>"; };
 		317ECCB71D9A538900E8D00E /* TopNewsResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopNewsResponseModel.m; path = MyZhihuDaily/TopNewsResponseModel.m; sourceTree = "<group>"; };
 		317ECCB91D9A53A300E8D00E /* NewsResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsResponseModel.h; path = MyZhihuDaily/NewsResponseModel.h; sourceTree = "<group>"; };
@@ -59,6 +62,8 @@
 		318AAC591D93A608001EF7FC /* NewsListResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListResponseModel.h; path = MyZhihuDaily/NewsListResponseModel.h; sourceTree = "<group>"; };
 		318AAC5A1D93A608001EF7FC /* NewsListResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListResponseModel.m; path = MyZhihuDaily/NewsListResponseModel.m; sourceTree = "<group>"; };
 		318AAC761D93BF9E001EF7FC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		31A1D1A31DC5B20500D97652 /* DetailNewsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailNewsResponse.h; path = MyZhihuDaily/DetailNewsResponse.h; sourceTree = "<group>"; };
+		31A1D1A41DC5B20500D97652 /* DetailNewsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailNewsResponse.m; path = MyZhihuDaily/DetailNewsResponse.m; sourceTree = "<group>"; };
 		31A575511DA0F555001C4746 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
 		31A575521DA0F555001C4746 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		31B61A2D1D92C1E5004340B8 /* MyZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +100,6 @@
 		31D74B1A1D9D052D0047B190 /* DetailNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNewsViewController.m; sourceTree = "<group>"; };
 		31D74B1F1D9D0E5F0047B190 /* DetailNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailNewsView.h; sourceTree = "<group>"; };
 		31D74B201D9D0E5F0047B190 /* DetailNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNewsView.m; sourceTree = "<group>"; };
-		31D74B221D9F7E560047B190 /* SetBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetBarView.h; sourceTree = "<group>"; };
-		31D74B231D9F7E560047B190 /* SetBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetBarView.m; sourceTree = "<group>"; };
 		31ED134A1D98EA6800CB5A56 /* HomepageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageCell.h; sourceTree = "<group>"; };
 		31ED134B1D98EA6800CB5A56 /* HomepageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageCell.m; sourceTree = "<group>"; };
 		63AC05C865ADA5C519213A65 /* Pods-MyZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyZhihuDaily/Pods-MyZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				317ECCB71D9A538900E8D00E /* TopNewsResponseModel.m */,
 				317ECCB91D9A53A300E8D00E /* NewsResponseModel.h */,
 				317ECCBA1D9A53A300E8D00E /* NewsResponseModel.m */,
+				31A1D1A31DC5B20500D97652 /* DetailNewsResponse.h */,
+				31A1D1A41DC5B20500D97652 /* DetailNewsResponse.m */,
 			);
 			name = JsonModels;
 			sourceTree = "<group>";
@@ -348,8 +353,8 @@
 			children = (
 				31D74B1F1D9D0E5F0047B190 /* DetailNewsView.h */,
 				31D74B201D9D0E5F0047B190 /* DetailNewsView.m */,
-				31D74B221D9F7E560047B190 /* SetBarView.h */,
-				31D74B231D9F7E560047B190 /* SetBarView.m */,
+				312922B31DA8C8CA0059885C /* DetailHeaderView.h */,
+				312922B41DA8C8CA0059885C /* DetailHeaderView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -541,12 +546,13 @@
 				31B61A381D92C1E5004340B8 /* ViewController.m in Sources */,
 				31B61AA81D92C4DB004340B8 /* HomePageViewController.m in Sources */,
 				31B61AB21D92C511004340B8 /* FooterView.m in Sources */,
-				31D74B241D9F7E560047B190 /* SetBarView.m in Sources */,
 				318AAC5B1D93A608001EF7FC /* NewsListResponseModel.m in Sources */,
 				31D74B211D9D0E5F0047B190 /* DetailNewsView.m in Sources */,
 				31B61AB31D92C511004340B8 /* HearderView.m in Sources */,
+				312922B51DA8C8CA0059885C /* DetailHeaderView.m in Sources */,
 				31A575531DA0F555001C4746 /* SectionHeaderView.m in Sources */,
 				31B61AA51D92C4CF004340B8 /* HeadView.m in Sources */,
+				31A1D1A51DC5B20500D97652 /* DetailNewsResponse.m in Sources */,
 				31B61AB41D92C511004340B8 /* LeftMenuTableViewCell.m in Sources */,
 				31B61AAB1D92C4E7004340B8 /* LeftMenuModel.m in Sources */,
 				31B61A9F1D92C4AB004340B8 /* AppDelegate.m in Sources */,

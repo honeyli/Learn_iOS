@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SetBarView : UIView
+@interface DetailToolBarView : UIView
 
 @end

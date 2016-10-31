@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HeadView : UIView
+@interface HeadView : UIView <UIScrollViewDelegate>
 @property (nonatomic, strong) UIImageView *headImageView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIPageControl *pageControl;

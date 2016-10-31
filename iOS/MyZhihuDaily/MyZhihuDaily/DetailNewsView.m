@@ -8,8 +8,13 @@
 
 #import "DetailNewsView.h"
 
-@interface DetailNewsView ()
 
+@interface DetailNewsView ()<UIScrollViewDelegate, UIWebViewDelegate>
+
+@property (nonatomic, strong) UIWebView *webView;
+@property (nonatomic, strong) UIButton *nextButton;
+@property (nonatomic, strong) UIButton *previousButton;
+@property (nonatomic, strong) DetailNewsResponse *news;
 @end
 
 @implementation DetailNewsView
@@ -18,14 +23,29 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self initUI];
-    }
+     }
     return self;
+}
+
+-(void)updateNewsWithDetailNews:(DetailNewsResponse *)detailNews
+{
+    if ([detailNews isEqual:_news] || !detailNews) {
+        return;
+    }
+    self.news = detailNews;
+    [_webView loadHTMLString:[NSString stringWithFormat:@"<html><head><link rel=\"stylesheet\" href=%@></head><body>%@</body></html>",[_news.css firstObject],_news.body] baseURL:nil];
+    
 }
 
 -(void)initUI
 {
-    UIToolbar *toolBar = [[UIToolbar alloc] init];
-
+    self.frame = CGRectMake(0, 200, self.frame.size.width, self.frame.size.height);
+    self.webView = [[UIWebView alloc] init];
+    self.webView.backgroundColor = [UIColor clearColor];
+    self.webView.frame = self.frame;
+    self.webView.scrollView.delegate = self;
+    self.webView.delegate = self;
+    [self addSubview:self.webView];
 }
 
 @end
