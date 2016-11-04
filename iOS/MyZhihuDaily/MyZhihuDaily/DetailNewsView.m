@@ -33,8 +33,8 @@
         return;
     }
     self.news = detailNews;
-    [_webView loadHTMLString:[NSString stringWithFormat:@"<html><head><link rel=\"stylesheet\" href=%@></head><body>%@</body></html>",[_news.css firstObject],_news.body] baseURL:nil];
-    
+//    [_webView loadHTMLString:[NSString stringWithFormat:@"<html><head><link rel=\"stylesheet\" href=%@></head><body>%@</body></html>",[_news.css firstObject],_news.body] baseURL:nil];
+//    
 }
 
 -(void)initUI

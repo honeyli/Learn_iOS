@@ -113,6 +113,7 @@ static NSString * const JPHeaderId = @"header";
             headView.topArray = model.topStories;
             self.currentDate = model.date;
             [headView showTopNews];
+            homeTableView.mj_footer.hidden = NO;
             [homeTableView reloadData];
         }
         else
@@ -248,6 +249,8 @@ static NSString * const JPHeaderId = @"header";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:indexPath.section];
     NewsResponseModel *news = [newsList.stories objectAtIndex:indexPath.row];
     

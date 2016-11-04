@@ -37,6 +37,7 @@
         topLabel.text = topNews.title;
 
     }
+    _headImageView.contentMode = UIViewContentModeScaleAspectFill;
     [_scrollView bringSubviewToFront:_pageControl];
     _scrollView.contentSize = CGSizeMake(_topArray.count * kScreenWidth, 200);
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 170, kScreenWidth, 30)];

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DetailNewsResponse.h"
 @interface DetailHeaderView : UIView
+
+-(void)updateHeaderViewWithNews:(DetailNewsResponse *)News;
 
 @end
