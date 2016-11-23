@@ -11,6 +11,8 @@
 @interface DetailNewsViewController : UIViewController
 
 @property (nonatomic, assign) NSInteger storyID;
+@property (nonatomic, assign) NSInteger section;
+
 
 -(void)receiveModel:(NewsResponseModel *)model;
 

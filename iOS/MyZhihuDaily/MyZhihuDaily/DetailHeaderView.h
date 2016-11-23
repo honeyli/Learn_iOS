@@ -10,6 +10,6 @@
 #import "DetailNewsResponse.h"
 @interface DetailHeaderView : UIView
 
--(void)updateHeaderViewWithNews:(DetailNewsResponse *)News;
+-(void)updateHeaderViewWithModel:(DetailNewsResponse *)Model;
 
 @end

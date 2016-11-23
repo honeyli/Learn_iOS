@@ -34,6 +34,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TOWebViewController-TOWebViewControllerLocalizable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TOWebViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ViewDeck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,12 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70BC44266C6FFE30D2C57129458E070B</key>
+		<key>45CA71A8550CBDC6B7A183089030B2A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B554568D74AFB6B27672E469DFA07F8</key>
+		<key>70BC44266C6FFE30D2C57129458E070B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,7 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A399081DDEAE6987DFA614B2EDDB27F9</key>
+		<key>A2E9FFE275ED7EF7B6D3277CC2B36F8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A56F727135296C303141CB3CD4F0D4A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2984C3E715500E5347BFFA2926CCC49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB2ED614F3F0C498F0B8985B083B292F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EBB2BF795D1274BF4F2AEE9B281EF55B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F357FFFEAA88FEE3E9208FBEA4F554E4</key>
+		<key>FB58BA52D372534859F4734981EA58FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

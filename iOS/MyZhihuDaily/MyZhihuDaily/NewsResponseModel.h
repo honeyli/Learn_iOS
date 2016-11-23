@@ -11,6 +11,6 @@
 @interface NewsResponseModel : NSObject
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, assign) NSInteger type;
-@property (nonatomic, assign) long storyID;
+@property (nonatomic, assign) NSInteger storyID;
 @property (nonatomic, strong) NSString *title;
 @end

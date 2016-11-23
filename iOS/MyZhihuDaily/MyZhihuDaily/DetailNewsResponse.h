@@ -15,7 +15,7 @@
 @property (nonnull, strong) NSString *title;
 @property (nonnull, strong) NSString *image;
 @property (nonnull, strong) NSString *share_url;
-@property (nonnull, strong) NSString *storyID;
+@property (nonatomic, assign) NSInteger storyID;
 @property (nonatomic, strong, nullable) NSArray<NSString *> *js;
 @property (nonatomic, strong, nullable) NSArray<NSString *> *images;
 @property (nonatomic, assign) NSInteger type;

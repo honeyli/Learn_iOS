@@ -9,20 +9,24 @@
 #import "DetailNewsViewController.h"
 #import "HomePageViewController.h"
 #import "DetailNewsResponse.h"
+#import "DetailNewsView.h"
+#import "DetailHeaderView.h"
+#import "NewsListResponseModel.h"
 
 #import "AFNetWorking.h"
 #import "YYModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "TOWebViewController.h"
 
-@interface DetailNewsViewController ()<UIWebViewDelegate, UIScrollViewDelegate>
+#define STATUS_BAR_TAP_NOTIFICATION @"STATUS_BAR_TAP_NOTIFICATION"
+
+@interface DetailNewsViewController ()<SwitchNewsDelegate>
+
 {
-    UIWebView *webView;
+    NSInteger nextStoryID;
 }
-
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *imageSourceLabel;
-@property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UIImageView *coverImageView;
+@property (nonatomic, strong) DetailNewsView *detailNewsView;
+@property (nonatomic, strong) DetailHeaderView *headerView;
 
 @end
 
@@ -32,91 +36,51 @@
     self.storyID = model.storyID;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleStatusBarTapNotification:) name:STATUS_BAR_TAP_NOTIFICATION object:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:STATUS_BAR_TAP_NOTIFICATION object:nil];
+}
+
+#pragma Observer Method
+
+-(void)handleStatusBarTapNotification:(NSNotification *)notification
+{
+    [_detailNewsView setContentOffset:CGPointZero animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.navigationController.navigationBar.translucent = YES;
-   
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:16]};
-    self.navigationController.navigationBar.translucent = YES;
-    
-    
-    CGRect rect = CGRectMake(0.0f, 0.0f, self.view.frame.size.width, 64);
-    UIColor *color = [UIColor colorWithRed:35/255.0 green:96/255.0 blue:200/255.0 alpha:0];
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
-
-
-
-
     
     [self initUI];
+    [self initToolBarView];
     [self initDetailData];
 }
 
--(void)initUI
+-(void)initToolBarView
 {
-
-    webView = [[UIWebView alloc] init];
-    webView.backgroundColor = [UIColor clearColor];
-    webView.frame =  CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height);
-    webView.scrollView.delegate = self;
-    webView.scrollView.showsHorizontalScrollIndicator = NO;
-    webView.delegate = self;
-    [self.view addSubview:webView];
-    
-
-    
-    _imageView = [[UIImageView alloc] init];
-    _imageView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200);
-    _imageView.contentMode = UIViewContentModeScaleAspectFill;
-    [webView.scrollView addSubview:_imageView];
-    
-    _coverImageView = [[UIImageView alloc] init];
-    _coverImageView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200);
-    _coverImageView.contentMode = UIViewContentModeScaleToFill;
-    _coverImageView.image = [UIImage imageNamed:@"Home_Image_Mask"];
-    [webView.scrollView addSubview:_coverImageView];
-    
-    _titleLabel = [[UILabel alloc] init];
-    _titleLabel.frame = CGRectMake(10, 135, [UIScreen mainScreen].bounds.size.width - 50, 60);
-    _titleLabel.textColor = [UIColor whiteColor];
-    _titleLabel.font = [UIFont systemFontOfSize:20];
-    _titleLabel.numberOfLines = 0;
-    [self.view addSubview:_titleLabel];
-    
-    _imageSourceLabel = [[UILabel alloc] init];
-    _imageSourceLabel.frame = CGRectMake(self.view.frame.size.width/2, 175, self.view.frame.size.width/2,40 );
-    _imageSourceLabel.textAlignment = NSTextAlignmentCenter;
-    _imageSourceLabel.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8];
-    _imageSourceLabel.font = [UIFont systemFontOfSize:11];
-    [self.view addSubview:_imageSourceLabel];
-    
-    
     UIView *toolBarView = [[UIView alloc] init];
-    toolBarView.frame = CGRectMake(0, 675, self.view.frame.size.width, 58);
+    toolBarView.frame = CGRectMake(0, 690, self.view.frame.size.width, 45);
     toolBarView.backgroundColor = [UIColor whiteColor];
-    [webView addSubview:toolBarView];
-    
-    UILabel *lineLabel = [[UILabel alloc] init];
-    lineLabel.frame = CGRectMake(0, 675, 460, 1);
-    lineLabel.text = @"";
-    lineLabel.backgroundColor = [UIColor redColor];
-    [toolBarView addSubview:lineLabel];
+    [self.view addSubview:toolBarView];
     
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     backButton.frame = CGRectMake(15, 2, 50, 45);
     [backButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Arrow"] forState:UIControlStateNormal];
-    [backButton addTarget:self action:@selector(backHome) forControlEvents:UIControlEventTouchUpInside];
+    [backButton addTarget:self action:@selector(backHome:) forControlEvents:UIControlEventTouchUpInside];
     [toolBarView addSubview:backButton];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -138,9 +102,15 @@
     commentButton.frame = CGRectMake(335, 2, 50, 45);
     [commentButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Comment"] forState:UIControlStateNormal];
     [toolBarView addSubview:commentButton];
-      
 }
 
+
+-(void)initUI
+{
+    self.detailNewsView = [[DetailNewsView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 43)];
+    _detailNewsView.delegate = self;
+    [self.view addSubview:_detailNewsView];
+}
 
 -(void)initDetailData
 {
@@ -164,13 +134,61 @@
             NSLog(@"%@ %@",response,responseObject);
         }
         DetailNewsResponse *detailNews = [DetailNewsResponse yy_modelWithJSON:responseObject];
-        [webView loadHTMLString:[NSString stringWithFormat:@"<html><head><link rel=\"stylesheet\" href=%@></head><body>%@</body></html>",[detailNews.css firstObject],detailNews.body] baseURL:nil];
-        [_imageView sd_setImageWithURL:[NSURL URLWithString:detailNews.image] placeholderImage:[UIImage imageNamed:@""]];
-        _imageSourceLabel.text = detailNews.image_source;
-        _titleLabel.text = detailNews.title;
+        [_detailNewsView updateNewsWithModel:detailNews];
         NSLog(@"%@",detailNews);
     }];
     [dataTask resume];
+}
+#pragma mark - ToolBar Clicked Handle
+-(void)backHome:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+//-(void)backHome:(UIButton *)sender
+//{
+//    switch (sender.tag) {
+//        case 0:
+//            [self.navigationController popViewControllerAnimated:YES];
+//            break;
+//        case 1:
+//            [self switc]
+//            break
+//        default:
+//            break;
+//    }
+//}
+//
+//#pragma mark - Previous/Next News Switch Method
+//
+//-(void)switchToNextStoryWithID:(long)storyID
+//{
+//    DetailNewsView *detailNewsView = [[DetailNewsView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height- 43)];
+//    
+//    detailNewsView.delegate = self;
+//    
+//    [self.view insertSubview:detailNewsView belowSubview:_toolBarView];
+//    
+//    DetailNewsView *previousDetailNewsView = _detailNewsView;
+//    
+//    _detailNewsView = detailNewsView;
+//    _storyID = nextStoryID;
+//    [self initDetailData];
+
+//    [UIView animateWithDuration:.5 animations:^{
+//        detailNewsView.top = 0;
+//        previousDetailNewsView.top = -kScreenHeight + 43;
+//    }completion:^(BOOL finished){
+//        [previousDetailNewsView removeFromSuperview];
+//    }];
+//}
+//}
+
+- (void)handleWebViewClickedWithURL:(NSURL *)url{
+    TOWebViewController *safariVC = [[TOWebViewController alloc] initWithURL:url];
+    safariVC.showUrlWhileLoading = NO;
+    
+    [self.navigationController pushViewController:safariVC animated:YES];
+    [safariVC.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 -(void)backHome
@@ -178,20 +196,5 @@
     HomePageViewController *homePage = [[HomePageViewController alloc] init];
     [self.navigationController pushViewController:homePage animated:YES];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
-   
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="leF-hy-h4j">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFZ-7F-QSs">
+                    <frame key="frameInset" height="44" maxX="-25"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="backButton" style="plain" id="J7U-dh-bHd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QB1-aP-d12">
+                                <rect key="frame" x="20" y="1" width="64" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="News_Navigation_Arrow"/>
+                                <connections>
+                                    <action selector="select:" destination="-2" eventType="touchUpInside" id="ESI-fK-DsV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem title="nextButton" style="plain" id="Dsf-MW-vqj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MAg-4b-zgF">
+                                <rect key="frame" x="94" y="1" width="64" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="News_Navigation_Next"/>
+                                <connections>
+                                    <action selector="select:" destination="-2" eventType="touchUpInside" id="Ouq-lb-EhC"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem title="zanButton" style="plain" id="r4B-Vn-yVO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ohu-C7-0wU">
+                                <rect key="frame" x="168" y="1" width="64" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="News_Navigation_Vote"/>
+                                <connections>
+                                    <action selector="select:" destination="-2" eventType="touchUpInside" id="oZg-My-sH0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem title="shareButton" style="plain" id="CuT-0o-zZP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XfR-eX-5Y4">
+                                <rect key="frame" x="242" y="1" width="64" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="News_Navigation_Share"/>
+                                <connections>
+                                    <action selector="select:" destination="-2" eventType="touchUpInside" id="GwL-QP-2bh"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem title="commentButton" style="plain" id="7Lh-em-lg3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="otB-L1-lwM">
+                                <rect key="frame" x="316" y="1" width="64" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="News_Navigation_Comment"/>
+                                <connections>
+                                    <action selector="select:" destination="-2" eventType="touchUpInside" id="Gw3-EK-e63"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="WHc-fW-9dj"/>
+                    </connections>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-149" y="8"/>
+        </view>
+        <barButtonItem style="plain" id="6QE-wn-fA3">
+            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PRK-ZY-yqK">
+                <rect key="frame" x="100" y="1" width="118" height="43"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                <state key="normal" image="News_Navigation_Arrow"/>
+            </button>
+        </barButtonItem>
+        <barButtonItem style="plain" id="hee-ja-dMy">
+            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RQa-WT-UBv">
+                <rect key="frame" x="20" y="1" width="64" height="43"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <state key="normal" image="News_Navigation_Arrow"/>
+            </button>
+        </barButtonItem>
+    </objects>
+    <resources>
+        <image name="News_Navigation_Arrow" width="64" height="43"/>
+        <image name="News_Navigation_Comment" width="64" height="43"/>
+        <image name="News_Navigation_Next" width="64" height="43"/>
+        <image name="News_Navigation_Share" width="64" height="43"/>
+        <image name="News_Navigation_Vote" width="64" height="43"/>
+    </resources>
+</document>

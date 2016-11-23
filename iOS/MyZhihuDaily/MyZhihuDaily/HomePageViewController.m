@@ -34,13 +34,12 @@
     NSMutableArray *title;
 }
 @property (nonatomic, strong) NSString *currentDate;
-@property (nonatomic, strong) NSString *storyID;
+@property (nonatomic, assign) NSInteger storyID;
 @end
 
 @implementation HomePageViewController
 
 static NSString * const JPHeaderId = @"header";
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -167,6 +166,14 @@ static NSString * const JPHeaderId = @"header";
     [dataTask resume];
 }
 
+- (void)transitionToDetailNewsVC:(NSInteger)storyID section:(NSInteger)section{
+    DetailNewsViewController *detailVC = [[DetailNewsViewController alloc] init];
+    detailVC.storyID = storyID;
+    detailVC.section = section;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
+
+
 -(void)OpenLeftVC:(id)sender
 {
     
@@ -254,9 +261,7 @@ static NSString * const JPHeaderId = @"header";
     NewsListResponseModel *newsList = [_homeArrayList objectAtIndex:indexPath.section];
     NewsResponseModel *news = [newsList.stories objectAtIndex:indexPath.row];
     
-    DetailNewsViewController *detailNews = [[DetailNewsViewController alloc] init];
-    [detailNews receiveModel:news];
-    [self.navigationController pushViewController:detailNews animated:YES];
-    
+    [self transitionToDetailNewsVC:news.storyID section:indexPath.section];
 }
+
 @end
