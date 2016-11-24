@@ -64,7 +64,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     [self initUI];
     [self initToolBarView];
     [self initDetailData];
@@ -73,37 +73,37 @@
 -(void)initToolBarView
 {
     UIView *toolBarView = [[UIView alloc] init];
-    toolBarView.frame = CGRectMake(0, 690, self.view.frame.size.width, 45);
+    toolBarView.frame = CGRectMake(0, self.view.frame.size.height - 45, self.view.frame.size.width, 48);
     toolBarView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:toolBarView];
     
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    backButton.frame = CGRectMake(15, 2, 50, 45);
-    [backButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Arrow"] forState:UIControlStateNormal];
+    backButton.frame = CGRectMake(0, 0 , self.view.frame.size.width / 5, 48);
+    UIImage *image = [UIImage imageNamed:@"News_Navigation_Arrow"];
+    [backButton setBackgroundImage:image forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(backHome:) forControlEvents:UIControlEventTouchUpInside];
     [toolBarView addSubview:backButton];
     
     UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    nextButton.frame = CGRectMake(95, 2, 50, 45);
+    nextButton.frame = CGRectMake(self.view.frame.size.width / 5, 0, self.view.frame.size.width / 5, 48);
     [nextButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Next"] forState:UIControlStateNormal];
     [toolBarView addSubview:nextButton];
     
     UIButton *voteButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    voteButton.frame = CGRectMake(175, 2, 50, 45);
+    voteButton.frame = CGRectMake((self.view.frame.size.width / 5) * 2 , 0, self.view.frame.size.width / 5, 48);
     [voteButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Vote"] forState:UIControlStateNormal];
     [toolBarView addSubview:voteButton];
     
     UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    shareButton.frame = CGRectMake(255, 2, 50, 45);
+    shareButton.frame = CGRectMake((self.view.frame.size.width / 5) * 3 , 0, self.view.frame.size.width / 5, 48);
     [shareButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Share"] forState:UIControlStateNormal];
     [toolBarView addSubview:shareButton];
     
     UIButton *commentButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    commentButton.frame = CGRectMake(335, 2, 50, 45);
+    commentButton.frame = CGRectMake((self.view.frame.size.width / 5 ) * 4  , 0, self.view.frame.size.width / 5, 48);
     [commentButton setBackgroundImage:[UIImage imageNamed:@"News_Navigation_Comment"] forState:UIControlStateNormal];
     [toolBarView addSubview:commentButton];
 }
-
 
 -(void)initUI
 {

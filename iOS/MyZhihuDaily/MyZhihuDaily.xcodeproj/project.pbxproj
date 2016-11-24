@@ -34,6 +34,10 @@
 		31B61AB91D92C52B004340B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B61AB81D92C52B004340B8 /* Assets.xcassets */; };
 		31D74B1B1D9D052D0047B190 /* DetailNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D74B1A1D9D052D0047B190 /* DetailNewsViewController.m */; };
 		31D74B211D9D0E5F0047B190 /* DetailNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D74B201D9D0E5F0047B190 /* DetailNewsView.m */; };
+		31D7E3431DE573B1000E43FC /* LanuchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E3421DE573B1000E43FC /* LanuchViewController.m */; };
+		31D7E3461DE573D6000E43FC /* ZhihuSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E3451DE573D6000E43FC /* ZhihuSideViewController.m */; };
+		31D7E34A1DE57E4F000E43FC /* Lanuch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E3491DE57E4F000E43FC /* Lanuch.xib */; };
+		31D7E34D1DE5855B000E43FC /* AtuoFillScreenUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E34C1DE5855B000E43FC /* AtuoFillScreenUtils.m */; };
 		31ED134C1D98EA6800CB5A56 /* HomepageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED134B1D98EA6800CB5A56 /* HomepageCell.m */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +61,8 @@
 /* Begin PBXFileReference section */
 		221CDA6673126F71E8B45D43 /* libPods-MyZhihuDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyZhihuDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		311397531DD070D7003D6275 /* NewsDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsDetail.xib; sourceTree = "<group>"; };
-		311CA1DE1DD31E020000EA95 /* HomePageDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageDataManager.h; sourceTree = "<group>"; };
-		311CA1DF1DD31E020000EA95 /* HomePageDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageDataManager.m; sourceTree = "<group>"; };
+		311CA1DE1DD31E020000EA95 /* HomePageDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageDataManager.h; path = ../HomePageDataManager.h; sourceTree = "<group>"; };
+		311CA1DF1DD31E020000EA95 /* HomePageDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageDataManager.m; path = ../HomePageDataManager.m; sourceTree = "<group>"; };
 		312922B31DA8C8CA0059885C /* DetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailHeaderView.h; sourceTree = "<group>"; };
 		312922B41DA8C8CA0059885C /* DetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailHeaderView.m; sourceTree = "<group>"; };
 		317ECCB61D9A538900E8D00E /* TopNewsResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopNewsResponseModel.h; path = MyZhihuDaily/TopNewsResponseModel.h; sourceTree = "<group>"; };
@@ -108,6 +112,13 @@
 		31D74B1A1D9D052D0047B190 /* DetailNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNewsViewController.m; sourceTree = "<group>"; };
 		31D74B1F1D9D0E5F0047B190 /* DetailNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailNewsView.h; sourceTree = "<group>"; };
 		31D74B201D9D0E5F0047B190 /* DetailNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNewsView.m; sourceTree = "<group>"; };
+		31D7E3411DE573B1000E43FC /* LanuchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchViewController.h; sourceTree = "<group>"; };
+		31D7E3421DE573B1000E43FC /* LanuchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchViewController.m; sourceTree = "<group>"; };
+		31D7E3441DE573D6000E43FC /* ZhihuSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhihuSideViewController.h; sourceTree = "<group>"; };
+		31D7E3451DE573D6000E43FC /* ZhihuSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhihuSideViewController.m; sourceTree = "<group>"; };
+		31D7E3491DE57E4F000E43FC /* Lanuch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lanuch.xib; sourceTree = "<group>"; };
+		31D7E34B1DE5855B000E43FC /* AtuoFillScreenUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtuoFillScreenUtils.h; sourceTree = "<group>"; };
+		31D7E34C1DE5855B000E43FC /* AtuoFillScreenUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtuoFillScreenUtils.m; sourceTree = "<group>"; };
 		31ED134A1D98EA6800CB5A56 /* HomepageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageCell.h; sourceTree = "<group>"; };
 		31ED134B1D98EA6800CB5A56 /* HomepageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageCell.m; sourceTree = "<group>"; };
 		63AC05C865ADA5C519213A65 /* Pods-MyZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyZhihuDaily/Pods-MyZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,8 +195,6 @@
 		31B61A241D92C1E5004340B8 = {
 			isa = PBXGroup;
 			children = (
-				311CA1DE1DD31E020000EA95 /* HomePageDataManager.h */,
-				311CA1DF1DD31E020000EA95 /* HomePageDataManager.m */,
 				31B61A2F1D92C1E5004340B8 /* MyZhihuDaily */,
 				31B61A491D92C1E5004340B8 /* MyZhihuDailyTests */,
 				31B61A541D92C1E5004340B8 /* MyZhihuDailyUITests */,
@@ -208,6 +217,7 @@
 		31B61A2F1D92C1E5004340B8 /* MyZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				31D7E33F1DE57383000E43FC /* Lanuch */,
 				31D74B1C1D9D05330047B190 /* DetailNews */,
 				318AAC571D93A5AC001EF7FC /* NetWork */,
 				31B61A841D92C370004340B8 /* AppDelegate */,
@@ -305,6 +315,8 @@
 		31B61A781D92C320004340B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				311CA1DE1DD31E020000EA95 /* HomePageDataManager.h */,
+				311CA1DF1DD31E020000EA95 /* HomePageDataManager.m */,
 				31B61AA61D92C4DB004340B8 /* HomePageViewController.h */,
 				31B61AA71D92C4DB004340B8 /* HomePageViewController.m */,
 			);
@@ -336,6 +348,8 @@
 			children = (
 				31B61A9D1D92C4AB004340B8 /* AppDelegate.h */,
 				31B61A9E1D92C4AB004340B8 /* AppDelegate.m */,
+				31D7E34B1DE5855B000E43FC /* AtuoFillScreenUtils.h */,
+				31D7E34C1DE5855B000E43FC /* AtuoFillScreenUtils.m */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -370,6 +384,26 @@
 				3181B4291DCF65B100EDAB90 /* UIView+Additons.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		31D7E33F1DE57383000E43FC /* Lanuch */ = {
+			isa = PBXGroup;
+			children = (
+				31D7E3401DE57391000E43FC /* Controllers */,
+			);
+			name = Lanuch;
+			sourceTree = "<group>";
+		};
+		31D7E3401DE57391000E43FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31D7E3411DE573B1000E43FC /* LanuchViewController.h */,
+				31D7E3421DE573B1000E43FC /* LanuchViewController.m */,
+				31D7E3441DE573D6000E43FC /* ZhihuSideViewController.h */,
+				31D7E3451DE573D6000E43FC /* ZhihuSideViewController.m */,
+				31D7E3491DE57E4F000E43FC /* Lanuch.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D7E34A1DE57E4F000E43FC /* Lanuch.xib in Resources */,
 				31B61A401D92C1E5004340B8 /* LaunchScreen.storyboard in Resources */,
 				31B61AB91D92C52B004340B8 /* Assets.xcassets in Resources */,
 				31B61A3B1D92C1E5004340B8 /* Main.storyboard in Resources */,
@@ -559,18 +594,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B61A381D92C1E5004340B8 /* ViewController.m in Sources */,
+				31D7E34D1DE5855B000E43FC /* AtuoFillScreenUtils.m in Sources */,
 				31B61AA81D92C4DB004340B8 /* HomePageViewController.m in Sources */,
 				31B61AB21D92C511004340B8 /* FooterView.m in Sources */,
 				318AAC5B1D93A608001EF7FC /* NewsListResponseModel.m in Sources */,
 				31D74B211D9D0E5F0047B190 /* DetailNewsView.m in Sources */,
 				31B61AB31D92C511004340B8 /* HearderView.m in Sources */,
 				312922B51DA8C8CA0059885C /* DetailHeaderView.m in Sources */,
+				31D7E3461DE573D6000E43FC /* ZhihuSideViewController.m in Sources */,
 				31A575531DA0F555001C4746 /* SectionHeaderView.m in Sources */,
 				31B61AA51D92C4CF004340B8 /* HeadView.m in Sources */,
 				31A1D1A51DC5B20500D97652 /* DetailNewsResponse.m in Sources */,
 				3181B42A1DCF65B100EDAB90 /* UIView+Additons.m in Sources */,
 				31B61AB41D92C511004340B8 /* LeftMenuTableViewCell.m in Sources */,
 				31B61AAB1D92C4E7004340B8 /* LeftMenuModel.m in Sources */,
+				31D7E3431DE573B1000E43FC /* LanuchViewController.m in Sources */,
 				31B61A9F1D92C4AB004340B8 /* AppDelegate.m in Sources */,
 				317ECCBB1D9A53A300E8D00E /* NewsResponseModel.m in Sources */,
 				31B61A321D92C1E5004340B8 /* main.m in Sources */,

@@ -10,10 +10,6 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#define DetailHeaderViewHeight 210.0f
-#define NSDictionaryOfVariableBindings(...) _NSDictionaryOfVariableBindings(@"" # __VA_ARGS__, __VA_ARGS__, nil)
-
-
 @interface DetailHeaderView()
 
 @property (nonatomic, strong) UILabel *titleLabel;

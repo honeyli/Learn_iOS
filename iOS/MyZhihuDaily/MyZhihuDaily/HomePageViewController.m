@@ -14,6 +14,7 @@
 #import "HomepageCell.h"
 #import "DetailNewsViewController.h"
 #import "SectionHeaderView.h"
+#import "AtuoFillScreenUtils.h"
 
 #import "IIViewDeckController.h"
 #import "AFNetworking.h"
@@ -45,7 +46,7 @@ static NSString * const JPHeaderId = @"header";
     [super viewDidLoad];
 
     _homeArrayList = [[NSMutableArray alloc] init];
-    [self setNav];
+     [self setNav];
     [self createTableView];
     [self requestLatestNews];
     

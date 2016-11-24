@@ -28,28 +28,25 @@
 -(void)addViews
 {
     homeLabel = [[UILabel alloc] init];
-    homeLabel.frame = CGRectMake(10, 5, 300, 45);
+    homeLabel.frame = CGRectMake(self.frame.size.width / 20, 5, self.frame.size.width / 1.7, 45);
     [self.contentView addSubview:homeLabel];
     
     newsImageView = [[UIImageView alloc] init];
-    newsImageView.frame = CGRectMake(325, 5, 70, 70);
+    newsImageView.frame = CGRectMake( [UIScreen mainScreen].bounds.size.width / 1.4 , self.frame.size.height/5, self.frame.size.width / 4, 58);
     [self.contentView addSubview:newsImageView];
 }
 
 -(void)configureCellWithModel:(NewsResponseModel *)model
 {
-
     homeLabel.text = model.title;
     homeLabel.numberOfLines = 0;
     homeLabel.lineBreakMode = NSLineBreakByWordWrapping;
     homeLabel.font = [UIFont systemFontOfSize:15];
     
-
     if (model.images.count > 0) {
         NSString *urlStr = model.images[0];
         [newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"Home_Icon"] options:SDWebImageLowPriority];
     }
-    
 }
 
 - (void)awakeFromNib {

@@ -10,6 +10,9 @@
 #import "HomePageViewController.h"
 #import "LeftMenuViewController.h"
 
+#define MainScreenWidth  [[UIScreen mainScreen]bounds].size.width
+#define MainScreenHeight  [[UIScreen mainScreen]bounds].size.height
+
 @interface AppDelegate ()
 @property (nonatomic, strong) IIViewDeckController *IIView;
 
@@ -30,7 +33,6 @@
     self.IIView = [[IIViewDeckController alloc] initWithCenterViewController:nav leftViewController:leftVC];
     self.IIView.leftSize = self.window.frame.size.width - (220);
     self.IIView.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
-   
     self.window.rootViewController = self.IIView;
     
     return YES;

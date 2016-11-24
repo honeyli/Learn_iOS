@@ -10,7 +10,6 @@
 #import "DetailHeaderView.h"
 #import "DetailNewsResponse.h"
 #import "UIView+Additons.h"
-#import "HomePageViewController.h"
 
 #import "TOWebViewController.h"
 
