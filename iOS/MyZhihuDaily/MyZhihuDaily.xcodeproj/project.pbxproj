@@ -37,7 +37,6 @@
 		31D7E3431DE573B1000E43FC /* LanuchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E3421DE573B1000E43FC /* LanuchViewController.m */; };
 		31D7E3461DE573D6000E43FC /* ZhihuSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E3451DE573D6000E43FC /* ZhihuSideViewController.m */; };
 		31D7E34A1DE57E4F000E43FC /* Lanuch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D7E3491DE57E4F000E43FC /* Lanuch.xib */; };
-		31D7E34D1DE5855B000E43FC /* AtuoFillScreenUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E34C1DE5855B000E43FC /* AtuoFillScreenUtils.m */; };
 		31ED134C1D98EA6800CB5A56 /* HomepageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED134B1D98EA6800CB5A56 /* HomepageCell.m */; };
 /* End PBXBuildFile section */
 
@@ -117,8 +116,6 @@
 		31D7E3441DE573D6000E43FC /* ZhihuSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhihuSideViewController.h; sourceTree = "<group>"; };
 		31D7E3451DE573D6000E43FC /* ZhihuSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhihuSideViewController.m; sourceTree = "<group>"; };
 		31D7E3491DE57E4F000E43FC /* Lanuch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lanuch.xib; sourceTree = "<group>"; };
-		31D7E34B1DE5855B000E43FC /* AtuoFillScreenUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtuoFillScreenUtils.h; sourceTree = "<group>"; };
-		31D7E34C1DE5855B000E43FC /* AtuoFillScreenUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtuoFillScreenUtils.m; sourceTree = "<group>"; };
 		31ED134A1D98EA6800CB5A56 /* HomepageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageCell.h; sourceTree = "<group>"; };
 		31ED134B1D98EA6800CB5A56 /* HomepageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageCell.m; sourceTree = "<group>"; };
 		63AC05C865ADA5C519213A65 /* Pods-MyZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyZhihuDaily/Pods-MyZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
@@ -348,8 +345,6 @@
 			children = (
 				31B61A9D1D92C4AB004340B8 /* AppDelegate.h */,
 				31B61A9E1D92C4AB004340B8 /* AppDelegate.m */,
-				31D7E34B1DE5855B000E43FC /* AtuoFillScreenUtils.h */,
-				31D7E34C1DE5855B000E43FC /* AtuoFillScreenUtils.m */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -594,7 +589,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B61A381D92C1E5004340B8 /* ViewController.m in Sources */,
-				31D7E34D1DE5855B000E43FC /* AtuoFillScreenUtils.m in Sources */,
 				31B61AA81D92C4DB004340B8 /* HomePageViewController.m in Sources */,
 				31B61AB21D92C511004340B8 /* FooterView.m in Sources */,
 				318AAC5B1D93A608001EF7FC /* NewsListResponseModel.m in Sources */,
@@ -768,6 +762,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = QVLHQH4PB7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyZhihuDaily/PrefixHeader.pch;
 				INFOPLIST_FILE = MyZhihuDaily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bulaba.ios;
@@ -784,6 +780,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = QVLHQH4PB7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyZhihuDaily/PrefixHeader.pch;
 				INFOPLIST_FILE = MyZhihuDaily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bulaba.ios;

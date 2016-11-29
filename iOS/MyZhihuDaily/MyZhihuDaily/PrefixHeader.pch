@@ -5,8 +5,6 @@
 //  Created by xuyanli on 16/9/22.
 //  Copyright © 2016年 xuyanli. All rights reserved.
 //
-#import "HTTPClient.h"
-
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 

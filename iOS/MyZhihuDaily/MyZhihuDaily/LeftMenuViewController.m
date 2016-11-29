@@ -11,7 +11,6 @@
 #import "LeftMenuTableViewCell.h"
 #import "HearderView.h"
 #import "FooterView.h"
-#import "AtuoFillScreenUtils.h"
 
 @interface LeftMenuViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -69,8 +68,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [AtuoFillScreenUtils autoLayoutFillScreen:self.view];
-
     [self createDatas];
     
     UITableView *leftTableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width - (195), self.view.frame.size.height) style:UITableViewStylePlain];

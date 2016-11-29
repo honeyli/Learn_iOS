@@ -27,15 +27,20 @@
 
 -(void)addViews
 {
-    homeLabel = [[UILabel alloc] init];
-    homeLabel.frame = CGRectMake(self.frame.size.width / 20, 5, self.frame.size.width / 1.7, 45);
-    [self.contentView addSubview:homeLabel];
+    CGRect cellFrame = self.frame;
+    cellFrame.size.width = kScreenWidth;
+    cellFrame.size.height = 80;
+    self.frame = cellFrame;
     
     newsImageView = [[UIImageView alloc] init];
-    newsImageView.frame = CGRectMake( [UIScreen mainScreen].bounds.size.width / 1.4 , self.frame.size.height/5, self.frame.size.width / 4, 58);
+    newsImageView.frame = CGRectMake( self.frame.size.width - 90 , (cellFrame.size.height - 58) / 2, 75, 58);
     [self.contentView addSubview:newsImageView];
+    
+    homeLabel = [[UILabel alloc] init];
+    homeLabel.frame = CGRectMake(15, 5, self.frame.size.width - newsImageView.frame.size.width - 45, 45);
+    [self.contentView addSubview:homeLabel];
+    
 }
-
 -(void)configureCellWithModel:(NewsResponseModel *)model
 {
     homeLabel.text = model.title;
@@ -45,13 +50,8 @@
     
     if (model.images.count > 0) {
         NSString *urlStr = model.images[0];
-        [newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"Home_Icon"] options:SDWebImageLowPriority];
+        [newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageLowPriority];
     }
-}
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

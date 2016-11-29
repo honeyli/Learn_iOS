@@ -14,7 +14,6 @@
 #import "HomepageCell.h"
 #import "DetailNewsViewController.h"
 #import "SectionHeaderView.h"
-#import "AtuoFillScreenUtils.h"
 
 #import "IIViewDeckController.h"
 #import "AFNetworking.h"
@@ -28,11 +27,11 @@
 
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 {
-
     UITableView *homeTableView;
     HeadView *headView;
     CGFloat navBarAlpha;
     NSMutableArray *title;
+    UIImageView *navBarHairLineImageView;
 }
 @property (nonatomic, strong) NSString *currentDate;
 @property (nonatomic, assign) NSInteger storyID;
@@ -42,9 +41,23 @@
 
 static NSString * const JPHeaderId = @"header";
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    navBarHairLineImageView.hidden = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    navBarHairLineImageView.hidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    navBarHairLineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
+    
     _homeArrayList = [[NSMutableArray alloc] init];
      [self setNav];
     [self createTableView];
@@ -81,9 +94,22 @@ static NSString * const JPHeaderId = @"header";
     [self changeNavColor];
 }
 
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
+}
+
 -(void)createTableView
 {
-    homeTableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y  , self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    homeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0  , self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     homeTableView.delegate = self;
     homeTableView.dataSource = self;
     homeTableView.rowHeight = 80;

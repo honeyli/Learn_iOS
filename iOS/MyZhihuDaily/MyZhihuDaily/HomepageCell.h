@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NewsResponseModel.h"
 @interface HomepageCell : UITableViewCell
+
 -(void)configureCellWithModel:(NewsResponseModel *)model;
+
 @end
