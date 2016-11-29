@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ZhihuDaily' do
+
+        pod 'TOWebViewController';
+        pod 'ViewDeck';
+        pod 'AFNetworking';
+        pod 'SDWebImage';
+        pod 'YYModel';
+        pod 'Mantle';
+        pod 'MJRefresh';
+        pod 'MBProgressHUD';
+
+end

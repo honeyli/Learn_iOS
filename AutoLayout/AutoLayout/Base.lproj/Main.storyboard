@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yhF-pU-cAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="0pV-3p-nke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gj3-28-G9b">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TfC-F6-sZ6">
+                                <rect key="frame" x="111" y="223" width="173" height="128"/>
+                                <color key="backgroundColor" red="0.92470747232437134" green="0.050944946706295013" blue="0.27401319146156311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TfC-F6-sZ6" firstAttribute="top" secondItem="yhF-pU-cAl" secondAttribute="bottom" constant="137" id="4bC-ZJ-hPI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TfC-F6-sZ6" secondAttribute="trailing" constant="85" id="9WV-BP-y0C"/>
+                            <constraint firstItem="TfC-F6-sZ6" firstAttribute="leading" secondItem="Gj3-28-G9b" secondAttribute="leadingMargin" constant="85" id="T6K-KL-5QL"/>
+                            <constraint firstItem="0pV-3p-nke" firstAttribute="top" secondItem="TfC-F6-sZ6" secondAttribute="bottom" constant="382" id="df8-AJ-oly"/>
+                            <constraint firstItem="TfC-F6-sZ6" firstAttribute="centerX" secondItem="Gj3-28-G9b" secondAttribute="centerX" id="f0b-2d-z7a"/>
+                            <constraint firstItem="TfC-F6-sZ6" firstAttribute="centerY" secondItem="Gj3-28-G9b" secondAttribute="centerY" id="hEF-mL-2qv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4bC-ZJ-hPI"/>
+                                <exclude reference="9WV-BP-y0C"/>
+                                <exclude reference="T6K-KL-5QL"/>
+                                <exclude reference="f0b-2d-z7a"/>
+                                <exclude reference="hEF-mL-2qv"/>
+                                <exclude reference="df8-AJ-oly"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4bC-ZJ-hPI"/>
+                                <include reference="9WV-BP-y0C"/>
+                                <include reference="T6K-KL-5QL"/>
+                                <include reference="f0b-2d-z7a"/>
+                                <include reference="hEF-mL-2qv"/>
+                                <include reference="df8-AJ-oly"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="9.4452773613193415"/>
+        </scene>
+    </scenes>
+</document>
