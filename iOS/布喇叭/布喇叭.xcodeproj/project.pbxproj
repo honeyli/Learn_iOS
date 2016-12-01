@@ -496,6 +496,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9WMYYLWJZ4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/xuyanli/Documents/Workspace/Learn_iOS/iOS/布喇叭/布喇叭/category/pch/bulaba.pch";
 				INFOPLIST_FILE = "布喇叭/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile.os.---";
@@ -508,6 +510,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9WMYYLWJZ4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/xuyanli/Documents/Workspace/Learn_iOS/iOS/布喇叭/布喇叭/category/pch/bulaba.pch";
 				INFOPLIST_FILE = "布喇叭/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile.os.---";

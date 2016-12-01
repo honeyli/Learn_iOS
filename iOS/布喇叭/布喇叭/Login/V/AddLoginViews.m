@@ -8,6 +8,9 @@
 
 #import "AddLoginViews.h"
 
+#define areaViewHeght 45.0f
+#define leftIntervalX 17.0f
+
 @implementation AddLoginViews
 -(instancetype)initWithFrame:(CGRect)frame
 {
@@ -15,13 +18,14 @@
     if (self) {
         [self addAreaViews];
         [self addInputViews];
+        [self senderMessagecode];
     }
     return  self;
 }
 
 -(void)addAreaViews
 {
-    UIView *areaView = [[UIView alloc] initWithFrame:CGRectMake(17, 90, 285, 50)];
+    UIView *areaView = [[UIView alloc] initWithFrame:CGRectMake(leftIntervalX, 90, 285, areaViewHeght)];
     areaView.backgroundColor = [UIColor whiteColor];
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickLoginView:)];
     [areaView addGestureRecognizer:tapGesture];
@@ -49,8 +53,8 @@
 -(void)addInputViews
 {
     UIView *inputView = [[UIView alloc] init];
-    inputView.frame = CGRectMake(17, 150, 70, 50);
-    inputView.backgroundColor = [UIColor whiteColor];
+    inputView.frame = CGRectMake(leftIntervalX, 150, 70, areaViewHeght);
+    inputView.backgroundColor = kWhiteColor;
     [self addSubview:inputView];
     
     UITextField *areaTextField = [[UITextField alloc] init];
@@ -63,24 +67,29 @@
     [inputView addSubview:areaTextField];
     
     UIView *numberView = [[UIView alloc] init];
-    numberView.frame = CGRectMake(97, 150, 205, 50);
-    numberView.backgroundColor = [UIColor whiteColor];
+    numberView.frame = CGRectMake(97, 150, 205, areaViewHeght);
+    numberView.backgroundColor = kWhiteColor;
     [self addSubview:numberView];
     
-    UITextField *numberTextField = [[UITextField alloc] init];
-    numberTextField.frame = CGRectMake(10, 10, 175, 30);
-    numberTextField.textAlignment = NSTextAlignmentLeft;
-    numberTextField.borderStyle = UITextBorderStyleNone;
-    numberTextField.placeholder = @"请输入手机号";
-    numberTextField.font = [UIFont systemFontOfSize:17];
-    numberTextField.textColor = [UIColor blackColor];
-    [numberView addSubview:numberTextField];
+    _numberTextField = [[UITextField alloc] init];
+    _numberTextField.frame = CGRectMake(10, 10, 175, 30);
+    _numberTextField.textAlignment = NSTextAlignmentLeft;
+    _numberTextField.borderStyle = UITextBorderStyleNone;
+    _numberTextField.placeholder = @"请输入手机号";
+    _numberTextField.font = [UIFont systemFontOfSize:17];
+    _numberTextField.textColor = [UIColor blackColor];
+    [numberView addSubview:_numberTextField];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
 }
 
 -(void)senderMessagecode
 {
-    UIButton *senderButton = [[UIButton alloc] init];
-    
+    _senderButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _senderButton.frame = CGRectMake(leftIntervalX, 225, 285, areaViewHeght);
+    _senderButton.backgroundColor = [UIColor colorWithRed:189/255.0 green:189/255.0 blue:189/255.0 alpha:1];
+    [_senderButton setTitle:@"发送短信验证码" forState:UIControlStateNormal];
+    [_senderButton setTitleColor:kWhiteColor forState:UIControlStateNormal];
+    [self addSubview:_senderButton];
 }
 
 -(void)clickLoginView:(id)sender

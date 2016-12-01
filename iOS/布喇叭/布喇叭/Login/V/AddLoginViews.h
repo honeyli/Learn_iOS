@@ -9,4 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddLoginViews : UIView
+@property (nonatomic, strong) UITextField *numberTextField;
+@property (nonatomic, strong) UIButton *senderButton;
 @end
