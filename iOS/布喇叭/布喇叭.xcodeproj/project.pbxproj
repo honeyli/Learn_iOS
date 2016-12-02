@@ -16,6 +16,7 @@
 		315EBB871DEEA4BC0028056C /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 315EBB861DEEA4BC0028056C /* ___UITests.m */; };
 		315EBBA21DEEBA4A0028056C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 315EBBA11DEEBA4A0028056C /* AppDelegate.m */; };
 		315EBBA51DEEFBEB0028056C /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 315EBBA41DEEFBEB0028056C /* LoginVC.m */; };
+		31A950FF1DF1774600993E93 /* popupBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A950FE1DF1774600993E93 /* popupBoxView.m */; };
 		31F70B471DEFC47A00D97653 /* AddLoginViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F70B461DEFC47A00D97653 /* AddLoginViews.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		315EBBA11DEEBA4A0028056C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		315EBBA31DEEFBEB0028056C /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		315EBBA41DEEFBEB0028056C /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		31A950FD1DF1774600993E93 /* popupBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popupBoxView.h; sourceTree = "<group>"; };
+		31A950FE1DF1774600993E93 /* popupBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popupBoxView.m; sourceTree = "<group>"; };
 		31F70B451DEFC47A00D97653 /* AddLoginViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLoginViews.h; sourceTree = "<group>"; };
 		31F70B461DEFC47A00D97653 /* AddLoginViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLoginViews.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +198,8 @@
 			children = (
 				31F70B451DEFC47A00D97653 /* AddLoginViews.h */,
 				31F70B461DEFC47A00D97653 /* AddLoginViews.m */,
+				31A950FD1DF1774600993E93 /* popupBoxView.h */,
+				31A950FE1DF1774600993E93 /* popupBoxView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				31F70B471DEFC47A00D97653 /* AddLoginViews.m in Sources */,
 				315EBBA51DEEFBEB0028056C /* LoginVC.m in Sources */,
 				315EBBA21DEEBA4A0028056C /* AppDelegate.m in Sources */,
+				31A950FF1DF1774600993E93 /* popupBoxView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

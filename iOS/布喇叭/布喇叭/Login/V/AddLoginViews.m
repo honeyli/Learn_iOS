@@ -16,6 +16,7 @@
 {
     UITextField *numberTextField;
     UIButton *senderButton;
+    UITextField *areaTextField;
 }
 @end
 
@@ -24,6 +25,8 @@
 -(void)drawRect:(CGRect)rect
 {
     self.backgroundColor = [UIColor colorWithRed:232/255.0 green:233/255.0 blue:232/255.0 alpha:1];
+    UITapGestureRecognizer *tapView = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapView)];
+    [self addGestureRecognizer:tapView];
     [self addAreaViews];
     [self addInputViews];
     [self senderMessagecode];
@@ -64,12 +67,13 @@
     inputView.backgroundColor = kWhiteColor;
     [self addSubview:inputView];
     
-    UITextField *areaTextField = [[UITextField alloc] init];
+    areaTextField = [[UITextField alloc] init];
     areaTextField.borderStyle = UITextBorderStyleNone;
     areaTextField.frame = CGRectMake(10, 10, 50, 30);
     areaTextField.textAlignment = NSTextAlignmentLeft;
     areaTextField.text = @"+86";
     areaTextField.textColor = [UIColor blackColor];
+    areaTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
     areaTextField.font = [UIFont systemFontOfSize:17];
     [inputView addSubview:areaTextField];
     
@@ -86,9 +90,8 @@
     numberTextField.font = [UIFont systemFontOfSize:17];
     numberTextField.textColor = [UIColor blackColor];
     numberTextField.keyboardType = UIKeyboardTypeNumberPad;
-//    numberTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    [numberView addSubview:numberTextField];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor) name:UITextFieldTextDidChangeNotification object:nil];
+    [numberView addSubview:numberTextField];
 }
 
 -(void)senderMessagecode {
@@ -108,25 +111,32 @@
 }
 
 -(void)addUserProtocol{
-    UILabel *userlabel = [[UILabel alloc] init];
-    userlabel.frame = CGRectMake(leftIntervalX, 285, kWidth, 20);
-    userlabel.text = @"轻触上面按钮，即表示您已同意";
-    userlabel.textColor = [UIColor grayColor];
-    userlabel.textAlignment = NSTextAlignmentLeft;
-    NSMutableAttributedString *userString = [[NSMutableAttributedString alloc] initWithString:@"https://resource-testing.bulaba.com/user_agreement_zh.html"];
-    [userString addAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:124/255.0 green:201/255.0 blue:189/255.0 alpha:1], NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(2,2)];
-    userlabel.attributedText = userString;
-    [self addSubview:userlabel];
+    
+    NSMutableAttributedString * userProtocol = [[NSMutableAttributedString alloc] initWithString: @"轻触上面按钮， 即表示您已同意"];
+
+    NSString * userText =@"《布喇叭用户协议》" ;
+    NSRange range = NSMakeRange(userProtocol.length, userText.length);
+    [userProtocol appendAttributedString: [[NSAttributedString alloc] initWithString: userText]];
+    [userProtocol addAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:80/255.0 green:189/255.0 blue:173/255.0 alpha:1] } range: range];
+    [userProtocol addAttributes: @{ NSFontAttributeName: [UIFont systemFontOfSize:14] } range: range];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(17, 290, kWidth, 35);
+    label.textColor = [UIColor colorWithRed:103/255.0 green:103/255.0 blue:103/255.0 alpha:1];
+    label.attributedText = userProtocol;
+    label.numberOfLines = 0;
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.font = [UIFont systemFontOfSize:14];
+    [self addSubview:label];
+
+}
+
+-(void)clickLoginView: (id)sender{
+    
 }
 
 -(void)clickSenderButton {
     
-}
-
-
-                                     
--(void)clickLoginView:(id)sender {
-
 }
 
 -(void)changeColor {
@@ -138,5 +148,8 @@
     }
 }
 
-
+-(void)tapView{
+    [numberTextField resignFirstResponder];
+    [areaTextField resignFirstResponder];
+}
 @end
