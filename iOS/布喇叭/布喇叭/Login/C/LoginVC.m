@@ -8,11 +8,8 @@
 
 #import "LoginVC.h"
 #import "AddLoginViews.h"
-@interface LoginVC () <UITextFieldDelegate>
-{
-    UITextField *textField;
-    UIButton *button;
-}
+@interface LoginVC ()
+
 @end
 
 @implementation LoginVC
@@ -23,11 +20,6 @@
     [self setNavBar];
     
     AddLoginViews *loginView = [[AddLoginViews alloc] init];
-    textField = loginView.numberTextField;
-    button = loginView.senderButton;
-    textField.delegate = self;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(infoAction) name:UITextFieldTextDidChangeNotification object:nil];
-    
     loginView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     loginView.backgroundColor = [UIColor colorWithRed:232/255.0 green:233/255.0 blue:232/255.0 alpha:1];
     [self.view addSubview:loginView];
@@ -40,15 +32,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 
-}
-
--(void)infoAction{
-    if ( [textField.text  isEqualToString:@""]) {
-        button.backgroundColor = [UIColor grayColor];
-    }else
-    {
-        button.backgroundColor = [UIColor greenColor];
-    }
 }
 
 

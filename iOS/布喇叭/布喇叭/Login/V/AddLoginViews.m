@@ -9,23 +9,30 @@
 #import "AddLoginViews.h"
 
 #define areaViewHeght 45.0f
+#define kWidth kScreenWidth - 34
 #define leftIntervalX 17.0f
 
-@implementation AddLoginViews
--(instancetype)initWithFrame:(CGRect)frame
+@interface AddLoginViews () <UITextFieldDelegate>
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self addAreaViews];
-        [self addInputViews];
-        [self senderMessagecode];
-    }
-    return  self;
+    UITextField *numberTextField;
+    UIButton *senderButton;
+}
+@end
+
+@implementation AddLoginViews
+
+-(void)drawRect:(CGRect)rect
+{
+    self.backgroundColor = [UIColor colorWithRed:232/255.0 green:233/255.0 blue:232/255.0 alpha:1];
+    [self addAreaViews];
+    [self addInputViews];
+    [self senderMessagecode];
+    [self addUserProtocol];
 }
 
 -(void)addAreaViews
 {
-    UIView *areaView = [[UIView alloc] initWithFrame:CGRectMake(leftIntervalX, 90, 285, areaViewHeght)];
+    UIView *areaView = [[UIView alloc] initWithFrame:CGRectMake(leftIntervalX, 90, kWidth, areaViewHeght)];
     areaView.backgroundColor = [UIColor whiteColor];
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickLoginView:)];
     [areaView addGestureRecognizer:tapGesture];
@@ -50,8 +57,8 @@
     [areaView addSubview:selectImageView];
 }
 
--(void)addInputViews
-{
+-(void)addInputViews {
+    
     UIView *inputView = [[UIView alloc] init];
     inputView.frame = CGRectMake(leftIntervalX, 150, 70, areaViewHeght);
     inputView.backgroundColor = kWhiteColor;
@@ -67,34 +74,68 @@
     [inputView addSubview:areaTextField];
     
     UIView *numberView = [[UIView alloc] init];
-    numberView.frame = CGRectMake(97, 150, 205, areaViewHeght);
+    numberView.frame = CGRectMake(97, 150, kWidth - inputView.frame.size.width - 10, areaViewHeght);
     numberView.backgroundColor = kWhiteColor;
     [self addSubview:numberView];
     
-    _numberTextField = [[UITextField alloc] init];
-    _numberTextField.frame = CGRectMake(10, 10, 175, 30);
-    _numberTextField.textAlignment = NSTextAlignmentLeft;
-    _numberTextField.borderStyle = UITextBorderStyleNone;
-    _numberTextField.placeholder = @"请输入手机号";
-    _numberTextField.font = [UIFont systemFontOfSize:17];
-    _numberTextField.textColor = [UIColor blackColor];
-    [numberView addSubview:_numberTextField];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
+    numberTextField = [[UITextField alloc] init];
+    numberTextField.frame = CGRectMake(10, 10, numberView.frame.size.width - 25, 30);
+    numberTextField.textAlignment = NSTextAlignmentLeft;
+    numberTextField.borderStyle = UITextBorderStyleNone;
+    numberTextField.placeholder = @"请输入手机号";
+    numberTextField.font = [UIFont systemFontOfSize:17];
+    numberTextField.textColor = [UIColor blackColor];
+    numberTextField.keyboardType = UIKeyboardTypeNumberPad;
+//    numberTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [numberView addSubview:numberTextField];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeColor) name:UITextFieldTextDidChangeNotification object:nil];
 }
 
--(void)senderMessagecode
-{
-    _senderButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _senderButton.frame = CGRectMake(leftIntervalX, 225, 285, areaViewHeght);
-    _senderButton.backgroundColor = [UIColor colorWithRed:189/255.0 green:189/255.0 blue:189/255.0 alpha:1];
-    [_senderButton setTitle:@"发送短信验证码" forState:UIControlStateNormal];
-    [_senderButton setTitleColor:kWhiteColor forState:UIControlStateNormal];
-    [self addSubview:_senderButton];
-}
-
--(void)clickLoginView:(id)sender
-{
+-(void)senderMessagecode {
     
+    senderButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    senderButton.frame = CGRectMake(leftIntervalX, 225, kWidth, areaViewHeght);
+    senderButton.backgroundColor = [UIColor colorWithRed:189/255.0 green:189/255.0 blue:189/255.0 alpha:1];
+    [senderButton addTarget:self action:@selector(clickSenderButton) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:senderButton];
+    
+    UILabel *senderLabel = [[UILabel alloc] init];
+    senderLabel.frame = CGRectMake((kWidth - 130) / 2, (areaViewHeght - 30) /2, 130, 30);
+    senderLabel.text = @"发送短信验证码";
+    senderLabel.textColor = kWhiteColor;
+    senderLabel.font = [UIFont systemFontOfSize:18];
+    [senderButton addSubview:senderLabel];
+}
+
+-(void)addUserProtocol{
+    UILabel *userlabel = [[UILabel alloc] init];
+    userlabel.frame = CGRectMake(leftIntervalX, 285, kWidth, 20);
+    userlabel.text = @"轻触上面按钮，即表示您已同意";
+    userlabel.textColor = [UIColor grayColor];
+    userlabel.textAlignment = NSTextAlignmentLeft;
+    NSMutableAttributedString *userString = [[NSMutableAttributedString alloc] initWithString:@"https://resource-testing.bulaba.com/user_agreement_zh.html"];
+    [userString addAttributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:124/255.0 green:201/255.0 blue:189/255.0 alpha:1], NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(2,2)];
+    userlabel.attributedText = userString;
+    [self addSubview:userlabel];
+}
+
+-(void)clickSenderButton {
+    
+}
+
+
+                                     
+-(void)clickLoginView:(id)sender {
+
+}
+
+-(void)changeColor {
+    if ( [numberTextField.text  isEqualToString:@""]) {
+        senderButton.backgroundColor = [UIColor colorWithRed:189/255.0 green:189/255.0 blue:189/255.0 alpha:1];
+    }else
+    {
+        senderButton.backgroundColor = [UIColor colorWithRed:67/255.0 green:184/255.0 blue:168/255.0 alpha:1];
+    }
 }
 
 
