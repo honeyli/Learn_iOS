@@ -22,6 +22,8 @@
 #import "MJRefresh.h"
 #import "MBProgressHUD.h"
 
+#define headViewHeight 200.0f
+
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 {
     UITableView *homeTableView;
@@ -29,6 +31,7 @@
     CGFloat navBarAlpha;
     NSMutableArray *title;
     UIImageView *navBarHairLineImageView;
+    UIImageView *headImage;
 }
 @property (nonatomic, strong) NSString *currentDate;
 @property (nonatomic, assign) NSInteger storyID;
@@ -42,25 +45,27 @@ static NSString * const JPHeaderId = @"header";
 {
     [super viewWillAppear:animated];
     navBarHairLineImageView.hidden = YES;
+    self.viewDeckController.enabled = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    navBarHairLineImageView.hidden = NO;
+    navBarHairLineImageView.hidden = YES;
+    self.viewDeckController.enabled = NO;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     navBarHairLineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
-    
+        
     _homeArrayList = [[NSMutableArray alloc] init];
      [self setNav];
     [self createTableView];
     [self requestLatestNews];
     
-    homeTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
+//    homeTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     homeTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
     homeTableView.mj_footer.hidden = YES;
 }
@@ -110,13 +115,17 @@ static NSString * const JPHeaderId = @"header";
     homeTableView.delegate = self;
     homeTableView.dataSource = self;
     homeTableView.rowHeight = 80;
-    headView = [[HeadView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200)];
+    headView = [[HeadView alloc] initWithFrame:
+                    CGRectMake(0, 0, kScreenWidth, headViewHeight)];
+    [headView setFrame:
+                    CGRectMake(0, -1 * 200, CGRectGetWidth(headView.frame), headViewHeight)];
     homeTableView.tableHeaderView = headView;
     homeTableView.showsVerticalScrollIndicator = NO;
     homeTableView.showsHorizontalScrollIndicator = NO;
     [self.view addSubview:homeTableView];
     
 }
+
 
 -(void)requestLatestNews
 {
@@ -250,15 +259,20 @@ static NSString * const JPHeaderId = @"header";
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
-    CGFloat y = scrollView.contentOffset.y;
-    if(y <= 0){
+    CGFloat offsetY = scrollView.contentOffset.y;
+/*    if(offsetY < offsetY * -1) {
+        CGRect currentFrame = headView.frame;
+        currentFrame.origin.y = offsetY;
+        currentFrame.size.height = -1*offsetY;
+        headView.headImageView.frame = currentFrame;
+    }*/
+    if(offsetY <= 0){
         //往上滑动，透明度为0
         navBarAlpha = 0;
         [self changeNavColor];
     }else{
         //滑动到距离为100的时候才显示完全
-        navBarAlpha = y/100;
+        navBarAlpha = offsetY/100;
         if (navBarAlpha >= 1) {
             [self changeNavColor];
             return;
@@ -286,6 +300,7 @@ static NSString * const JPHeaderId = @"header";
     NewsResponseModel *news = [newsList.stories objectAtIndex:indexPath.row];
     
     [self transitionToDetailNewsVC:news.storyID section:indexPath.section];
+
 }
 
 @end

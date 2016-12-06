@@ -55,7 +55,7 @@
     
     self.previousButton = ({
         UIButton *previousButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-        previousButton.center = CGPointMake(kScreenWidth/2, -20);
+        previousButton.center = CGPointMake(kScreenWidth/2, -30);
         [_webView.scrollView addSubview:previousButton];
         previousButton.enabled = NO;
         [previousButton setTitle:@"载入上一篇" forState:UIControlStateNormal];

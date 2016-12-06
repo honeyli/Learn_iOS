@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomePageViewController.h"
 #import "LeftMenuViewController.h"
+#import "IIViewDeckController.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) IIViewDeckController *IIView;
@@ -28,13 +29,13 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homePage];
     
     self.IIView = [[IIViewDeckController alloc] initWithCenterViewController:nav leftViewController:leftVC];
-    self.IIView.leftSize = self.window.frame.size.width - (220);
+    self.IIView.leftSize = 100 ;
+    self.IIView.elastic = false;
     self.IIView.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
     self.window.rootViewController = self.IIView;
     
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

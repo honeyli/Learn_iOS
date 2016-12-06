@@ -41,6 +41,7 @@
     [self.contentView addSubview:homeLabel];
     
 }
+
 -(void)configureCellWithModel:(NewsResponseModel *)model
 {
     homeLabel.text = model.title;

@@ -7,15 +7,29 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import "XWCountryCodeController.h"
+@interface ViewController ()<XWCountryCodeControllerDelegate>
+{
+    UILabel *label;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(100, 100, 100, 100);
+    [button setTitle:@"ksdfjskf" forState:UIControlStateNormal];
+    [button addTarget:self
+               action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    label = [[UILabel alloc] init];
+    label.frame = CGRectMake(200, 200, 100, 100);
+    [self.view addSubview:label];
+
 //    UIView *redView = [[UIView alloc] init];
 //    redView.backgroundColor = [UIColor redColor];
 //    redView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -39,6 +53,16 @@
 //    
 //    
     
+}
+
+-(void)click{
+    XWCountryCodeController *countryCodeVC = [[XWCountryCodeController alloc] init];
+    countryCodeVC.deleagete = self;
+    [countryCodeVC toReturnCountryCode:^(NSString *countryCodeStr) {
+//        label.text = countryCodeStr;
+        [label setText:countryCodeStr];
+    }];
+    [self presentViewController:countryCodeVC animated:YES completion:nil];
 }
 
 

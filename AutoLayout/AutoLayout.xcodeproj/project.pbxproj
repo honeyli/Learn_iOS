@@ -15,6 +15,9 @@
 		313916541DEBDA0800E9F3E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313916521DEBDA0800E9F3E5 /* LaunchScreen.storyboard */; };
 		3139165F1DEBDA0800E9F3E5 /* AutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3139165E1DEBDA0800E9F3E5 /* AutoLayoutTests.m */; };
 		3139166A1DEBDA0800E9F3E5 /* AutoLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 313916691DEBDA0800E9F3E5 /* AutoLayoutUITests.m */; };
+		31DA40041DF6B2B40071D972 /* sortedChnames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31DA40001DF6B2B40071D972 /* sortedChnames.plist */; };
+		31DA40051DF6B2B40071D972 /* sortedEnames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31DA40011DF6B2B40071D972 /* sortedEnames.plist */; };
+		31DA40061DF6B2B40071D972 /* XWCountryCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA40031DF6B2B40071D972 /* XWCountryCodeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		313916651DEBDA0800E9F3E5 /* AutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		313916691DEBDA0800E9F3E5 /* AutoLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutUITests.m; sourceTree = "<group>"; };
 		3139166B1DEBDA0800E9F3E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DA40001DF6B2B40071D972 /* sortedChnames.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sortedChnames.plist; sourceTree = "<group>"; };
+		31DA40011DF6B2B40071D972 /* sortedEnames.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sortedEnames.plist; sourceTree = "<group>"; };
+		31DA40021DF6B2B40071D972 /* XWCountryCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCountryCodeController.h; sourceTree = "<group>"; };
+		31DA40031DF6B2B40071D972 /* XWCountryCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCountryCodeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		313916431DEBDA0800E9F3E5 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				31DA3FFF1DF6B2B40071D972 /* XWCountryCode */,
 				313916471DEBDA0800E9F3E5 /* AppDelegate.h */,
 				313916481DEBDA0800E9F3E5 /* AppDelegate.m */,
 				3139164A1DEBDA0800E9F3E5 /* ViewController.h */,
@@ -138,6 +146,18 @@
 				3139166B1DEBDA0800E9F3E5 /* Info.plist */,
 			);
 			path = AutoLayoutUITests;
+			sourceTree = "<group>";
+		};
+		31DA3FFF1DF6B2B40071D972 /* XWCountryCode */ = {
+			isa = PBXGroup;
+			children = (
+				31DA40001DF6B2B40071D972 /* sortedChnames.plist */,
+				31DA40011DF6B2B40071D972 /* sortedEnames.plist */,
+				31DA40021DF6B2B40071D972 /* XWCountryCodeController.h */,
+				31DA40031DF6B2B40071D972 /* XWCountryCodeController.m */,
+			);
+			name = XWCountryCode;
+			path = ../../../Demo/XWCountryCode/XWCountryCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				313916541DEBDA0800E9F3E5 /* LaunchScreen.storyboard in Resources */,
+				31DA40051DF6B2B40071D972 /* sortedEnames.plist in Resources */,
+				31DA40041DF6B2B40071D972 /* sortedChnames.plist in Resources */,
 				313916511DEBDA0800E9F3E5 /* Assets.xcassets in Resources */,
 				3139164F1DEBDA0800E9F3E5 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +300,7 @@
 			files = (
 				3139164C1DEBDA0800E9F3E5 /* ViewController.m in Sources */,
 				313916491DEBDA0800E9F3E5 /* AppDelegate.m in Sources */,
+				31DA40061DF6B2B40071D972 /* XWCountryCodeController.m in Sources */,
 				313916461DEBDA0800E9F3E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +537,7 @@
 				313916701DEBDA0800E9F3E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		313916711DEBDA0800E9F3E5 /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +546,7 @@
 				313916731DEBDA0800E9F3E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		313916741DEBDA0800E9F3E5 /* Build configuration list for PBXNativeTarget "AutoLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +555,7 @@
 				313916761DEBDA0800E9F3E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

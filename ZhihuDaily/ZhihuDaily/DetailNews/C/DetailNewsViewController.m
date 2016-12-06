@@ -51,6 +51,7 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:STATUS_BAR_TAP_NOTIFICATION object:nil];
 }
 
@@ -64,7 +65,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
     [self initUI];
     [self initToolBarView];
     [self initDetailData];

@@ -70,7 +70,7 @@
     
     [self createDatas];
     
-    UITableView *leftTableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width - (195), self.view.frame.size.height) style:UITableViewStylePlain];
+    UITableView *leftTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     leftTableView.delegate = self;
     leftTableView.dataSource = self;
     leftTableView.rowHeight = 50;

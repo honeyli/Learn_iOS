@@ -72,7 +72,6 @@
 
 -(void)updateHeaderViewWithModel:(DetailNewsResponse *)Model;
 {
-   
     [_imageView sd_setImageWithURL:[NSURL URLWithString:Model.image]];
     _imageSourceLabel.text = Model.image_source;
     _titleLabel.text = Model.title;
